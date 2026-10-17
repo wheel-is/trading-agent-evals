@@ -1,0 +1,384 @@
+{
+  "version": "rigor-audit-1",
+  "status": "exploratory_candidate_review_not_validated_financial_benchmark",
+  "original_labels_unchanged": true,
+  "research_cases": 121,
+  "paper_cases": 11,
+  "original_research_criteria": 157,
+  "paper_content_criteria": 157,
+  "paper_operations_checks": 88,
+  "research_judge_votes": 5181,
+  "paper_judge_votes": 735,
+  "full_financial_grades_released": 0,
+  "perfect_research_full_pass_cases": 0,
+  "research_task_audit": [
+    {
+      "template_id": "P01",
+      "research_cases": 11,
+      "full_pass": 0,
+      "failed": 1,
+      "unresolved": 10,
+      "relevance_100": 9,
+      "correctness_100": 0,
+      "correctness_labels": {
+        "unknown": 55,
+        "pass": 10,
+        "fail": 1
+      },
+      "correctness_weight_unknown_percent": 88.46153846153847
+    },
+    {
+      "template_id": "P02",
+      "research_cases": 11,
+      "full_pass": 0,
+      "failed": 5,
+      "unresolved": 6,
+      "relevance_100": 6,
+      "correctness_100": 0,
+      "correctness_labels": {
+        "unknown": 75,
+        "pass": 9,
+        "fail": 15
+      },
+      "correctness_weight_unknown_percent": 79.36117936117937
+    },
+    {
+      "template_id": "P03",
+      "research_cases": 11,
+      "full_pass": 0,
+      "failed": 3,
+      "unresolved": 8,
+      "relevance_100": 8,
+      "correctness_100": 0,
+      "correctness_labels": {
+        "unknown": 103,
+        "pass": 9,
+        "fail": 9
+      },
+      "correctness_weight_unknown_percent": 83.75241779497098
+    },
+    {
+      "template_id": "P04",
+      "research_cases": 11,
+      "full_pass": 0,
+      "failed": 5,
+      "unresolved": 6,
+      "relevance_100": 7,
+      "correctness_100": 0,
+      "correctness_labels": {
+        "unknown": 87,
+        "pass": 11,
+        "fail": 12
+      },
+      "correctness_weight_unknown_percent": 77.5
+    },
+    {
+      "template_id": "P05",
+      "research_cases": 11,
+      "full_pass": 0,
+      "failed": 4,
+      "unresolved": 7,
+      "relevance_100": 7,
+      "correctness_100": 0,
+      "correctness_labels": {
+        "unknown": 111,
+        "pass": 7,
+        "fail": 3
+      },
+      "correctness_weight_unknown_percent": 93.65750528541226
+    },
+    {
+      "template_id": "P06",
+      "research_cases": 11,
+      "full_pass": 0,
+      "failed": 5,
+      "unresolved": 6,
+      "relevance_100": 8,
+      "correctness_100": 0,
+      "correctness_labels": {
+        "unknown": 67,
+        "pass": 20,
+        "fail": 23
+      },
+      "correctness_weight_unknown_percent": 62.95454545454545
+    },
+    {
+      "template_id": "P07",
+      "research_cases": 11,
+      "full_pass": 0,
+      "failed": 7,
+      "unresolved": 4,
+      "relevance_100": 9,
+      "correctness_100": 0,
+      "correctness_labels": {
+        "unknown": 78,
+        "pass": 13,
+        "fail": 19
+      },
+      "correctness_weight_unknown_percent": 71.36363636363636
+    },
+    {
+      "template_id": "P08",
+      "research_cases": 11,
+      "full_pass": 0,
+      "failed": 7,
+      "unresolved": 4,
+      "relevance_100": 6,
+      "correctness_100": 0,
+      "correctness_labels": {
+        "unknown": 73,
+        "pass": 19,
+        "fail": 29
+      },
+      "correctness_weight_unknown_percent": 63.2495164410058
+    },
+    {
+      "template_id": "P09",
+      "research_cases": 11,
+      "full_pass": 0,
+      "failed": 3,
+      "unresolved": 8,
+      "relevance_100": 9,
+      "correctness_100": 0,
+      "correctness_labels": {
+        "pass": 67,
+        "unknown": 43,
+        "fail": 11
+      },
+      "correctness_weight_unknown_percent": 34.32282003710575
+    },
+    {
+      "template_id": "P10",
+      "research_cases": 11,
+      "full_pass": 0,
+      "failed": 3,
+      "unresolved": 8,
+      "relevance_100": 9,
+      "correctness_100": 0,
+      "correctness_labels": {
+        "unknown": 45,
+        "pass": 131,
+        "fail": 33
+      },
+      "correctness_weight_unknown_percent": 24.363636363636363
+    },
+    {
+      "template_id": "P11",
+      "research_cases": 11,
+      "full_pass": 0,
+      "failed": 2,
+      "unresolved": 9,
+      "relevance_100": 9,
+      "correctness_100": 0,
+      "correctness_labels": {
+        "unknown": 132,
+        "pass": 10,
+        "fail": 12
+      },
+      "correctness_weight_unknown_percent": 87.87878787878788
+    }
+  ],
+  "jury_unanimous": 1620,
+  "jury_patterns": [
+    {
+      "votes": [
+        "fail",
+        "fail",
+        "fail"
+      ],
+      "count": 223
+    },
+    {
+      "votes": [
+        "fail",
+        "fail",
+        "pass"
+      ],
+      "count": 3
+    },
+    {
+      "votes": [
+        "fail",
+        "fail",
+        "unknown"
+      ],
+      "count": 13
+    },
+    {
+      "votes": [
+        "fail",
+        "pass",
+        "fail"
+      ],
+      "count": 4
+    },
+    {
+      "votes": [
+        "fail",
+        "unknown",
+        "fail"
+      ],
+      "count": 2
+    },
+    {
+      "votes": [
+        "fail",
+        "unknown",
+        "unknown"
+      ],
+      "count": 3
+    },
+    {
+      "votes": [
+        "pass",
+        "fail",
+        "fail"
+      ],
+      "count": 1
+    },
+    {
+      "votes": [
+        "pass",
+        "fail",
+        "pass"
+      ],
+      "count": 2
+    },
+    {
+      "votes": [
+        "pass",
+        "pass",
+        "fail"
+      ],
+      "count": 6
+    },
+    {
+      "votes": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "count": 606
+    },
+    {
+      "votes": [
+        "pass",
+        "pass",
+        "unknown"
+      ],
+      "count": 14
+    },
+    {
+      "votes": [
+        "pass",
+        "unknown",
+        "pass"
+      ],
+      "count": 3
+    },
+    {
+      "votes": [
+        "pass",
+        "unknown",
+        "unknown"
+      ],
+      "count": 6
+    },
+    {
+      "votes": [
+        "unknown",
+        "fail",
+        "fail"
+      ],
+      "count": 6
+    },
+    {
+      "votes": [
+        "unknown",
+        "fail",
+        "unknown"
+      ],
+      "count": 23
+    },
+    {
+      "votes": [
+        "unknown",
+        "pass",
+        "pass"
+      ],
+      "count": 4
+    },
+    {
+      "votes": [
+        "unknown",
+        "pass",
+        "unknown"
+      ],
+      "count": 2
+    },
+    {
+      "votes": [
+        "unknown",
+        "unknown",
+        "pass"
+      ],
+      "count": 15
+    },
+    {
+      "votes": [
+        "unknown",
+        "unknown",
+        "unknown"
+      ],
+      "count": 791
+    }
+  ],
+  "judge_agreement_is_accuracy": false,
+  "expert_label_count": 0,
+  "complete_validated_historical_task_packs": 0,
+  "distinct_judge_model_families_verified": false,
+  "planned_repeated_trials_per_case": 1,
+  "trial_note": "Mostly single selected trial. Retries/captures and 3 judges are not repeated independent target trials.",
+  "confidence_intervals": null,
+  "confidence_note": "Identification ranges from unresolved labels are not statistical confidence intervals. No product superiority test or population generalization is justified by these captures.",
+  "rubric_status": "post-hoc, domain approval pending",
+  "category_status": "post-hoc presentation taxonomy, no score/weight changes",
+  "difficulty_conclusion": "No full financial all-pass is established. Relevance saturation is real, but evaluator uncertainty is not proof of task difficulty. Do not force scores below 100 or tune the test set after seeing held-out answers.",
+  "required_work": [
+    {
+      "id": "ground_truth",
+      "status": "partial",
+      "requirement": "Independently validated historical source packs with complete coverage for each feasible task; compare claims and calculations to frozen references."
+    },
+    {
+      "id": "expert_calibration",
+      "status": "missing",
+      "requirement": "Two qualified reviewers; at least220 development labels across11tasks including100known critical failures; adjudication and separate held-out validation."
+    },
+    {
+      "id": "diverse_jury",
+      "status": "missing",
+      "requirement": "Pin actual judge identifiers/settings; prefer different model families. Same-model prompt diversity is not independent ground truth."
+    },
+    {
+      "id": "repeats",
+      "status": "missing",
+      "requirement": "New planned independent trials and isolated sessions; at least3 perfixture/config as initial design, increase based on measured variance."
+    },
+    {
+      "id": "difficulty_pilot",
+      "status": "not_run",
+      "requirement": "Pilot easy/boundary/forensic variants with complete obtainable data. Select difficulty on development only; freeze private held-out tests before targets run."
+    },
+    {
+      "id": "paired_comparison",
+      "status": "not_available",
+      "requirement": "Same fixtures, access, budgets, selection and tools within comparisons; matched source-provided and open-web tracks; keep native paper separate."
+    },
+    {
+      "id": "bias_checks",
+      "status": "not_run",
+      "requirement": "Blind names/order; test judge invariance to irrelevant verbosity/instructions and label-changing factual mutations before release."
+    }
+  ]
+}

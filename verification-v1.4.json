@@ -1,0 +1,32 @@
+{
+  "version": "1.4",
+  "cases": 132,
+  "research_cases_preserved": 121,
+  "paper_cases_scored_separately": 11,
+  "paper_checks": 245,
+  "paper_votes": 735,
+  "research_labels_unchanged": true,
+  "criterion_taxonomy_complete": 157,
+  "categories": 8,
+  "task_families": 5,
+  "all11tests_visible": true,
+  "main_chart_jango_visible": true,
+  "default_metric": "critical_gated_correctness",
+  "javascript_tests_passed": 18,
+  "data_integrity_tests_passed": 8,
+  "internal_links_and_anchors_checked": 331,
+  "all_links_resolve": true,
+  "paper_evidence_validation": {
+    "case_count": 11,
+    "criterion_decisions": 245,
+    "votes": 735,
+    "text_quotes_exact": true,
+    "image_quotes_visually_verified": true,
+    "image_normalization": "Whitespace and visually equivalent dash/minus glyphs only; screenshot evidence has no text byte span.",
+    "all_input_hashes_unchanged": true
+  },
+  "financial_release_allowed": false,
+  "full_source_validation_complete": false,
+  "expert_calibration_complete": false,
+  "new_harder_target_tests_executed": false
+}

@@ -1,63 +1,23 @@
 {
+  "passed": 18,
   "tests": [
-    {
-      "name": "Original rubric and full121 research cases",
-      "pass": true
-    },
-    {
-      "name": "Default11 common research configurations",
-      "pass": true
-    },
-    {
-      "name": "All main denominators exactly10 tasks",
-      "pass": true
-    },
-    {
-      "name": "All11 names appear in primary ranking",
-      "pass": true
-    },
-    {
-      "name": "Task heatmap has110 inspectable case links",
-      "pass": true
-    },
-    {
-      "name": "Claude unknown clock remains visible",
-      "pass": true
-    },
-    {
-      "name": "Jango remains visible without research score/time",
-      "pass": true
-    },
-    {
-      "name": "Critical-correctness toggle uses stored original gate scores",
-      "pass": true
-    },
-    {
-      "name": "Uncertainty hatch retained for correctness",
-      "pass": true
-    },
-    {
-      "name": "Raw correctness is separate diagnostic",
-      "pass": true
-    },
-    {
-      "name": "Axis all-pass uses true versus unresolved bounds",
-      "pass": true
-    },
-    {
-      "name": "Task filter uses actual selected single tasks",
-      "pass": true
-    },
-    {
-      "name": "Payload cannot close JSON script element",
-      "pass": true
-    },
-    {
-      "name": "Escaping hostile strings is effective",
-      "pass": true
-    }
-  ],
-  "passed": 14,
-  "rendered_product_rows": 11,
-  "task_links": 110
+    "All132cases including11Jango paper",
+    "Default correctness and all12 product configurations",
+    "Common mean uses exactly10tasks for every product",
+    "Jango visible in main chart and distinctly labeled",
+    "All11tests have132inspectable case cells includingP01pilots",
+    "P01selection retains both pilot identities and12products",
+    "Familyfilter uses only matched2policytasks",
+    "Fullallpass uses every content check, neverrelevance only",
+    "Paperoperations never enter headline content score",
+    "Categorymean uses participating tasks and N/A staysnull",
+    "Criterion drilldown exposes exactlabels and fullgrade links",
+    "Jango operationalchecks excluded from financialskills",
+    "Dynamic cellclick routes to correct evidence",
+    "Taskbutton resets conflicting familyfilter",
+    "Unresolved ranges remain and neverbecomeconfidenceintervals",
+    "Payload and HTMLescape preventscriptbreakout",
+    "Jango hasno synthetic latency coordinate",
+    "All8skills and5families have distinct definitions"
+  ]
 }

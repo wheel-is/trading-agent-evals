@@ -1,0 +1,181 @@
+{
+  "version": "prospective-protocol-draft-2",
+  "status": "design_only_not_executed_not_source_complete",
+  "purpose": "Make the next evaluation challenging through verifiable work, not arbitrary penalties. Do not rescore old answers against new requirements.",
+  "design": [
+    "Three fixture families per task: complete baseline, forensic boundary case, and paired robustness case. Use private date/entity variants after development.",
+    "Two data-access tracks: identical provided evidence packets for reasoning; native/open-web retrieval as a separate product task. Paper execution gets its own isolated simulator/state oracle.",
+    "Freeze exact input/source/rubric hashes, choices, budgets, planned trials and retry rules before launch. Record first valid submission; technical retry does not erase genuine failure.",
+    "For declared discretionary methods, score defensibility against evidence; for deterministic subtasks, compute exact reference answers independently.",
+    "Pilot with strong reference systems and qualified analysts. A ceiling signals a need for more demanding development fixtures; never forbid a legitimately perfect score on frozen tests.",
+    "Unknown evaluator truth is missing benchmark coverage, not evidence of difficulty. Publish both error rates and source-validation coverage.",
+    "Use paired task-level comparisons only after validation, cluster uncertainty by task/fixture, report per-template results and multiplicity-aware comparisons; do not treat correlated criteria or judges as independent samples.",
+    "Add paper lifecycle fixtures for isolated buying power, shared-account stop, partial fills, cancellation receipts, timed shutdown and inactive future policy. No live brokerage required."
+  ],
+  "tasks": [
+    {
+      "template_id": "P01",
+      "name": "Company-level market cap",
+      "challenge": "Reconcile share classes, point-in-time membership, competing leaders and synchronized closing values.",
+      "next_difficulty_case": "Add close-date changes, conflicting share-count vintages and an exact-tie fixture.",
+      "criteria": 11,
+      "critical": 4,
+      "family": "market",
+      "full_source_validation": false,
+      "historical_reference_status": "Historical source pack incomplete"
+    },
+    {
+      "template_id": "P02",
+      "name": "Twenty-manager consensus",
+      "challenge": "Rebuild twenty top-ten lists from the correct 13F filings; deduplicate managers, instruments and voting counts.",
+      "next_difficulty_case": "Supply amendment/addition fixtures, option rows, dollar-unit changes and share-class collisions.",
+      "criteria": 12,
+      "critical": 5,
+      "family": "disclosures",
+      "full_source_validation": false,
+      "historical_reference_status": "Historical source pack incomplete"
+    },
+    {
+      "template_id": "P03",
+      "name": "Congress disclosure trigger",
+      "challenge": "Use public disclosure time, distinct member identities and transaction-range lower bounds.",
+      "next_difficulty_case": "Use delayed filings, multiple owners for one member, $499,999/$500,000 boundaries and an untriggered control.",
+      "criteria": 14,
+      "critical": 7,
+      "family": "disclosures",
+      "full_source_validation": false,
+      "historical_reference_status": "Historical source pack incomplete"
+    },
+    {
+      "template_id": "P04",
+      "name": "Insider clusters",
+      "challenge": "Verify membership and distinct CEO/CFO plus director open-market buyers using footnotes.",
+      "next_difficulty_case": "Add a dual-role person, 10b5-1 exclusion, grant/exercise distractors and late public filings.",
+      "criteria": 13,
+      "critical": 5,
+      "family": "disclosures",
+      "full_source_validation": false,
+      "historical_reference_status": "Historical source pack incomplete"
+    },
+    {
+      "template_id": "P05",
+      "name": "Estimate revisions",
+      "challenge": "Reconstruct historical strength, breadth and momentum with the declared score and data vintage.",
+      "next_difficulty_case": "Supply complete archived endpoints plus missing-data, revised-after-cutoff and near-tie variants.",
+      "criteria": 14,
+      "critical": 5,
+      "family": "market",
+      "full_source_validation": false,
+      "historical_reference_status": "Historical source pack incomplete"
+    },
+    {
+      "template_id": "P06",
+      "name": "Oligopoly quality",
+      "challenge": "Match concentration and leadership to one market definition; reconcile ROIC, cash flow and pricing power.",
+      "next_difficulty_case": "Provide conflicting geography/market boundaries, one-off cash flow and negative counterevidence.",
+      "criteria": 13,
+      "critical": 5,
+      "family": "business",
+      "full_source_validation": false,
+      "historical_reference_status": "Historical source pack incomplete"
+    },
+    {
+      "template_id": "P07",
+      "name": "AI bottlenecks",
+      "challenge": "Compare five constraints, establish which actually binds, then connect three firms to cash flow.",
+      "next_difficulty_case": "Contrast capacity constraints with demand growth, indirect exposure and bottleneck rotation.",
+      "criteria": 13,
+      "critical": 5,
+      "family": "business",
+      "full_source_validation": false,
+      "historical_reference_status": "Historical source pack incomplete"
+    },
+    {
+      "template_id": "P08",
+      "name": "Lobbying to revenue",
+      "challenge": "Deduplicate entities, rank comparable growth first, then confirm the top five without backfilling.",
+      "next_difficulty_case": "Include zero/tiny denominators, duplicate subsidiaries, a failed top-five confirmation and tempting sixth name.",
+      "criteria": 14,
+      "critical": 7,
+      "family": "disclosures",
+      "full_source_validation": false,
+      "historical_reference_status": "Historical source pack incomplete"
+    },
+    {
+      "template_id": "P09",
+      "name": "Four-regime rotation",
+      "challenge": "Rebuild release-vintage signs, tie/zero handling, exact ETF maps and initialization.",
+      "next_difficulty_case": "Exercise every regime, cutoff-overlap ambiguity, revisions and missing incumbent state.",
+      "criteria": 14,
+      "critical": 8,
+      "family": "allocation",
+      "full_source_validation": false,
+      "historical_reference_status": "Partial BLS reference and supported-method calculations"
+    },
+    {
+      "template_id": "P10",
+      "name": "Public robo-model policy",
+      "challenge": "Separate supplied assumptions from approved disclosures; apply exact weights, cash triggers and fees.",
+      "next_difficulty_case": "Test strict versus inclusive boundaries, missing instrument approval, cash versus target and stale model versions.",
+      "criteria": 22,
+      "critical": 9,
+      "family": "allocation",
+      "full_source_validation": false,
+      "historical_reference_status": "Historical source pack incomplete"
+    },
+    {
+      "template_id": "P11",
+      "name": "Earnings-mention PageRank",
+      "challenge": "Build a complete source-bound directed graph and independently verify scores with isolates and dangling nodes.",
+      "next_difficulty_case": "Test edge reversal, duplicate/self/subsidiary mentions, isolates, dangling mass and false toy-to-full claims.",
+      "criteria": 17,
+      "critical": 9,
+      "family": "graph",
+      "full_source_validation": false,
+      "historical_reference_status": "Independent illustrative numerical contradiction; full corpus unverified"
+    }
+  ],
+  "release_requirements": [
+    {
+      "id": "ground_truth",
+      "status": "partial",
+      "requirement": "Independently validated historical source packs with complete coverage for each feasible task; compare claims and calculations to frozen references."
+    },
+    {
+      "id": "expert_calibration",
+      "status": "missing",
+      "requirement": "Two qualified reviewers; at least220 development labels across11tasks including100known critical failures; adjudication and separate held-out validation."
+    },
+    {
+      "id": "diverse_jury",
+      "status": "missing",
+      "requirement": "Pin actual judge identifiers/settings; prefer different model families. Same-model prompt diversity is not independent ground truth."
+    },
+    {
+      "id": "repeats",
+      "status": "missing",
+      "requirement": "New planned independent trials and isolated sessions; at least3 perfixture/config as initial design, increase based on measured variance."
+    },
+    {
+      "id": "difficulty_pilot",
+      "status": "not_run",
+      "requirement": "Pilot easy/boundary/forensic variants with complete obtainable data. Select difficulty on development only; freeze private held-out tests before targets run."
+    },
+    {
+      "id": "paired_comparison",
+      "status": "not_available",
+      "requirement": "Same fixtures, access, budgets, selection and tools within comparisons; matched source-provided and open-web tracks; keep native paper separate."
+    },
+    {
+      "id": "bias_checks",
+      "status": "not_run",
+      "requirement": "Blind names/order; test judge invariance to irrelevant verbosity/instructions and label-changing factual mutations before release."
+    }
+  ],
+  "not_claimed": [
+    "No new target runs",
+    "No private held-out set exists yet",
+    "No expert-reviewed ground truth supplied",
+    "No empirical hardness/discrimination/reliability estimate yet"
+  ]
+}

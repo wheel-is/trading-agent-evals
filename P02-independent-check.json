@@ -1,0 +1,500 @@
+{
+  "status": "limited_independent_recomputation_not_source_truth",
+  "source_file": "outputs/jango-eval-kit/results/native-paper-local-20261015/P02/jango/ui-observation-012.txt",
+  "source_sha256": "33fec584d21ec70f955b0e126673f9126dfbfe2e555a2aa621cf881fca15b5f0",
+  "purpose": "Count each issuer once per declared manager in the actually captured roster. Does not validate real filings, missing eligible rows or the true ranking.",
+  "rows": [
+    {
+      "raw_quote": "Berkshire: AAPL 26,353M / AXP 26,256M / BAC 24,893M / KO 23,578M / CVX 18,683M / OXY 12,885M / MCO 12,848M / KHC 10,857M / CB 9,314M / DVA 4,234M",
+      "visible_card": 284,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "AAPL",
+        "AXP",
+        "BAC",
+        "KO",
+        "CVX",
+        "OXY",
+        "MCO",
+        "KHC",
+        "CB",
+        "DVA"
+      ]
+    },
+    {
+      "raw_quote": "Baupost (\u00d71000 normalized): AMZN 892M / ELV 493M / QSR 490M / GOOGL* 485M / FERG 344M / GPC 332M / UNP 322M / V 241M / WCC 229M / AON 228M",
+      "visible_card": 287,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "AMZN",
+        "ELV",
+        "QSR",
+        "GOOGL",
+        "FERG",
+        "GPC",
+        "UNP",
+        "V",
+        "WCC",
+        "AON"
+      ]
+    },
+    {
+      "raw_quote": "Pershing (via 2026053): UBER 4,032M / BN 3,591M / MSFT 3,062M / AMZN 2,441M / QSR 2,248M / META 2,072M / HHH 1,985M agg / V 1,980M / MA 931M / SPGI 807M",
+      "visible_card": 290,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "UBER",
+        "BN",
+        "MSFT",
+        "AMZN",
+        "QSR",
+        "META",
+        "HHH",
+        "V",
+        "MA",
+        "SPGI"
+      ]
+    },
+    {
+      "raw_quote": "Greenlight via DME: GRBK 549M / FLR 501M / CNR 483M / BHF 443M / ACHC 362M / FBIN 283M / PENN 245M / PCG 183M / CNC 146M / SNX 145M",
+      "visible_card": 293,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "GRBK",
+        "FLR",
+        "CNR",
+        "BHF",
+        "ACHC",
+        "FBIN",
+        "PENN",
+        "PCG",
+        "CNC",
+        "SNX"
+      ]
+    },
+    {
+      "raw_quote": "Appaloosa: AMZN 1,192M / MU 1,125M / TSM 788M / GOOGL* 654M / UBER 555M / EWY 490M (equity ETF, disclosed) / META 380M / VST 351M / NVDA 305M / NRG 257M (AAPL Put excluded at #11)",
+      "visible_card": 296,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "AMZN",
+        "MU",
+        "TSM",
+        "GOOGL",
+        "UBER",
+        "META",
+        "VST",
+        "NVDA",
+        "NRG"
+      ]
+    },
+    {
+      "raw_quote": "Lone Pine: NBIS 1,176M / ASML 1,132M / STX 965M / HD 918M / AMAT 873M / MDLN-private 827M (excluded from ticker consensus) / LIN 809M / TER 722M / GLW 697M / CVNA 692M",
+      "visible_card": 299,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "NBIS",
+        "ASML",
+        "STX",
+        "HD",
+        "AMAT",
+        "LIN",
+        "TER",
+        "GLW",
+        "CVNA"
+      ]
+    },
+    {
+      "raw_quote": "Viking: V 2,194M / TSM 1,513M / APD 1,390M / SHW 1,335M / FTVI 1,218M / META 1,052M / SCHW 982M / TMO 971M / JPM 949M / LII 912M (AMZN 11th, excluded)",
+      "visible_card": 302,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "V",
+        "TSM",
+        "APD",
+        "SHW",
+        "FTVI",
+        "META",
+        "SCHW",
+        "TMO",
+        "JPM",
+        "LII"
+      ]
+    },
+    {
+      "raw_quote": "Tiger Global: TSM 1,787M / AMZN 1,685M / NVDA 1,478M / GOOGL* 1,383M / META 1,275M / LRCX 1,224M / SE 1,173M / AMAT 934M / GEV 863M / MSFT 788M",
+      "visible_card": 305,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "TSM",
+        "AMZN",
+        "NVDA",
+        "GOOGL",
+        "META",
+        "LRCX",
+        "SE",
+        "AMAT",
+        "GEV",
+        "MSFT"
+      ]
+    },
+    {
+      "raw_quote": "Coatue (multi-manager rows aggregated): LRCX 3,757M / MU 3,517M / TSM 3,302M / AMAT 2,730M / SPACEX-private 2,592M (excluded) / GEV 2,551M / AMZN 2,289M / CBRS 1,355M / HUT 1,122M / AVGO 1,563M\u2192(order: AVGO 1,563M > HUT; META 1,026M 10th). Final set: LRCX, MU, TSM, AMAT, GEV, AMZN, CBRS, AVGO, HUT, META",
+      "visible_card": 308,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        " LRCX",
+        "MU",
+        "TSM",
+        "AMAT",
+        "GEV",
+        "AMZN",
+        "CBRS",
+        "AVGO",
+        "HUT",
+        "META"
+      ]
+    },
+    {
+      "raw_quote": "D1: SPACEX-private 21,455M (excluded) / CART 2,812M / JHX 1,941M / NU 1,714M / JCI 1,439M / MELI 928M / USFD 816M / DHR 724M / SHW 718M / RDDT 551M (9 mappable counted)",
+      "visible_card": 311,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "CART",
+        "JHX",
+        "NU",
+        "JCI",
+        "MELI",
+        "USFD",
+        "DHR",
+        "SHW",
+        "RDDT"
+      ]
+    },
+    {
+      "raw_quote": "Altimeter: NVDA 980M / CBRS 701M / META 568M / TSM 562M / CRWV 528M / ARM 518M / AMZN 432M / UBER 368M / SNOW 314M / MSFT 303M (GRAB warrant excluded, #20)",
+      "visible_card": 314,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "NVDA",
+        "CBRS",
+        "META",
+        "TSM",
+        "CRWV",
+        "ARM",
+        "AMZN",
+        "UBER",
+        "SNOW",
+        "MSFT"
+      ]
+    },
+    {
+      "raw_quote": "TCI: GE 8,693M / V 3,901M / MCO 3,436M / SPGI 2,377M / CP 2,456M\u2192(order CP>SPGI) / GOOGL* 4,390M agg (2nd) / FER 1,426M / CNI 987M / MLM 822M / VMC 639M. Set: GE, GOOGL*, V, MCO, CP, SPGI, FER, CNI, MLM, VMC",
+      "visible_card": 317,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        " GE",
+        "GOOGL",
+        "V",
+        "MCO",
+        "CP",
+        "SPGI",
+        "FER",
+        "CNI",
+        "MLM",
+        "VMC"
+      ]
+    },
+    {
+      "raw_quote": "Third Point: WBD 662M / AMZN 632M / GOOGL* 443M agg / CRH 385M / TDS 342M / TSM 306M / LYV 253M / KEYS 240M / SOMN 223M / SQ 223M\u2192(tie KEYS>SOMN>SQ by shares)",
+      "visible_card": 320,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "WBD",
+        "AMZN",
+        "GOOGL",
+        "CRH",
+        "TDS",
+        "TSM",
+        "LYV",
+        "KEYS",
+        "SOMN",
+        "SQ"
+      ]
+    },
+    {
+      "raw_quote": "Elliott (all ETF/index puts excluded: QQQ/IGV/XLI/XLY/XLP/GDX/IHI puts): TFPM 1,197M / PSX 1,039M / SU 931M / HPE 794M / LUV 694M / UNIT 584M / PINS 577M / ETSY 562M / NCLH 541M / PEP 528M",
+      "visible_card": 323,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "TFPM",
+        "PSX",
+        "SU",
+        "HPE",
+        "LUV",
+        "UNIT",
+        "PINS",
+        "ETSY",
+        "NCLH",
+        "PEP"
+      ]
+    },
+    {
+      "raw_quote": "Icahn (IEP/CVI/UAN aggregated): IEP 4,459M / CVI 1,961M / UAN 464M / CTRI 133M / IFF 121M / SATS 62M / JBLU 40M / MNRO 39M / CZR 26M / SAND 22M",
+      "visible_card": 326,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "IEP",
+        "CVI",
+        "UAN",
+        "CTRI",
+        "IFF",
+        "SATS",
+        "JBLU",
+        "MNRO",
+        "CZR",
+        "SAND"
+      ]
+    },
+    {
+      "raw_quote": "ValueAct (via 1418814): V 1,256M / AMZN 922M / RKT 770M / BLK 691M / META 505M / CRM 497M / TOST 428M / KKR 410M / SPOT 335M / LLYVA 309M agg",
+      "visible_card": 329,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "V",
+        "AMZN",
+        "RKT",
+        "BLK",
+        "META",
+        "CRM",
+        "TOST",
+        "KKR",
+        "SPOT",
+        "LLYVA"
+      ]
+    },
+    {
+      "raw_quote": "Glenview (IWM/SPY puts excluded): GPN 626M / CVS 479M / THC 463M / TMO 459M / AMZN 398M / A 397M / DHR 384M / META 366M / AMD 328M / TEVA 268M",
+      "visible_card": 332,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "GPN",
+        "CVS",
+        "THC",
+        "TMO",
+        "AMZN",
+        "A",
+        "DHR",
+        "META",
+        "AMD",
+        "TEVA"
+      ]
+    },
+    {
+      "raw_quote": "Maverick: NVDA 788M / AMD 751M / ALAB 601M / INTC 587M / GOOGL* 573M / AMZN 524M / NU 511M / META 449M / GFL 443M / NTRB 420M (NU call excluded, #27)",
+      "visible_card": 335,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "NVDA",
+        "AMD",
+        "ALAB",
+        "INTC",
+        "GOOGL",
+        "AMZN",
+        "NU",
+        "META",
+        "GFL",
+        "NTRB"
+      ]
+    },
+    {
+      "raw_quote": "Egerton: V 1,486M / GOOGL* 1,031M agg / APH 887M / AMZN 743M / MCO 448M / NVDA 331M / MDLN-private 301M (excluded) / VMC 290M / CRH 287M / AMAT 271M (9 mappable counted)",
+      "visible_card": 338,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "V",
+        "GOOGL",
+        "APH",
+        "AMZN",
+        "MCO",
+        "NVDA",
+        "VMC",
+        "CRH",
+        "AMAT"
+      ]
+    },
+    {
+      "raw_quote": "AKO (\u00d71000 normalized): ALC 652M / SUNBELT-private 590M (excluded) / RACE 565M / V 537M / GE 489M / AMZN 380M / ADI 317M / MSFT 162M / CSCO 105M / CP 103M (9 mappable counted)",
+      "visible_card": 341,
+      "declared_eligible_symbols_after_explicit_private_and_etf_exclusions": [
+        "ALC",
+        "RACE",
+        "V",
+        "GE",
+        "AMZN",
+        "ADI",
+        "MSFT",
+        "CSCO",
+        "CP"
+      ]
+    }
+  ],
+  "claimed_counts": {
+    "AMZN": 12,
+    "META": 9,
+    "V": 7,
+    "GOOGL": 7,
+    "TSM": 6,
+    "NVDA": 5,
+    "AMAT": 4,
+    "MSFT": 4,
+    "MCO": 3,
+    "UBER": 3
+  },
+  "recomputed_counts": {
+    "AXP": 1,
+    "CB": 1,
+    "MCO": 3,
+    "DVA": 1,
+    "BAC": 1,
+    "KHC": 1,
+    "KO": 1,
+    "OXY": 1,
+    "CVX": 1,
+    "AAPL": 1,
+    "QSR": 2,
+    "UNP": 1,
+    "ELV": 1,
+    "V": 7,
+    "AMZN": 12,
+    "WCC": 1,
+    "AON": 1,
+    "FERG": 1,
+    "GOOGL": 7,
+    "GPC": 1,
+    "SPGI": 2,
+    "UBER": 3,
+    "BN": 1,
+    "MA": 1,
+    "MSFT": 4,
+    "HHH": 1,
+    "META": 9,
+    "FBIN": 1,
+    "CNC": 1,
+    "BHF": 1,
+    "SNX": 1,
+    "GRBK": 1,
+    "PENN": 1,
+    "ACHC": 1,
+    "PCG": 1,
+    "FLR": 1,
+    "CNR": 1,
+    "NRG": 1,
+    "TSM": 6,
+    "NVDA": 5,
+    "VST": 1,
+    "MU": 2,
+    "NBIS": 1,
+    "CVNA": 1,
+    "TER": 1,
+    "ASML": 1,
+    "GLW": 1,
+    "HD": 1,
+    "LIN": 1,
+    "AMAT": 4,
+    "STX": 1,
+    "JPM": 1,
+    "FTVI": 1,
+    "SHW": 2,
+    "SCHW": 1,
+    "TMO": 2,
+    "APD": 1,
+    "LII": 1,
+    "GEV": 2,
+    "SE": 1,
+    "LRCX": 1,
+    "AVGO": 1,
+    " LRCX": 1,
+    "HUT": 1,
+    "CBRS": 2,
+    "JHX": 1,
+    "CART": 1,
+    "MELI": 1,
+    "NU": 2,
+    "USFD": 1,
+    "RDDT": 1,
+    "JCI": 1,
+    "DHR": 2,
+    "SNOW": 1,
+    "ARM": 1,
+    "CRWV": 1,
+    "VMC": 2,
+    "CNI": 1,
+    "CP": 2,
+    "MLM": 1,
+    "FER": 1,
+    " GE": 1,
+    "TDS": 1,
+    "SOMN": 1,
+    "WBD": 1,
+    "KEYS": 1,
+    "LYV": 1,
+    "SQ": 1,
+    "CRH": 2,
+    "PEP": 1,
+    "PSX": 1,
+    "UNIT": 1,
+    "HPE": 1,
+    "ETSY": 1,
+    "LUV": 1,
+    "TFPM": 1,
+    "NCLH": 1,
+    "SU": 1,
+    "PINS": 1,
+    "SAND": 1,
+    "IEP": 1,
+    "CTRI": 1,
+    "SATS": 1,
+    "JBLU": 1,
+    "UAN": 1,
+    "CVI": 1,
+    "CZR": 1,
+    "MNRO": 1,
+    "IFF": 1,
+    "TOST": 1,
+    "LLYVA": 1,
+    "BLK": 1,
+    "CRM": 1,
+    "KKR": 1,
+    "RKT": 1,
+    "SPOT": 1,
+    "THC": 1,
+    "CVS": 1,
+    "AMD": 2,
+    "A": 1,
+    "TEVA": 1,
+    "GPN": 1,
+    "GFL": 1,
+    "INTC": 1,
+    "ALAB": 1,
+    "NTRB": 1,
+    "APH": 1,
+    "CSCO": 1,
+    "RACE": 1,
+    "ALC": 1,
+    "ADI": 1,
+    "GE": 1
+  },
+  "all_ten_claimed_counts_match_the_incomplete_declared_lists": true,
+  "incomplete_declared_lists": [
+    {
+      "visible_card": 296,
+      "n": 9
+    },
+    {
+      "visible_card": 299,
+      "n": 9
+    },
+    {
+      "visible_card": 311,
+      "n": 9
+    },
+    {
+      "visible_card": 338,
+      "n": 9
+    },
+    {
+      "visible_card": 341,
+      "n": 9
+    }
+  ],
+  "primary_ewy_identity": {
+    "url": "https://www.ishares.com/us/products/239681/ishares-msci-south-korea-etf",
+    "dated_factsheet_url": "https://www.ishares.com/us/literature/fact-sheet/ewy-ishares-msci-south-korea-etf-fund-fact-sheet-en-us.pdf",
+    "factsheet_as_of": "2026-03-31",
+    "observed_using": "web.run search on2026-10-17",
+    "identity": "EWY is iShares MSCI South Korea ETF, CUSIP464286772; fund launched2000-05-09. Type only; no holdings/values verified."
+  },
+  "grade_override": false
+}
