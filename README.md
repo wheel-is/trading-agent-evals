@@ -1,9 +1,7 @@
-# Trading Agent evaluation
+# Trading Agent evaluation — version 1.2
 
-[Open the comparison](https://wheel-is.github.io/trading-agent-evals/#all-products)
+[Open the task-fulfilment ranking](https://wheel-is.github.io/trading-agent-evals/#performance-index)
 
-Twelve product tracks, 132 selected cases, 115 captured outputs. Grok, Grok Bot, Muse web and native, Claude Code, and separate Jango paper are included.
+Eleven research configurations are ranked over common P02–P11 tasks using 484 post-hoc single-reviewer output-completion labels. This is exploratory task fulfilment, not independently verified financial accuracy. Jango paper is visible separately, and missing timing does not hide Claude or Jango.
 
-Financial scoring remains **unreleased** pending validated historical references, domain approval and calibrated or expert review. Paper results are not pooled with research.
-
-JavaScript is retained; initial charts and all saved responses are also readable without it. Complete raw captures and implementation remain in the local export.
+All twelve product tracks, 132 selected cases and preserved response provenance remain available. Three Grok clipboard defects were recovered from original rendered captures. Financial grading remains unreleased.

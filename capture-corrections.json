@@ -1,0 +1,1335 @@
+{
+  "version": "capture-correction-1",
+  "changes": [
+    {
+      "template_id": "P04",
+      "case_id": "P04-xai-grok-bf26c793ce",
+      "reason": "Original clipboard capture contains delivered or stale prompt text, while retained rendered UI snapshot contains a different assistant memo. No new target request was made.",
+      "original_clipboard_response": {
+        "file": "jango-eval-kit/results/research-broader-local-20261015/P04/xai-grok/recommendation.md",
+        "sha256": "f31d019babb61ef51e54ec475c662803280454f07d338b930a2080a5ba999e8e"
+      },
+      "source_file": "jango-eval-kit/results/research-broader-local-20261015/P04/xai-grok/ui-observation-014.txt",
+      "source_sha256": "303a6c1a50ddc96d35f94e5c12e09d503d90946a3c013f5cd219c19e500b94c9",
+      "source_line_start": 189,
+      "source_line_end": 407,
+      "rendered_text_file": "formal-eval-20261017-v1.2/data-v5/recovered/P04-grok-rendered-response.txt",
+      "rendered_text_sha256": "0cf3282e86d5334556476d7c8134e3ff27980a5b199b3b96db8424a6fb1220e8",
+      "format": "AX text/link nodes in source order; formatting-only reconstruction, not a verbatim Markdown Copy. The original clipboard and UI snapshot are unchanged.",
+      "source_lines": [
+        {
+          "source_line": 189,
+          "text": "Research Memo: P04 Insider Cluster Screening"
+        },
+        {
+          "source_line": 190,
+          "text": "Template ID:"
+        },
+        {
+          "source_line": 191,
+          "text": " P04"
+        },
+        {
+          "source_line": 192,
+          "text": "Recommendation Status:"
+        },
+        {
+          "source_line": 193,
+          "text": " No-qualifier (verified absence of qualifying clusters within searchable public coverage)"
+        },
+        {
+          "source_line": 194,
+          "text": "Relevant Decision Time / Reference Market Close:"
+        },
+        {
+          "source_line": 195,
+          "text": " 2026-10-15T16:00:00-04:00 (America/New_York)"
+        },
+        {
+          "source_line": 196,
+          "text": "Common Research Cutoff:"
+        },
+        {
+          "source_line": 197,
+          "text": " 2026-10-16T03:15:00Z No orders, account changes, schedules, or ongoing monitors were executed. This is a conditional research recommendation only."
+        },
+        {
+          "source_line": 199,
+          "text": "Concrete Recommendation"
+        },
+        {
+          "source_line": 200,
+          "text": "No S&P 500 companies qualify under the frozen conventions for a current open-market purchase cluster (CEO or CFO plus at least one distinct director, transaction dates in the trailing 30 calendar days ending 2026-10-15, filings publicly available by the research cutoff, supported as discretionary open-market purchases excluding grants/gifts/option exercises/automatic-plan transactions)."
+        },
+        {
+          "source_line": 201,
+          "text": "Result:"
+        },
+        {
+          "source_line": 202,
+          "text": " Explicit no-trigger / no-qualifier. Zero names recommended. Target weights and selection rules are not applicable. Conditional hold/change rules (for any future or hypothetical position under the strategy): Hold up to five qualifying names. Exit any position after six months from public availability of the final filing that established the cluster, or earlier upon public disclosure of an open-market sale by any qualifying insider in that cluster. Qualifying insider identities would be attached per name if any had qualified. No incumbent holdings are supplied or assumed."
+        },
+        {
+          "source_line": 204,
+          "text": "Methodology, Conventions, Coverage, and Unresolved Gaps"
+        },
+        {
+          "source_line": 205,
+          "text": "Declared conventions (fixed before conclusions):"
+        },
+        {
+          "source_line": 209,
+          "text": "S&P 500 membership as of the reference close (secondary sources including Wikipedia list of S&P 500 companies and aggregator holdings as of ~Oct 15, 2026; primary S&P Dow Jones Indices announcements confirm recent changes such as Vylor/Twilio additions and Corteva/Warner Bros. Discovery deletions effective early October 2026, but no full official constituent roster was retrieved)."
+        },
+        {
+          "source_line": 212,
+          "text": "Cluster requires distinct people: CEO or CFO + separate director (dual-role individual cannot satisfy both). Roles as of transaction dates."
+        },
+        {
+          "source_line": 215,
+          "text": "Transaction dates: 2026-09-15 to 2026-10-15 inclusive."
+        },
+        {
+          "source_line": 218,
+          "text": "Only code-P (or equivalent) open-market purchases confirmed by transaction codes + footnotes/plan disclosures. Automatic DRIP, grants, gifts, exercises, and 10b5-1/plan transactions excluded. Uncertain classifications left unresolved."
+        },
+        {
+          "source_line": 221,
+          "text": "Filings must have SEC acceptance/public availability by cutoff."
+        },
+        {
+          "source_line": 224,
+          "text": "Deterministic selection if >5 qualified: not triggered. Equal weights would have been declared if applicable."
+        },
+        {
+          "source_line": 225,
+          "text": "Coverage:"
+        },
+        {
+          "source_line": 226,
+          "text": " Public web search and page fetches on SEC EDGAR references, OpenInsider, Quant500 (S&P 500-specific Form 4 aggregator covering ~461 companies / 6,401 transactions from ~2026-07-20 to 2026-10-15, reporting 196 open-market purchases), Milo, AnalyzePortfolio, InsiderTradingScreener, StockTitan summaries, and related secondary sources. Retrieval context: tools executed on/around the cutoff window; publication dates of source pages are as noted in the ledger. No full exhaustive EDGAR crawl of every Form 4 was performed (public-tool limitations)."
+        },
+        {
+          "source_line": 227,
+          "text": "Material unresolved / gaps:"
+        },
+        {
+          "source_line": 231,
+          "text": "Aggregators may miss edge-case filings or lag; primary EDGAR XML/HTML for every potential Form 4 was not fully extracted."
+        },
+        {
+          "source_line": 234,
+          "text": "Exact S&P 500 roster effective at close relies on secondary lists + recent official change announcements (no conflicting membership evidence found for examined names)."
+        },
+        {
+          "source_line": 237,
+          "text": "Footnote-level plan status not independently re-verified for every distant filing beyond aggregator + summary consistency."
+        },
+        {
+          "source_line": 240,
+          "text": "No evidence of qualifying CEO/CFO + director open-market clusters emerged in the window for confirmed S&P 500 names."
+        },
+        {
+          "source_line": 241,
+          "text": "Differing defensible choices (e.g., stricter primary-only membership verification) would not alter the no-qualifier outcome given the absence of candidates."
+        },
+        {
+          "source_line": 243,
+          "text": "Claim-to-Evidence Ledger (Decision-Driving Facts)"
+        },
+        {
+          "source_line": 248,
+          "text": "Entity/Identifier"
+        },
+        {
+          "source_line": 250,
+          "text": "Value/Assertion"
+        },
+        {
+          "source_line": 252,
+          "text": "Observation Period"
+        },
+        {
+          "source_line": 254,
+          "text": "Publication/Availability Date"
+        },
+        {
+          "source_line": 256,
+          "text": "Exact Source URL"
+        },
+        {
+          "source_line": 258,
+          "text": "Supporting Record/Passage"
+        },
+        {
+          "source_line": 260,
+          "text": "Uncertainty"
+        },
+        {
+          "source_line": 263,
+          "text": "Quant500 S&P 500 Form 4 summary"
+        },
+        {
+          "source_line": 265,
+          "text": "196 open-market (code P) purchases across ~461 S&P 500 companies; no CEO/CFO/director open-market purchases listed in Sep–Oct 2026 window"
+        },
+        {
+          "source_line": 267,
+          "text": "Filings ~2026-07-20 to 2026-10-15"
+        },
+        {
+          "source_line": 269,
+          "text": "Page content reflecting data through ~2026-10-15"
+        },
+        {
+          "source_line": 271,
+          "text": "quant500.com/insider-alerts"
+        },
+        {
+          "source_line": 273,
+          "text": "“6401 insider transactions across 461 S&P 500 companies... 196 open-market purchases... The 196 open-market purchases (code P) are the rare signal... [listed large purchases are 10% owner / Berkshire on LEN]”"
+        },
+        {
+          "source_line": 275,
+          "text": "Aggregator; secondary"
+        },
+        {
+          "source_line": 278,
+          "text": "LEN (S&P 500) purchases"
+        },
+        {
+          "source_line": 280,
+          "text": "Berkshire Hathaway / Buffett (10% owner) large open-market purchases (e.g., ~$134.9M on 2026-10-02, ~$103M on 2026-09-18)"
+        },
+        {
+          "source_line": 282,
+          "text": "Transaction dates Sep–Oct 2026"
+        },
+        {
+          "source_line": 284,
+          "text": "Filings ~2026-10-05 etc."
+        },
+        {
+          "source_line": 286,
+          "text": "quant500.com/insider-alerts"
+        },
+        {
+          "source_line": 287,
+          "text": " (and related)"
+        },
+        {
+          "source_line": 289,
+          "text": "“LEN Berkshire Hathaway Inc, Buffett Warren E 10% Owner $134.9M Purchase”"
+        },
+        {
+          "source_line": 291,
+          "text": "Not CEO/CFO + director cluster"
+        },
+        {
+          "source_line": 294,
+          "text": "ORCL (S&P 500)"
+        },
+        {
+          "source_line": 296,
+          "text": "Director Stephen H. Rusckowski open-market purchase of 25,000 shares @ ~$139.35 (~$3.48M) on 2026-09-29; filed 2026-10-01"
+        },
+        {
+          "source_line": 298,
+          "text": "Trade 2026-09-29"
+        },
+        {
+          "source_line": 300,
+          "text": "Accepted ~2026-10-01 21:42 UTC"
+        },
+        {
+          "source_line": 302,
+          "text": "sec.gov/Archives/"
+        },
+        {
+          "source_line": 303,
+          "text": "... (via summaries e.g. "
+        },
+        {
+          "source_line": 304,
+          "text": "filingexplorer.com/insider-trades/0001341439-26-000099"
+        },
+        {
+          "source_line": 305,
+          "text": "); "
+        },
+        {
+          "source_line": 306,
+          "text": "greeksoup.ai/stocks/us/orcl/insiders/"
+        },
+        {
+          "source_line": 308,
+          "text": "“Rusckowski Stephen H, Director, bought 25,000 shares at $139.35 on 29 September 2026, filed 1 October 2026... code P”"
+        },
+        {
+          "source_line": 310,
+          "text": "Single director only; no CEO/CFO open-market buy in window (CEO sales under plan noted)"
+        },
+        {
+          "source_line": 313,
+          "text": "CRM (S&P 500)"
+        },
+        {
+          "source_line": 315,
+          "text": "Director David Blair Kirk open-market purchase of 4,176 shares @ ~$239.33 (~$999K) on 2026-09-18; filed 2026-09-21"
+        },
+        {
+          "source_line": 317,
+          "text": "Trade 2026-09-18"
+        },
+        {
+          "source_line": 319,
+          "text": "Accepted ~2026-09-21"
+        },
+        {
+          "source_line": 321,
+          "text": "sec.gov/Archives/edgar/data/1108524/000110852426000212/"
+        },
+        {
+          "source_line": 322,
+          "text": "... ; "
+        },
+        {
+          "source_line": 323,
+          "text": "andmilo.com/insider-trading"
+        },
+        {
+          "source_line": 324,
+          "text": " ; OpenInsider/CRM"
+        },
+        {
+          "source_line": 326,
+          "text": "“Kirk David Blair Director P - Purchase $239.33 +4,176 ... +$999,451”"
+        },
+        {
+          "source_line": 328,
+          "text": "Single director; CEO Benioff sales noted elsewhere; no matching officer purchase"
+        },
+        {
+          "source_line": 331,
+          "text": "SPG (S&P 500 / S&P 100)"
+        },
+        {
+          "source_line": 333,
+          "text": "Multiple directors purchased small lots on 2026-09-30 @ $202.78 via dividend reinvestment on restricted stock under 2019 plan"
+        },
+        {
+          "source_line": 335,
+          "text": "Trade 2026-09-30"
+        },
+        {
+          "source_line": 337,
+          "text": "Filings ~2026-10-01"
+        },
+        {
+          "source_line": 339,
+          "text": "stocktitan.net/sec-filings/SPG/form-4.html"
+        },
+        {
+          "source_line": 340,
+          "text": " ; OpenInsider/SPG ; "
+        },
+        {
+          "source_line": 341,
+          "text": "insiderset.com/stocks/SPG/insider-transactions"
+        },
+        {
+          "source_line": 343,
+          "text": "“acquired through reinvestment of dividends received on restricted stock awarded as non-cash compensation under the Simon Property Group, L.P. 2019 Stock Incentive Plan”"
+        },
+        {
+          "source_line": 345,
+          "text": "Automatic/plan; excluded per rules"
+        },
+        {
+          "source_line": 348,
+          "text": "GME"
+        },
+        {
+          "source_line": 350,
+          "text": "Ryan Cohen (CEO/Chairman) large open-market buys (e.g., ~$22.8M on 2026-10-13); other directors also bought earlier"
+        },
+        {
+          "source_line": 352,
+          "text": "Sep–Oct 2026"
+        },
+        {
+          "source_line": 354,
+          "text": "Filings mid-Oct 2026"
+        },
+        {
+          "source_line": 356,
+          "text": "OpenInsider; AnalyzePortfolio; "
+        },
+        {
+          "source_line": 357,
+          "text": "insidertrades.com/gamestop-corp-stock/"
+        },
+        {
+          "source_line": 359,
+          "text": "Multiple P purchases by Cohen and directors"
+        },
+        {
+          "source_line": 361,
+          "text": "Not S&P 500 (market cap ~$14B; absent from Wikipedia/S&P lists)"
+        },
+        {
+          "source_line": 364,
+          "text": "HEI"
+        },
+        {
+          "source_line": 366,
+          "text": "Co-CEO Mendelson + directors (Henriques, Schriesheim) purchases ~795 shares each @ $220.30 on 2026-10-08"
+        },
+        {
+          "source_line": 368,
+          "text": "Trade 2026-10-08"
+        },
+        {
+          "source_line": 370,
+          "text": "Filings ~2026-10-13"
+        },
+        {
+          "source_line": 372,
+          "text": "AnalyzePortfolio; TradeSmith owners"
+        },
+        {
+          "source_line": 374,
+          "text": "Cluster of officer + directors"
+        },
+        {
+          "source_line": 376,
+          "text": "Not confirmed S&P 500 member (absent from Wikipedia list; mid-cap range)"
+        },
+        {
+          "source_line": 379,
+          "text": "S&P 500 membership"
+        },
+        {
+          "source_line": 381,
+          "text": "SPG, ORCL, CRM, LEN confirmed in; GME, HEI, FUL not"
+        },
+        {
+          "source_line": 383,
+          "text": "As of ~Oct 2026"
+        },
+        {
+          "source_line": 385,
+          "text": "Wikipedia list (with 2026 addition dates); aggregator holdings"
+        },
+        {
+          "source_line": 387,
+          "text": "en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+        },
+        {
+          "source_line": 388,
+          "text": " ; recent S&P DJI press releases (e.g., "
+        },
+        {
+          "source_line": 389,
+          "text": "spglobal.com/"
+        },
+        {
+          "source_line": 390,
+          "text": "... Oct 1 2026 changes)"
+        },
+        {
+          "source_line": 392,
+          "text": "Standard constituent tables and change announcements"
+        },
+        {
+          "source_line": 394,
+          "text": "Secondary for full roster; no conflicts for examined names"
+        },
+        {
+          "source_line": 399,
+          "text": "Company/Membership Evidence and Cluster Ledger"
+        },
+        {
+          "source_line": 400,
+          "text": "No qualifying clusters. Examined candidates (ORCL director-only; CRM director-only; SPG automatic DRIP; LEN 10% owner-only; non-members GME/HEI) do not meet the dual distinct insider + open-market + S&P 500 + window criteria."
+        },
+        {
+          "source_line": 401,
+          "text": "Per-name qualifying insider sets and exits:"
+        },
+        {
+          "source_line": 402,
+          "text": " None applicable."
+        },
+        {
+          "source_line": 404,
+          "text": "Future Review/Change Conditions"
+        },
+        {
+          "source_line": 405,
+          "text": "Re-screen on new Form 4s becoming public with transaction dates in a rolling 30-day window, confirming S&P 500 membership at the relevant close, roles, code-P open-market status (footnotes/plan exclusion), and SEC acceptance by the then-current cutoff. Exit any future position six months after the establishing filing’s public availability or on any qualifying insider’s open-market sale disclosure. All decision-driving figures and dates are drawn from the cited public sources available by the cutoff. Secondary aggregators are explicitly identified; primary EDGAR records were referenced where accessible via summaries. No evidence was fabricated."
+        },
+        {
+          "source_line": 407,
+          "text": "134 sources"
+        }
+      ],
+      "completeness": "complete visible assistant subtree in retained snapshot; backend/hidden content not inferred"
+    },
+    {
+      "template_id": "P09",
+      "case_id": "P09-xai-grok-4958a01ad4",
+      "reason": "Original clipboard capture contains delivered or stale prompt text, while retained rendered UI snapshot contains a different assistant memo. No new target request was made.",
+      "original_clipboard_response": {
+        "file": "jango-eval-kit/results/research-broader-local-20261015/P09/xai-grok/recommendation.md",
+        "sha256": "eb1216ecfaf87a3828ca15faedec1282f2245f017f1c72afc1ad131cae8c6a3b"
+      },
+      "source_file": "jango-eval-kit/results/research-broader-local-20261015/P09/xai-grok/ui-observation-010.txt",
+      "source_sha256": "5de02ffc5ed667c7873f5b706e68f8ac4ac2a5254ef75a5ffa1860344ab4ee56",
+      "source_line_start": 195,
+      "source_line_end": 323,
+      "rendered_text_file": "formal-eval-20261017-v1.2/data-v5/recovered/P09-grok-rendered-response.txt",
+      "rendered_text_sha256": "0ebe533c30f9b293714f252f56a7684c88a65df60ccbcb3b2f64c6fe8d812e48",
+      "format": "AX text/link nodes in source order; formatting-only reconstruction, not a verbatim Markdown Copy. The original clipboard and UI snapshot are unchanged.",
+      "source_lines": [
+        {
+          "source_line": 195,
+          "text": "P09: Four-Regime Rotation — Research Recommendation Memo"
+        },
+        {
+          "source_line": 196,
+          "text": "Template ID:"
+        },
+        {
+          "source_line": 197,
+          "text": " P09: Four-Regime Rotation"
+        },
+        {
+          "source_line": 198,
+          "text": "Recommendation status:"
+        },
+        {
+          "source_line": 199,
+          "text": " Concrete recommendation supported by available point-in-time data"
+        },
+        {
+          "source_line": 200,
+          "text": "Relevant decision time:"
+        },
+        {
+          "source_line": 201,
+          "text": " 2026-09-30 16:00 America/New_York (evaluation month-end)"
+        },
+        {
+          "source_line": 202,
+          "text": "Common research cutoff:"
+        },
+        {
+          "source_line": 203,
+          "text": " 2026-10-16T03:15:00Z"
+        },
+        {
+          "source_line": 204,
+          "text": "Retrieval context:"
+        },
+        {
+          "source_line": 205,
+          "text": " Public web searches and page fetches conducted 2026-10-15/16 PDT; all cited records have publication/availability dates on or before the decision time (or are explicitly historical vintages of those releases). No private data, connectors, accounts, or non-public sources used. No orders, account changes, schedules, or monitors executed."
+        },
+        {
+          "source_line": 207,
+          "text": "Declared Conventions (fixed before classification)"
+        },
+        {
+          "source_line": 208,
+          "text": "Growth series:"
+        },
+        {
+          "source_line": 209,
+          "text": " Board of Governors of the Federal Reserve System G.17 Industrial Production Total Index, seasonally adjusted (FRED series INDPRO; 2017=100 base)."
+        },
+        {
+          "source_line": 210,
+          "text": "Inflation series:"
+        },
+        {
+          "source_line": 211,
+          "text": " BLS Consumer Price Index for All Urban Consumers: All Items, not seasonally adjusted (CPI-U, CPIAUCNS)."
+        },
+        {
+          "source_line": 212,
+          "text": "Release/lag policy:"
+        },
+        {
+          "source_line": 213,
+          "text": " At the month-end close (16:00 ET on the last calendar day), use the most recent monthly observation whose official release date is on or before that timestamp. For the 2026-09-30 decision, this is the August 2026 observation for both series (CPI released 2026-09-11 08:30 ET; IP released 2026-09-18 09:15 ET)."
+        },
+        {
+          "source_line": 214,
+          "text": "Transformations and comparison windows:"
+        },
+        {
+          "source_line": 215,
+          "text": " Year-over-year percent change. Compare the latest available YoY to the YoY of the immediately preceding month, using values from the vintage available at decision time (same release for the latest observation and its prior-month comparison where applicable)."
+        },
+        {
+          "source_line": 216,
+          "text": "Rising/falling sign rule:"
+        },
+        {
+          "source_line": 217,
+          "text": " Rising if latest YoY > prior-month YoY (strict); falling if latest YoY < prior-month YoY."
+        },
+        {
+          "source_line": 218,
+          "text": "Zero-change rule:"
+        },
+        {
+          "source_line": 219,
+          "text": " If latest YoY = prior-month YoY, classify as falling."
+        },
+        {
+          "source_line": 220,
+          "text": "Missing-release policy:"
+        },
+        {
+          "source_line": 221,
+          "text": " If the expected latest release is unavailable by decision time, use the most recent prior available observation and note the lag; if a required comparison value cannot be recovered from the available vintage, leave the corresponding sign (and thus the regime) unresolved."
+        },
+        {
+          "source_line": 222,
+          "text": "Initialization rule:"
+        },
+        {
+          "source_line": 223,
+          "text": " No prior portfolio or regime state is supplied. This memo provides the initial classification and prescribed allocation based on data available at the evaluation month-end. Later changes are recommended only when a subsequent month-end classification produces a different regime pair; no prior regime is invented and no trade is asserted to have occurred."
+        },
+        {
+          "source_line": 225,
+          "text": "Classification (August 2026 observations, vintages available by 2026-09-30 16:00 ET)"
+        },
+        {
+          "source_line": 226,
+          "text": "Growth:"
+        },
+        {
+          "source_line": 227,
+          "text": " Rising."
+        },
+        {
+          "source_line": 228,
+          "text": ""
+        },
+        {
+          "source_line": 229,
+          "text": "August 2026 IP YoY = +1.4% (index 103.1). July 2026 IP YoY = +1.1% (index 103.0). 1.4 > 1.1."
+        },
+        {
+          "source_line": 230,
+          "text": "Inflation:"
+        },
+        {
+          "source_line": 231,
+          "text": " Falling (zero-change rule)."
+        },
+        {
+          "source_line": 232,
+          "text": ""
+        },
+        {
+          "source_line": 233,
+          "text": "August 2026 CPI-U all-items YoY = 3.4%. July 2026 CPI-U all-items YoY = 3.4%. Equal, therefore falling."
+        },
+        {
+          "source_line": 234,
+          "text": "Resulting regime:"
+        },
+        {
+          "source_line": 235,
+          "text": " Growth rising + inflation falling."
+        },
+        {
+          "source_line": 236,
+          "text": "Prescribed allocation (exact map):"
+        },
+        {
+          "source_line": 237,
+          "text": " 100% SPY."
+        },
+        {
+          "source_line": 239,
+          "text": "Mapping Rules (preserved exactly)"
+        },
+        {
+          "source_line": 243,
+          "text": "Growth rising / inflation falling → 100% SPY"
+        },
+        {
+          "source_line": 246,
+          "text": "Both falling → 100% TLT"
+        },
+        {
+          "source_line": 249,
+          "text": "Both rising → 50% GLD + 50% DBC"
+        },
+        {
+          "source_line": 252,
+          "text": "Growth falling / inflation rising → 50% GLD + 50% SGOV"
+        },
+        {
+          "source_line": 254,
+          "text": "Claim-to-Evidence Ledger (decision-driving facts)"
+        },
+        {
+          "source_line": 258,
+          "text": "Entity:  CPI-U all-items NSA YoY, August 2026."
+        },
+        {
+          "source_line": 259,
+          "text": "Value:  3.4%."
+        },
+        {
+          "source_line": 260,
+          "text": "Observation period:  August 2026."
+        },
+        {
+          "source_line": 261,
+          "text": "Publication/availability:  2026-09-11 08:30 ET (USDL-26-1496)."
+        },
+        {
+          "source_line": 262,
+          "text": "Source:  BLS news release and supporting tables (e.g., "
+        },
+        {
+          "source_line": 263,
+          "text": "fraser.stlouisfed.org/title/consumer-price-index-6838/august-2026-735977"
+        },
+        {
+          "source_line": 264,
+          "text": "; contemporaneous reports at CNBC, Reuters, Bloomberg)."
+        },
+        {
+          "source_line": 265,
+          "text": "Supporting record:  “Over the last 12 months, the all items index increased 3.4 percent before seasonal adjustment.” “The all items index rose 3.4 percent for the 12 months ending August as it did for the 12 months ending July.”"
+        },
+        {
+          "source_line": 266,
+          "text": "Uncertainty:  Low; primary official release."
+        },
+        {
+          "source_line": 269,
+          "text": "Entity:  CPI-U all-items NSA YoY, July 2026."
+        },
+        {
+          "source_line": 270,
+          "text": "Value:  3.4%."
+        },
+        {
+          "source_line": 271,
+          "text": "Observation period:  July 2026."
+        },
+        {
+          "source_line": 272,
+          "text": "Publication/availability:  2026-08-12 08:30 ET."
+        },
+        {
+          "source_line": 273,
+          "text": "Source:  BLS July 2026 CPI release (USDL implied; contemporaneous summaries)."
+        },
+        {
+          "source_line": 274,
+          "text": "Supporting record:  “The all items index rose 3.4 percent for the 12 months ending July after rising 3.5 percent for the 12 months ending June.”"
+        },
+        {
+          "source_line": 275,
+          "text": "Uncertainty:  Low; consistent across primary and secondary sources."
+        },
+        {
+          "source_line": 278,
+          "text": "Entity:  Industrial Production Total Index SA, August 2026 YoY and level."
+        },
+        {
+          "source_line": 279,
+          "text": "Value:  +1.4% YoY; index 103.1 (2017=100); MoM 0.0%."
+        },
+        {
+          "source_line": 280,
+          "text": "Observation period:  August 2026."
+        },
+        {
+          "source_line": 281,
+          "text": "Publication/availability:  2026-09-18 09:15 ET (G.17)."
+        },
+        {
+          "source_line": 282,
+          "text": "Source:"
+        },
+        {
+          "source_line": 283,
+          "text": "federalreserve.gov/releases/G17/20260918/g17.txt"
+        },
+        {
+          "source_line": 284,
+          "text": " (and PDF/HTML equivalents)."
+        },
+        {
+          "source_line": 285,
+          "text": "Supporting record:  “At 103.1 percent of its 2017 average, total IP in August was 1.4 percent above its year-earlier level.” Table values confirm Aug. [p] 103.1, July [r] 103.0, Aug MoM .0."
+        },
+        {
+          "source_line": 286,
+          "text": "Uncertainty:  Low; primary official release. Preliminary (p) flag is standard."
+        },
+        {
+          "source_line": 289,
+          "text": "Entity:  Industrial Production Total Index SA, July 2026 YoY."
+        },
+        {
+          "source_line": 290,
+          "text": "Value:  +1.1%."
+        },
+        {
+          "source_line": 291,
+          "text": "Observation period:  July 2026."
+        },
+        {
+          "source_line": 292,
+          "text": "Publication/availability:  2026-08-18 (prior G.17); reconfirmed in September vintage."
+        },
+        {
+          "source_line": 293,
+          "text": "Source:"
+        },
+        {
+          "source_line": 294,
+          "text": "federalreserve.gov/Releases/G17/20260818/g17.txt"
+        },
+        {
+          "source_line": 295,
+          "text": "; secondary confirmation in Haver Analytics summary of the September release."
+        },
+        {
+          "source_line": 296,
+          "text": "Supporting record:  July release: “At 103.0 percent of its 2017 average, total IP in July was 1.1 percent above its year-earlier level.” Haver (citing Fed): “The year-on-year growth rate accelerated to 1.4% in August… from 1.1% in July.”"
+        },
+        {
+          "source_line": 297,
+          "text": "Uncertainty:  Low; primary source available."
+        },
+        {
+          "source_line": 300,
+          "text": "Release timing confirmation:  CPI August data available 2026-09-11; IP August data available 2026-09-18. Both precede 2026-09-30 16:00 ET. BLS and Fed schedules corroborate."
+        },
+        {
+          "source_line": 301,
+          "text": "No material unresolved conflicts. Vintages used are those available by the decision cutoff; later revisions (e.g., post-September IP or October CPI) are not substituted."
+        },
+        {
+          "source_line": 303,
+          "text": "Methodology, Coverage, and Reproducibility Notes"
+        },
+        {
+          "source_line": 307,
+          "text": "Series choice is a declared defensible convention (monthly, revision-aware official series with public vintages). Differing choices (e.g., core CPI, NFP, ISM PMI, MoM instead of YoY) are possible but are not used here."
+        },
+        {
+          "source_line": 310,
+          "text": "Calculations: simple comparison of published YoY rates (1.4 > 1.1 for growth; 3.4 = 3.4 for inflation → falling under zero-change rule). Arithmetic is fully reproducible from the cited primary releases."
+        },
+        {
+          "source_line": 313,
+          "text": "Coverage: August 2026 observations fully available by decision time. No missing-release gap."
+        },
+        {
+          "source_line": 316,
+          "text": "Limitations: IP August is preliminary; CPI is final for the period. Zero-change rule is an explicit convention (alternative treatments of equality could reverse the inflation sign). No full ALFRED vintage download was performed beyond the contemporaneous releases; the cited primary texts are sufficient for the comparison."
+        },
+        {
+          "source_line": 318,
+          "text": "Conditional Future Review / Change Policy"
+        },
+        {
+          "source_line": 319,
+          "text": "Subsequent month-end classifications (using the identical series, transformations, windows, sign rule, zero-change rule, and lag policy) should be compared to this regime. A change in the prescribed allocation is recommended only if the growth/inflation sign pair changes. Initialization is complete with this initial 100% SPY recommendation. No ongoing monitoring, schedule, or execution has been deployed."
+        },
+        {
+          "source_line": 320,
+          "text": "Final concrete recommendation (initial):"
+        },
+        {
+          "source_line": 321,
+          "text": " 100% SPY, reflecting growth rising and inflation falling as of the 2026-09-30 decision time under the declared conventions."
+        },
+        {
+          "source_line": 323,
+          "text": "110 sources"
+        }
+      ],
+      "completeness": "complete visible assistant subtree in retained snapshot; backend/hidden content not inferred"
+    },
+    {
+      "template_id": "P10",
+      "case_id": "P10-xai-grok-0d6fe94070",
+      "reason": "Original clipboard capture contains delivered or stale prompt text, while retained rendered UI snapshot contains a different assistant memo. No new target request was made.",
+      "original_clipboard_response": {
+        "file": "jango-eval-kit/results/research-broader-local-20261015/P10/xai-grok/recommendation.md",
+        "sha256": "6b84b1e845b1bdd095efa9f38f0fa957e871932d89ea15eedfc547b607448d5c"
+      },
+      "source_file": "jango-eval-kit/results/research-broader-local-20261015/P10/xai-grok/ui-observation-009.txt",
+      "source_sha256": "0de67009b77289dde273723d0bf0a5327787632daeabd3b9442ff15c56b3289d",
+      "source_line_start": 231,
+      "source_line_end": 439,
+      "rendered_text_file": "formal-eval-20261017-v1.2/data-v5/recovered/P10-grok-rendered-response.txt",
+      "rendered_text_sha256": "006941ff1d5208be204d903081ed34d02bd904e037b7ea6f04b7d3461bbd04af",
+      "format": "AX text/link nodes in source order; formatting-only reconstruction, not a verbatim Markdown Copy. The original clipboard and UI snapshot are unchanged.",
+      "source_lines": [
+        {
+          "source_line": 231,
+          "text": "P10 Public-Disclosure-Faithful SoFi Classic Robo — Recommendations-Only Research Memo"
+        },
+        {
+          "source_line": 232,
+          "text": "Template ID:"
+        },
+        {
+          "source_line": 233,
+          "text": " P10"
+        },
+        {
+          "source_line": 234,
+          "text": "Recommendation status:"
+        },
+        {
+          "source_line": 235,
+          "text": " Provisional / dated-model supported by public disclosure, but instrument-level venue approval and post-April 2026 confirmation unverified → temporary no-action / 100% cash pending verification (distinct from the model’s 1% cash target). No holdings, orders, account changes, schedules, or monitors executed."
+        },
+        {
+          "source_line": 236,
+          "text": "Relevant decision / observation time:"
+        },
+        {
+          "source_line": 237,
+          "text": " Reference regular US market close 2026-10-15T16:00:00-04:00; research conducted prior to cutoff 2026-10-16T03:15:00Z (America/New_York). Retrieval context: public web search and page fetches only."
+        },
+        {
+          "source_line": 238,
+          "text": "Common research cutoff:"
+        },
+        {
+          "source_line": 239,
+          "text": " 2026-10-16T03:15:00Z."
+        },
+        {
+          "source_line": 241,
+          "text": "Executive Recommendation"
+        },
+        {
+          "source_line": 242,
+          "text": "The latest publicly disclosed broad-bond target model that could be located is the April 2026 Classic Moderately Aggressive (IRA / broad-USD-bond version) from SoFi’s “Robo-1.5-Portfolio-Details-April-2026.pdf” (last updated Apr 2026). It matches the supplied April 2026 aggregate fallback exactly: "
+        },
+        {
+          "source_line": 243,
+          "text": "83% stocks / 14% broad USD bonds (including long-Treasury and MBS exposure) / 2% gold / 1% non-interest-bearing cash"
+        },
+        {
+          "source_line": 244,
+          "text": ". Instrument-level targets (long-only, totaling 100%) are:"
+        },
+        {
+          "source_line": 245,
+          "text": "Stocks (83%):"
+        },
+        {
+          "source_line": 246,
+          "text": ""
+        },
+        {
+          "source_line": 247,
+          "text": "IVV 17%, IVW 15%, IVE 11%, DYNF 10%, THRO 4%, EFG 4%, EFV 5%, CORO 5%, VWO 6%, BAI 4%, SHLD 2%."
+        },
+        {
+          "source_line": 248,
+          "text": "Bonds (14%, broad USD + long Treasuries + MBS, not munis):"
+        },
+        {
+          "source_line": 249,
+          "text": ""
+        },
+        {
+          "source_line": 250,
+          "text": "IUSB 7%, SPTL 3%, VMBS 4%."
+        },
+        {
+          "source_line": 251,
+          "text": "Gold (2%):"
+        },
+        {
+          "source_line": 252,
+          "text": " IAU."
+        },
+        {
+          "source_line": 253,
+          "text": "Cash (1%):"
+        },
+        {
+          "source_line": 254,
+          "text": " CASH-USD. This is the preferred public model for the tax-neutral Moderately Aggressive, 10+ year horizon simulation (preferring the broad-bond version over the taxable muni version in the same PDF)."
+        },
+        {
+          "source_line": 255,
+          "text": "However:"
+        },
+        {
+          "source_line": 259,
+          "text": "The main public page "
+        },
+        {
+          "source_line": 260,
+          "text": "sofi.com/invest/roboholdings"
+        },
+        {
+          "source_line": 261,
+          "text": " continues to surface an older ©2023 holdings document."
+        },
+        {
+          "source_line": 264,
+          "text": "No later public holdings document or confirmation of post-April 2026 model changes was located."
+        },
+        {
+          "source_line": 267,
+          "text": "No approved instrument-level mapping, disclosure pack, or model-approval authority for the Jango Alpaca paper venue was supplied. Publicly listed ETFs are not automatically approved."
+        },
+        {
+          "source_line": 268,
+          "text": "Therefore the concrete recommendation is provisional and on hold:"
+        },
+        {
+          "source_line": 269,
+          "text": " Treat the April 2026 83/14/2/1 instrument-level model as the dated public target (stale-leaning relative to the October 2026 decision date because of the website lag and absence of newer confirmation). Temporary status is "
+        },
+        {
+          "source_line": 270,
+          "text": "100% non-interest-bearing cash / no-action"
+        },
+        {
+          "source_line": 271,
+          "text": " pending independent verification of (a) instrument approval and venue eligibility and (b) whether a newer model has been approved. This temporary cash status is "
+        },
+        {
+          "source_line": 272,
+          "text": "not"
+        },
+        {
+          "source_line": 273,
+          "text": " a claimed compliant implementation of the 1% cash model target. No orders were placed or queued; no account state was changed; no schedules or monitors were deployed."
+        },
+        {
+          "source_line": 275,
+          "text": "Claim-to-Evidence Ledger (Decision-Driving Facts)"
+        },
+        {
+          "source_line": 279,
+          "text": "Entity:  SoFi Classic Moderately Aggressive (IRA / broad-bond) model, April 2026."
+        },
+        {
+          "source_line": 280,
+          "text": "Assertion:  83% stocks / 14% broad USD bonds (IUSB + SPTL + VMBS) / 2% IAU / 1% cash; specific weights as listed above. Sums to 100%."
+        },
+        {
+          "source_line": 281,
+          "text": "Observation / availability period:  Last updated Apr 2026."
+        },
+        {
+          "source_line": 282,
+          "text": "Publication/availability date:  Document available at least by May 2026 (support page updates around that time); PDF retrieved in this research."
+        },
+        {
+          "source_line": 283,
+          "text": "Exact source URL:"
+        },
+        {
+          "source_line": 284,
+          "text": "d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/Robo-1.5-Portfolio-Details-April-2026.pdf"
+        },
+        {
+          "source_line": 285,
+          "text": "Supporting record:  Classic Portfolios: IRA Accounts table, Moderately Aggressive column; bonds explicitly IUSB (Core Universal USD Bond), SPTL (Portfolio Long Term Treasury), VMBS (Mortgage-Backed Securities)."
+        },
+        {
+          "source_line": 286,
+          "text": "Uncertainty:  Website main holdings page serves older document; no post-April confirmation found. Secondary sources (reviews) do not contradict the aggregate."
+        },
+        {
+          "source_line": 289,
+          "text": "Entity:  SoFi Wealth wrap fee and rebalancing parameters."
+        },
+        {
+          "source_line": 290,
+          "text": "Assertion:  0.25% annual wrap fee (not charged on the generally 1% cash allocation); rebalance when individual holding drifts more than approximately 5 percentage points from target, cash ≥ $50 above target, cash < 0.25% of portfolio, or model/profile changes; implementation window for model changes of immediate to several weeks (up to three weeks referenced); continuous monitoring; Investment Committee at least quarterly."
+        },
+        {
+          "source_line": 291,
+          "text": "Observation period:  Form ADV effective March 27, 2026; support articles updated into 2025–2026."
+        },
+        {
+          "source_line": 292,
+          "text": "Sources:"
+        },
+        {
+          "source_line": 293,
+          "text": "sofi.com/legal/adv"
+        },
+        {
+          "source_line": 294,
+          "text": " (and linked ADV PDF); "
+        },
+        {
+          "source_line": 295,
+          "text": "support.sofi.com/hc/en-us/articles/4405023270541-What-is-rebalancing-How-often-will-my-Robo-Invest-portfolio-be-rebalanced"
+        },
+        {
+          "source_line": 296,
+          "text": "; Form ADV Part 2A excerpts confirming wrap fee language and rebalancing triggers."
+        },
+        {
+          "source_line": 297,
+          "text": "Uncertainty:  Fee calculation details match the supplied task terms (monthly 0.0025/12 × average daily invested assets excluding cash); fund expenses separate."
+        },
+        {
+          "source_line": 300,
+          "text": "Entity:  Aggregate fallback match."
+        },
+        {
+          "source_line": 301,
+          "text": "Assertion:  April 2026 public document produces exactly the user-supplied 83/14/2/1 mix for the broad-bond version."
+        },
+        {
+          "source_line": 302,
+          "text": "Source:  Same PDF as above."
+        },
+        {
+          "source_line": 303,
+          "text": "Uncertainty:  None on the arithmetic of the extracted table; earlier extraction attempts required careful column isolation."
+        },
+        {
+          "source_line": 304,
+          "text": "No other decision-driving public instrument-level targets more recent than April 2026 were located."
+        },
+        {
+          "source_line": 306,
+          "text": "Methodology, Conventions, and Coverage"
+        },
+        {
+          "source_line": 307,
+          "text": "Chosen conventions (declared in advance and held fixed):"
+        },
+        {
+          "source_line": 311,
+          "text": "Prefer the publicly disclosed broad-USD-bond (IRA-style) Classic model over the taxable muni version, per the mandate’s explicit instruction to use broad USD bonds, long Treasuries, and MBS rather than municipal bonds."
+        },
+        {
+          "source_line": 314,
+          "text": "Treat the April 2026 PDF as the latest locatable public instrument-level disclosure that matches the supplied aggregate fallback."
+        },
+        {
+          "source_line": 317,
+          "text": "Absolute deviation > 5.0 percentage points is the strict rebalance threshold for individual holdings."
+        },
+        {
+          "source_line": 320,
+          "text": "Temporary 100% cash is a verification-hold status, not a model target."
+        },
+        {
+          "source_line": 323,
+          "text": "Tax-neutral simulation; no TLH or tax-aware optimization. Long-only only; no individual stocks, margin, or leverage."
+        },
+        {
+          "source_line": 326,
+          "text": "No independent optimization, covariance matrix, objective function, lambda, or volatility target is attributed to SoFi. None is computed here."
+        },
+        {
+          "source_line": 327,
+          "text": "Coverage is limited to public web sources available by the cutoff. Arithmetic of the extracted table was verified to sum to 100%. No private-account data, venue eligibility checks, or non-public disclosures were accessed."
+        },
+        {
+          "source_line": 329,
+          "text": "Conditional Review / Change / Rebalance Policy (Not Deployed)"
+        },
+        {
+          "source_line": 330,
+          "text": "Per public disclosures and supplied task terms (labeled separately below):"
+        },
+        {
+          "source_line": 334,
+          "text": "Continuous market-day monitoring as a policy (not executed here)."
+        },
+        {
+          "source_line": 337,
+          "text": "Rebalance triggers: individual holding absolute deviation > 5.0 pp from target; cash at least $50 above its 1% target; cash below 0.25% of portfolio value; strategy/risk-profile change; approved model change."
+        },
+        {
+          "source_line": 340,
+          "text": "Use deposits, dividends, and distributions to reduce underweights first where practical before selling."
+        },
+        {
+          "source_line": 343,
+          "text": "Hold investable cash below the $50 trading threshold until reached, except that an independently triggered risk/profile/model correction is not disabled by the idle-cash threshold."
+        },
+        {
+          "source_line": 346,
+          "text": "Broker-default lot handling for sales; no automated tax-loss harvesting or tax-aware optimization."
+        },
+        {
+          "source_line": 349,
+          "text": "Model review at least quarterly (Investment Committee). Approved/versioned model changes only; implementation window zero to three weeks."
+        },
+        {
+          "source_line": 352,
+          "text": "Advisory fee modeled as (0.0025 / 12) × that month’s average daily invested assets excluding cash; underlying fund expenses identified separately and not double-counted. No dollar amount is calculated without account values."
+        },
+        {
+          "source_line": 353,
+          "text": "These rules are described only; none were executed or scheduled."
+        },
+        {
+          "source_line": 355,
+          "text": "Source / Assumption Ledger"
+        },
+        {
+          "source_line": 356,
+          "text": "Verified public SoFi disclosures:"
+        },
+        {
+          "source_line": 360,
+          "text": "April 2026 PDF instrument-level weights and 83/14/2/1 aggregate for broad-bond Moderately Aggressive Classic (URL above)."
+        },
+        {
+          "source_line": 363,
+          "text": "Form ADV (March 27, 2026): 0.25% wrap fee (not on cash), rebalancing triggers matching the ~5 pp / $50 / 0.25% / model-change rules, continuous monitoring, 0–several-week implementation window, Classic description, Investment Committee process with BlackRock input."
+        },
+        {
+          "source_line": 366,
+          "text": "Support pages confirming daily market-day review and the same rebalance conditions."
+        },
+        {
+          "source_line": 367,
+          "text": "Supplied task terms (not independently verified as SoFi statements):"
+        },
+        {
+          "source_line": 371,
+          "text": "April 2026 83/14/2/1 aggregate fallback."
+        },
+        {
+          "source_line": 374,
+          "text": "0.25% annual advisory-fee assumption and exact monthly calculation method."
+        },
+        {
+          "source_line": 377,
+          "text": "Exact operational thresholds, 10+ year horizon, Moderately Aggressive profile, tax-neutral, 1% cash target, long-only, no individual stocks/margin/leverage/off-model trades, versioning, etc."
+        },
+        {
+          "source_line": 378,
+          "text": "Independent approximations:"
+        },
+        {
+          "source_line": 379,
+          "text": " None used. No shrinkage covariance, specific objective, lambda, or 12% volatility target is attributed to SoFi."
+        },
+        {
+          "source_line": 381,
+          "text": "Portfolio Analytics, Fees, Benchmark, and Gaps"
+        },
+        {
+          "source_line": 382,
+          "text": "Backward-looking returns/risk, forward-looking capital-market estimates, benchmark-relative expectations, detailed exposure analytics, liquidity metrics, and total-cost figures beyond the 0.25% wrap fee + underlying fund expenses are not sufficiently evidenced in the public sources located for this specific April 2026 model."
+        },
+        {
+          "source_line": 386,
+          "text": "Fee treatment: 0.25% wrap on invested assets excluding cash (monthly as described); fund expense ratios separate (NerdWallet and other secondary reviews cite Classic ranges roughly 0.07–0.20%, but primary current ER data for the exact mix were not extracted as decision-driving)."
+        },
+        {
+          "source_line": 389,
+          "text": "Benchmark: Not explicitly stated in the located primary documents for this model; gap."
+        },
+        {
+          "source_line": 392,
+          "text": "Risk analytics: Moderately Aggressive description (70–90% stocks, large movements expected) is in the PDF; no proprietary risk target or volatility number is disclosed or attributed."
+        },
+        {
+          "source_line": 395,
+          "text": "Liquidity: All listed vehicles are ETFs; no specific liquidity analysis performed."
+        },
+        {
+          "source_line": 396,
+          "text": "Material gaps:"
+        },
+        {
+          "source_line": 397,
+          "text": " Post-April 2026 model confirmation absent; website holdings page lag; no venue-specific approval or eligibility for the listed ETFs in the paper account; no current account snapshot (so rebalance triggers cannot be applied to actual drifts); no independent forward-looking estimates computed."
+        },
+        {
+          "source_line": 399,
+          "text": "Proposed Model-Version Record (Not Deployed)"
+        },
+        {
+          "source_line": 403,
+          "text": "Effective date:  April 2026 (last updated Apr 2026)."
+        },
+        {
+          "source_line": 406,
+          "text": "Supplied profile:  10+ year horizon, Moderately Aggressive, tax-neutral simulation."
+        },
+        {
+          "source_line": 409,
+          "text": "Target holdings/weights (where verified public):  As listed in the Executive Recommendation (IRA / broad-bond Classic Moderately Aggressive). Aggregate 83/14/2/1."
+        },
+        {
+          "source_line": 412,
+          "text": "Cash target:  1% non-interest-bearing."
+        },
+        {
+          "source_line": 415,
+          "text": "Sources:  April 2026 PDF (primary); Form ADV and support pages for operational rules."
+        },
+        {
+          "source_line": 418,
+          "text": "Assumptions:  Tax-neutral; broad-bond preference; long-only; supplied fee and threshold rules."
+        },
+        {
+          "source_line": 421,
+          "text": "Benchmark:  Unresolved (not specified in primary sources)."
+        },
+        {
+          "source_line": 424,
+          "text": "Independently estimated return/risk:  Not computed; none attributed to SoFi."
+        },
+        {
+          "source_line": 427,
+          "text": "Fees:  0.25% wrap on invested assets excluding cash (monthly formula as supplied); fund expenses separate."
+        },
+        {
+          "source_line": 430,
+          "text": "Triggers:  As described in the conditional policy section."
+        },
+        {
+          "source_line": 433,
+          "text": "Implementation status:  Not deployed. Temporary no-action / 100% cash pending instrument-approval and venue-eligibility verification. Model marked dated/provisional relative to October 2026 decision date."
+        },
+        {
+          "source_line": 436,
+          "text": "Rationale for change / status:  Latest locatable public broad-bond disclosure matches the supplied aggregate fallback and mandate constraints; website lag and missing approval/venue verification prevent implementation recommendation. No ad-hoc timing or off-model trades."
+        },
+        {
+          "source_line": 437,
+          "text": "All decision-driving figures are cited to public URLs with dates. Limitations are recorded; no further clarification is requested. No execution or monitoring occurred."
+        },
+        {
+          "source_line": 439,
+          "text": "85 sources"
+        }
+      ],
+      "completeness": "complete visible assistant subtree in retained snapshot; backend/hidden content not inferred"
+    }
+  ],
+  "vibe_followups": "Vibe short responses are product-delivered grounding-recovery outputs. Earlier drafts are answer_rejected records, not delivered earlier memos; they were not substituted."
+}

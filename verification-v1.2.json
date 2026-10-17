@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-17T20:22:01.152314+00:00",
+  "checks_pass": true,
+  "checks": {
+    "formal-eval-20261017_preserved_files": 1191,
+    "formal-eval-20261017-v1.1_preserved_files": 78,
+    "reviewed_cases": 121,
+    "criterion_labels": 484,
+    "source_excerpt_roundtrips": 375,
+    "capture_corrections": 3,
+    "common_tasks_per_ranked_config": 10,
+    "ranked_research_configurations": 11,
+    "paper_not_ranked": true,
+    "missing_clocks_preserved": true,
+    "financial_grades_released": 0,
+    "relative_static_links": 288,
+    "javascript_tests": 13,
+    "browser_render_verified": false
+  },
+  "semantic_grade_status": "post_hoc_single_reviewer_exploratory_output_review_not_calibrated_financial_truth"
+}

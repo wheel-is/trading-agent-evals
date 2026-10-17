@@ -1,0 +1,43 @@
+{
+  "version": "response-fulfilment-audit-1",
+  "frozen_at": "2026-10-17T20:12:27.671618+00:00",
+  "status": "post_hoc_provisional_single_reviewer",
+  "reviewer": "Codex assistant in this conversation; no external jury or expert calibration",
+  "purpose": "Rank inspectable task completion in saved responses, not factual accuracy or investment performance.",
+  "criteria": [
+    {
+      "id": "RESULT",
+      "weight": 5,
+      "pass": "Delivers the actual requested non-illustrative selection/ranking/portfolio or a completed sufficiently scoped no-qualifier conclusion. An explicitly provisional or unresolved core result does not pass. Cash pending missing research does not establish completed screening."
+    },
+    {
+      "id": "WORK",
+      "weight": 3,
+      "pass": "Delivers actual task-specific data and at least one inspectable worked calculation/comparison/eligibility screen. Plans, formulas alone, toy examples and claims about undelivered files do not pass. Partial worked data can pass this narrower check."
+    },
+    {
+      "id": "EVIDENCE",
+      "weight": 3,
+      "pass": "Ties actual decision-driving data to identifiable source records and observation/publication/decision periods, allowing a reader to attempt a source audit. Merely listing generic sources or saying verified does not pass. This checks inspectability, not source authenticity or correctness."
+    },
+    {
+      "id": "POLICY",
+      "weight": 1,
+      "pass": "States task-specific conditional review/entry/exit or rebalance rules required by the prompt. Generic monitor/rebalance language does not pass."
+    }
+  ],
+  "labels": [
+    "pass",
+    "fail",
+    "unknown"
+  ],
+  "arithmetic": "Reuse scoring.py: weighted passed weight / all applicable weight. Unknown retains denominator and generates bounds. No relevance/correctness composite. This is a new output-completion construct.",
+  "aggregation": "Main research ranking uses the common P02-P11 tasks, equally weighted, one frozen selected case each. Original P01 pilots remain separate; no product/config mixing. Paper outputs are audited separately and receive no cross-track rank. Genuine attempted errors/timeouts retain zero delivered-check credit.",
+  "limitations": [
+    "Single uncalibrated reviewer; post-hoc exploratory index, no statistical confidence or financial accuracy claim.",
+    "Checks concern content delivered in canonical response; file names and uninspected artifact claims earn no artifact credit.",
+    "Permitted honest abstention is not a factual failure; it can earn work/evidence/policy credit while its missing requested result earns no result credit.",
+    "Tools, quotas, timing and shared context differ across configurations. Timing and context findings remain separate."
+  ],
+  "financial_release_gates_unchanged": true
+}

@@ -1,9 +1,9 @@
-Trading Agent evaluation v1.1
+Trading Agent report 1.2
 
-All twelve product tracks are visible in index.html. All 132 selected cases and 169 archived attempts are indexed in RESPONSES.html. 115 outputs captured.
+Open index.html#performance-index. Eleven research configurations are ranked by a new provisional task-fulfilment audit over common P02-P11 tasks. All twelve product tracks remain visible. Claude and Jango are retained in a labeled unknown-clock shelf; missing timing is never zero. Jango paper is not assigned a comparable research rank.
 
-Jango paper is a separate ungraded track. No financial grades are released. JavaScript is retained; initial charts and tables are also pre-rendered.
+FULFILMENT.html contains the exact rubric, 484 manual labels, rationales and response excerpts. This is a post-hoc, single-reviewer completion audit, not calibrated financial accuracy. Official financial grades remain blocked.
 
-Public snapshot excludes raw desktop/account captures and redacts one local filesystem path with original/public hashes distinguished. The complete archive, implementation and tests remain in the Desktop export.
+Three Grok clipboard-prompt errors were corrected from retained rendered snapshots with source-line provenance. Old reports, raw captures and original copied bytes remain unchanged. No target reruns or trades were made. Reproduction sources are included under implementation/report/revision-sources-v1.2/.
 
-Independent of and unaffiliated with Vals AI.
+Public snapshot includes the exploratory output-audit ledger and its rubric. Original raw captures, implementation and tests remain in the Desktop export.
