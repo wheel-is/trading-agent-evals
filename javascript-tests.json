@@ -1,0 +1,63 @@
+{
+  "tests": [
+    {
+      "name": "Original rubric and full121 research cases",
+      "pass": true
+    },
+    {
+      "name": "Default11 common research configurations",
+      "pass": true
+    },
+    {
+      "name": "All main denominators exactly10 tasks",
+      "pass": true
+    },
+    {
+      "name": "All11 names appear in primary ranking",
+      "pass": true
+    },
+    {
+      "name": "Task heatmap has110 inspectable case links",
+      "pass": true
+    },
+    {
+      "name": "Claude unknown clock remains visible",
+      "pass": true
+    },
+    {
+      "name": "Jango remains visible without research score/time",
+      "pass": true
+    },
+    {
+      "name": "Critical-correctness toggle uses stored original gate scores",
+      "pass": true
+    },
+    {
+      "name": "Uncertainty hatch retained for correctness",
+      "pass": true
+    },
+    {
+      "name": "Raw correctness is separate diagnostic",
+      "pass": true
+    },
+    {
+      "name": "Axis all-pass uses true versus unresolved bounds",
+      "pass": true
+    },
+    {
+      "name": "Task filter uses actual selected single tasks",
+      "pass": true
+    },
+    {
+      "name": "Payload cannot close JSON script element",
+      "pass": true
+    },
+    {
+      "name": "Escaping hostile strings is effective",
+      "pass": true
+    }
+  ],
+  "passed": 14,
+  "rendered_product_rows": 11,
+  "task_links": 110
+}

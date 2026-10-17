@@ -1,7 +1,9 @@
-# Trading Agent evaluation — version 1.2
+# Trading Agent Evaluation — original rubric run
 
-[Open the task-fulfilment ranking](https://wheel-is.github.io/trading-agent-evals/#performance-index)
+[Open results](https://wheel-is.github.io/trading-agent-evals/#performance-index)
 
-Eleven research configurations are ranked over common P02–P11 tasks using 484 post-hoc single-reviewer output-completion labels. This is exploratory task fulfilment, not independently verified financial accuracy. Jango paper is visible separately, and missing timing does not hide Claude or Jango.
+All121 selected research cases reviewed against157 original checks:1,727 case-criterion decisions and5,181 independent AI votes. Relevance, raw/gated correctness and all-pass are reported separately, with uncertainty. The prior four-check completion proxy is superseded.
 
-All twelve product tracks, 132 selected cases and preserved response provenance remain available. Three Grok clipboard defects were recovered from original rendered captures. Financial grading remains unreleased.
+These are uncalibrated candidate grades. Financial release remains blocked by domain approval, full historical sources and expert calibration. Jango paper remains a separate treatment with eleven retained outputs.
+
+Full provenance, exact votes, source observations, implementation and tests are preserved in the Desktop export.

@@ -1,20 +1,14 @@
 {
   "status": "blocked",
-  "reasons": [
-    "rubric_approved",
-    "sourcepacks_validated",
-    "deterministic_tests_pass",
-    "semantic_routes_calibrated_or_human"
-  ],
-  "expert_labels_obtained": 0,
-  "critical_negative_expert_labels": 0,
-  "jury_calls_executed": 0,
-  "validated_sourcepacks": 0,
-  "financial_grades_released": 0,
-  "required_next_work": [
-    "Acquire and validate point-in-time primary source/reference packs.",
-    "Review/approve the draft rubric and per-contract applicability.",
-    "Finish and test the template-specific financial verifier/claim extraction routes.",
-    "Obtain real qualified-human labels and calibrate judges, or use expert-only adjudication."
-  ]
+  "release_allowed": false,
+  "prerequisites": {
+    "rubric_approved": false,
+    "sourcepacks_validated": false,
+    "deterministic_tests_pass": true,
+    "semantic_routes_calibrated_or_human": false
+  },
+  "official_financial_grades_released": 0,
+  "automated_candidate_criterion_decisions": 1727,
+  "candidate_judge_votes": 5181,
+  "candidate_run_completed": true
 }

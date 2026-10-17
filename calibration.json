@@ -1,0 +1,10 @@
+{
+  "status": "not_available",
+  "expert_criterion_labels": 0,
+  "expert_critical_negatives": 0,
+  "calibrated_judges": 0,
+  "held_out_validation_passed": false,
+  "label_agreement_accuracy": null,
+  "critical_false_pass_rate": null,
+  "note": "Inter-judge agreement is descriptive only; it is not accuracy, source truth, expert review or calibration."
+}

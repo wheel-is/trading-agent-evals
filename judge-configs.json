@@ -1,0 +1,169 @@
+{
+  "judges": [
+    {
+      "judge_id": "A",
+      "configuration": "mandate-and-evidence-review-v1",
+      "model_identifier": null,
+      "model_family": "Inherited configured model; same-family reviews, no cross-family diversity established.",
+      "calibrated": false,
+      "prompt_and_isolation": "Separate fresh-context judge; full anonymized answer and actual prompt; no identity map, prior proxy grades or peer votes; shared partial primary P09 evidence packet.",
+      "vote_files": [
+        {
+          "file": "votes/A-P01.json",
+          "sha256": "d0569f36f1052b4f321dc03717fb44e8b5eaac2b157cbd3cb74517256ef08e05"
+        },
+        {
+          "file": "votes/A-P02.json",
+          "sha256": "d0f941dbd2594a6bd77576273c0e0757e23ae07012c15c23091dd9cce3b85b39"
+        },
+        {
+          "file": "votes/A-P03.json",
+          "sha256": "91af2f079eb040f461dff25e660b8f7239e76975e54d8fe1ada0c2c1a79152fb"
+        },
+        {
+          "file": "votes/A-P04.json",
+          "sha256": "15b652f30987cdeadd78057f1a605bb93b755c28f58fba616275869fac93624e"
+        },
+        {
+          "file": "votes/A-P05.json",
+          "sha256": "43c1209b18ddedb8912e33fc22498b296fa2962acaef66821a5ae40bebf09f1a"
+        },
+        {
+          "file": "votes/A-P06.json",
+          "sha256": "02af0a741d1a0314d0c7a53a51b90a67b2f703001297f3c4a5792333ea22573b"
+        },
+        {
+          "file": "votes/A-P07.json",
+          "sha256": "47128af836ea53f37bf730d1519e9aad98871b76280820b4339c2a757d0f8de6"
+        },
+        {
+          "file": "votes/A-P08.json",
+          "sha256": "d8482d9905aad245854576b6c6e16727de7306f78c32929e1fdfbdfebbc85d56"
+        },
+        {
+          "file": "votes/A-P09.json",
+          "sha256": "231bd1b1429c90aefc9f2242d76e66ae25cd0984b8950fb283fc13f2f5baa3d6"
+        },
+        {
+          "file": "votes/A-P10.json",
+          "sha256": "c640d033da936d671666b5e45b42517ab93cd7033c6e4e7e9564e5639c1d9d1d"
+        },
+        {
+          "file": "votes/A-P11.json",
+          "sha256": "3c117cb2f14036f9d615c62924665398f2b970a075342588e04b3dde15821012"
+        }
+      ]
+    },
+    {
+      "judge_id": "B",
+      "configuration": "contradiction-and-omission-review-v1",
+      "model_identifier": null,
+      "model_family": "Inherited configured model; same-family reviews, no cross-family diversity established.",
+      "calibrated": false,
+      "prompt_and_isolation": "Separate fresh-context judge; full anonymized answer and actual prompt; no identity map, prior proxy grades or peer votes; shared partial primary P09 evidence packet.",
+      "vote_files": [
+        {
+          "file": "votes/B-P01.json",
+          "sha256": "00d48bf40c5185765f849b60502121770cfc963ad2357c4aa17f766cf71fba9d"
+        },
+        {
+          "file": "votes/B-P02.json",
+          "sha256": "beb0363176dfe485f25866a7e2890900d10c95bb3890a6009a01cd0dff81b5f8"
+        },
+        {
+          "file": "votes/B-P03.json",
+          "sha256": "3e68d444a8a175bb7004109fc82034ac837766868f57336ab9eeb3cfa3bf7b51"
+        },
+        {
+          "file": "votes/B-P04.json",
+          "sha256": "bb8c6f63e647fbe1180f9b1c1f7cceda0376978635d841016c2c5e690abdb602"
+        },
+        {
+          "file": "votes/B-P05.json",
+          "sha256": "be6fa7ec580df2d8d09b3ce2e08f480bba4b5c11b1e92461a9aadae967f864f7"
+        },
+        {
+          "file": "votes/B-P06.json",
+          "sha256": "ac4a17cb7ebd9f5601a8b4e1d71b5901c283537e950c40a9a915a05d527a33e0"
+        },
+        {
+          "file": "votes/B-P07.json",
+          "sha256": "ef07ec52a7fdde86ba094fa0f515913edf9732789afdf0adbb119f0d71c7f974"
+        },
+        {
+          "file": "votes/B-P08.json",
+          "sha256": "314ac29ed2aa1576e5071092ab2c56dc418b16350ab8919f1dfb6757aec14ac6"
+        },
+        {
+          "file": "votes/B-P09.json",
+          "sha256": "c2c874dd241f630e2e63a029e724e43fcede433fa1ddbc038ce762cbaf01c94f"
+        },
+        {
+          "file": "votes/B-P10.json",
+          "sha256": "0c5725702a9eff35fae234be32ade4b98e38b34a2db655b70bd7e5af0ba725b1"
+        },
+        {
+          "file": "votes/B-P11.json",
+          "sha256": "53f8a88ad2c421623bdc29cb6669f0f146b948fed09ba736b2ba603810d22f80"
+        }
+      ]
+    },
+    {
+      "judge_id": "C",
+      "configuration": "reproducibility-and-contract-review-v1",
+      "model_identifier": null,
+      "model_family": "Inherited configured model; same-family reviews, no cross-family diversity established.",
+      "calibrated": false,
+      "prompt_and_isolation": "Separate fresh-context judge; full anonymized answer and actual prompt; no identity map, prior proxy grades or peer votes; shared partial primary P09 evidence packet.",
+      "vote_files": [
+        {
+          "file": "votes/C-P01.json",
+          "sha256": "8b27cc6cd9dafa7da373c7f875f355499536975cdfab118d1164514de47df66c"
+        },
+        {
+          "file": "votes/C-P02.json",
+          "sha256": "81a11a823f0b01c59bcd49d67e1e4d98b828f8caabe1e70354bc43fc35e19ae3"
+        },
+        {
+          "file": "votes/C-P03.json",
+          "sha256": "dcda7f6035f8a12f4bebbfa30f7bd391c0a77a7e6c5d847da02f537514038d1e"
+        },
+        {
+          "file": "votes/C-P04.json",
+          "sha256": "16caac18cfd637c16557ba4385c75a3c7f784ea7e6c361c8248cfcc9061e354a"
+        },
+        {
+          "file": "votes/C-P05.json",
+          "sha256": "650c372e3938f74d0e79d798bc2c92d1c3b9f9dae2a70fcd1b6467beaa160670"
+        },
+        {
+          "file": "votes/C-P06.json",
+          "sha256": "d25b6257cf204be0c56359ed6014c2d51b760a24bd1b56a485a0a99a9e9b57a5"
+        },
+        {
+          "file": "votes/C-P07.json",
+          "sha256": "bd7945db63318d3abb443f0476c2c796855ec26e077d1316cd792fcff2265fe5"
+        },
+        {
+          "file": "votes/C-P08.json",
+          "sha256": "8cbea1af9d1bb65a23da3a6429d60ba91387ac1e97c7c8b1a24747237c719635"
+        },
+        {
+          "file": "votes/C-P09.json",
+          "sha256": "ad3eb7fa9b641f684a2f189c9781a6e9d796e4681ff7be8094953cb9ee93bcae"
+        },
+        {
+          "file": "votes/C-P10.json",
+          "sha256": "fda46bcbc2a069c28732a9a7ad702e1f3f190743737476310c2b1ccada4ffe85"
+        },
+        {
+          "file": "votes/C-P11.json",
+          "sha256": "7f17462403767fe987d85dc3a582fcbe035f05d378d4016d7c822ab4f46a7808"
+        }
+      ]
+    }
+  ],
+  "three_independent_prompts": true,
+  "distinct_model_families": false,
+  "blinding_limit": "Product self mentions replaced by [product]. Full URLs/response style may remain identifying; not a measured blinding-success study."
+}

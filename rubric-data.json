@@ -1,0 +1,4861 @@
+{
+  "version": "report-1.3-original-rubric-jury",
+  "created_at": "2026-10-17T20:44:27.783744+00:00",
+  "rubric_version": "research-grading-build-draft-1",
+  "rubric_sha256": "2523dca82072df6b78f87dcd6f7d95cab5e5908e53d8e8dddfe772caa698bbf4",
+  "candidate_status": "complete_uncalibrated_original_rubric_review",
+  "financial_release_status": "blocked",
+  "configs": [
+    {
+      "config_id": "openai-codex-pilot",
+      "name": "Codex · P01 pilot",
+      "color": "#172a20",
+      "glyph": "C",
+      "surface": "public-web / CLI",
+      "pilot": true,
+      "is_paper": false
+    },
+    {
+      "config_id": "openai-codex",
+      "name": "Codex",
+      "color": "#172a20",
+      "glyph": "C",
+      "surface": "public-web / CLI",
+      "pilot": false,
+      "is_paper": false
+    },
+    {
+      "config_id": "claude-code-desktop-pilot",
+      "name": "Claude Code · P01 pilot",
+      "color": "#bf8068",
+      "glyph": "A",
+      "surface": "public-web / desktop",
+      "pilot": true,
+      "is_paper": false
+    },
+    {
+      "config_id": "claude-code-desktop",
+      "name": "Claude Code",
+      "color": "#bf8068",
+      "glyph": "A",
+      "surface": "public-web / desktop",
+      "pilot": false,
+      "is_paper": false
+    },
+    {
+      "config_id": "google-antigravity-gemini",
+      "name": "Gemini",
+      "color": "#4a77b4",
+      "glyph": "G",
+      "surface": "public-web / browser",
+      "pilot": false,
+      "is_paper": false
+    },
+    {
+      "config_id": "xai-grok",
+      "name": "Grok",
+      "color": "#171b1a",
+      "glyph": "X",
+      "surface": "public-web / browser",
+      "pilot": false,
+      "is_paper": false
+    },
+    {
+      "config_id": "meta-muse",
+      "name": "Muse",
+      "color": "#538c90",
+      "glyph": "M",
+      "surface": "public-web / browser",
+      "pilot": false,
+      "is_paper": false
+    },
+    {
+      "config_id": "hermes-agent",
+      "name": "Hermes",
+      "color": "#9a8060",
+      "glyph": "H",
+      "surface": "public-web / CLI",
+      "pilot": false,
+      "is_paper": false
+    },
+    {
+      "config_id": "opencode",
+      "name": "OpenCode",
+      "color": "#777881",
+      "glyph": "O",
+      "surface": "public-web / CLI",
+      "pilot": false,
+      "is_paper": false
+    },
+    {
+      "config_id": "oh-my-pi",
+      "name": "oh-my-pi",
+      "color": "#93678e",
+      "glyph": "π",
+      "surface": "public-web / CLI",
+      "pilot": false,
+      "is_paper": false
+    },
+    {
+      "config_id": "vibe-trading",
+      "name": "Vibe-Trading",
+      "color": "#78944f",
+      "glyph": "V",
+      "surface": "restricted native loop",
+      "pilot": false,
+      "is_paper": false
+    },
+    {
+      "config_id": "xai-grok-bot-native",
+      "name": "Grok Bot",
+      "color": "#315d4d",
+      "glyph": "X",
+      "surface": "native public research",
+      "pilot": false,
+      "is_paper": false
+    },
+    {
+      "config_id": "meta-muse-native",
+      "name": "Muse Native",
+      "color": "#4b909f",
+      "glyph": "M",
+      "surface": "native public research",
+      "pilot": false,
+      "is_paper": false
+    },
+    {
+      "config_id": "jango-paper",
+      "name": "Jango · paper",
+      "color": "#a27345",
+      "glyph": "J",
+      "surface": "native paper / Safari",
+      "pilot": false,
+      "is_paper": true
+    }
+  ],
+  "tasks": [
+    {
+      "template_id": "P01",
+      "name": "S&P1"
+    },
+    {
+      "template_id": "P02",
+      "name": "Hedge Fund Consensus"
+    },
+    {
+      "template_id": "P03",
+      "name": "Congressional Conviction"
+    },
+    {
+      "template_id": "P04",
+      "name": "Insider Cluster"
+    },
+    {
+      "template_id": "P05",
+      "name": "Revision Leaders"
+    },
+    {
+      "template_id": "P06",
+      "name": "Oligopoly Champions"
+    },
+    {
+      "template_id": "P07",
+      "name": "AI Bottleneck"
+    },
+    {
+      "template_id": "P08",
+      "name": "Lobbying-to-Revenue"
+    },
+    {
+      "template_id": "P09",
+      "name": "Four-Regime Rotation"
+    },
+    {
+      "template_id": "P10",
+      "name": "Public-Disclosure-Faithful SoFi Classic Robo"
+    },
+    {
+      "template_id": "P11",
+      "name": "Google PageRank"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "P01-openai-codex-pilot-fef4a7fddc",
+      "config_id": "openai-codex-pilot",
+      "template_id": "P01",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        },
+        "raw_correctness": {
+          "lower": 11.538461538461538,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 138.74,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P02-openai-codex-5e00bf17a9",
+      "config_id": "openai-codex",
+      "template_id": "P02",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 8.108108108108109
+        },
+        "raw_correctness": {
+          "lower": 8.108108108108109,
+          "upper": 100.0,
+          "coverage": 8.108108108108109
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 525.65,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P03-openai-codex-eed6b80498",
+      "config_id": "openai-codex",
+      "template_id": "P03",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        },
+        "raw_correctness": {
+          "lower": 10.638297872340425,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 6,
+      "captured": true,
+      "observed_seconds": 242.39,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P04-openai-codex-f96196f467",
+      "config_id": "openai-codex",
+      "template_id": "P04",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 20.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 316.65,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P05-openai-codex-829957096a",
+      "config_id": "openai-codex",
+      "template_id": "P05",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        },
+        "raw_correctness": {
+          "lower": 6.976744186046512,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 185.36,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P06-openai-codex-0ee8460159",
+      "config_id": "openai-codex",
+      "template_id": "P06",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 27.500000000000004
+        },
+        "raw_correctness": {
+          "lower": 27.500000000000004,
+          "upper": 100.0,
+          "coverage": 27.500000000000004
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 436.19,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P07-openai-codex-1928c9542d",
+      "config_id": "openai-codex",
+      "template_id": "P07",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 20.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 364.58,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P08-openai-codex-588411c356",
+      "config_id": "openai-codex",
+      "template_id": "P08",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 23.404255319148938
+        },
+        "raw_correctness": {
+          "lower": 23.404255319148938,
+          "upper": 100.0,
+          "coverage": 23.404255319148938
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 6,
+      "captured": true,
+      "observed_seconds": 284.42,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P09-openai-codex-5218bd81da",
+      "config_id": "openai-codex",
+      "template_id": "P09",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 83.6734693877551
+        },
+        "raw_correctness": {
+          "lower": 83.6734693877551,
+          "upper": 100.0,
+          "coverage": 83.6734693877551
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 1,
+      "captured": true,
+      "observed_seconds": 138.61,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P10-openai-codex-fd42f0a465",
+      "config_id": "openai-codex",
+      "template_id": "P10",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 76.0
+        },
+        "raw_correctness": {
+          "lower": 76.0,
+          "upper": 100.0,
+          "coverage": 76.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 3,
+      "captured": true,
+      "observed_seconds": 286.23,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P11-openai-codex-9a45f3dd14",
+      "config_id": "openai-codex",
+      "template_id": "P11",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        },
+        "raw_correctness": {
+          "lower": 5.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 9,
+      "captured": true,
+      "observed_seconds": 199.17,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P01-claude-code-desktop-pilot-2cad2db416",
+      "config_id": "claude-code-desktop-pilot",
+      "template_id": "P01",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        },
+        "raw_correctness": {
+          "lower": 11.538461538461538,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": null,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P02-claude-code-desktop-5f3e598fd6",
+      "config_id": "claude-code-desktop",
+      "template_id": "P02",
+      "scores": {
+        "relevance": {
+          "lower": 72.72727272727273,
+          "upper": 72.72727272727273,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 91.8918918918919,
+          "coverage": 16.216216216216218
+        },
+        "raw_correctness": {
+          "lower": 8.108108108108109,
+          "upper": 91.8918918918919,
+          "coverage": 16.216216216216218
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": null,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P03-claude-code-desktop-6ce0e5eff1",
+      "config_id": "claude-code-desktop",
+      "template_id": "P03",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        },
+        "raw_correctness": {
+          "lower": 10.638297872340425,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 6,
+      "captured": true,
+      "observed_seconds": null,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P04-claude-code-desktop-0904f8b8c3",
+      "config_id": "claude-code-desktop",
+      "template_id": "P04",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 20.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": null,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P05-claude-code-desktop-d88db51468",
+      "config_id": "claude-code-desktop",
+      "template_id": "P05",
+      "scores": {
+        "relevance": {
+          "lower": 61.53846153846154,
+          "upper": 100.0,
+          "coverage": 61.53846153846154
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 0.0
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 0.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": null,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": null,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P06-claude-code-desktop-35b3c93768",
+      "config_id": "claude-code-desktop",
+      "template_id": "P06",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 20.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": null,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P07-claude-code-desktop-5fa764998e",
+      "config_id": "claude-code-desktop",
+      "template_id": "P07",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 7.5,
+          "upper": 87.5,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": null,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P08-claude-code-desktop-cacc6624e6",
+      "config_id": "claude-code-desktop",
+      "template_id": "P08",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 23.404255319148938
+        },
+        "raw_correctness": {
+          "lower": 23.404255319148938,
+          "upper": 100.0,
+          "coverage": 23.404255319148938
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 6,
+      "captured": true,
+      "observed_seconds": null,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P09-claude-code-desktop-b62c865d14",
+      "config_id": "claude-code-desktop",
+      "template_id": "P09",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 83.6734693877551
+        },
+        "raw_correctness": {
+          "lower": 83.6734693877551,
+          "upper": 100.0,
+          "coverage": 83.6734693877551
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 1,
+      "captured": true,
+      "observed_seconds": null,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P10-claude-code-desktop-9acb34782e",
+      "config_id": "claude-code-desktop",
+      "template_id": "P10",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 76.0
+        },
+        "raw_correctness": {
+          "lower": 76.0,
+          "upper": 100.0,
+          "coverage": 76.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 3,
+      "captured": true,
+      "observed_seconds": null,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P11-claude-code-desktop-e829f67237",
+      "config_id": "claude-code-desktop",
+      "template_id": "P11",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        },
+        "raw_correctness": {
+          "lower": 5.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 9,
+      "captured": true,
+      "observed_seconds": null,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P01-google-antigravity-gemini-064bf22a9d",
+      "config_id": "google-antigravity-gemini",
+      "template_id": "P01",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        },
+        "raw_correctness": {
+          "lower": 11.538461538461538,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 496.214,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P02-google-antigravity-gemini-42b31d5b68",
+      "config_id": "google-antigravity-gemini",
+      "template_id": "P02",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 0.0
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 0.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 85.797,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P03-google-antigravity-gemini-8f64cbae60",
+      "config_id": "google-antigravity-gemini",
+      "template_id": "P03",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 72.3404255319149
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 27.659574468085108,
+          "coverage": 72.3404255319149
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 5,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 37.258,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "target_error"
+    },
+    {
+      "case_id": "P04-google-antigravity-gemini-511b202613",
+      "config_id": "google-antigravity-gemini",
+      "template_id": "P04",
+      "scores": {
+        "relevance": {
+          "lower": 61.53846153846154,
+          "upper": 100.0,
+          "coverage": 61.53846153846154
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 25.0
+        },
+        "raw_correctness": {
+          "lower": 12.5,
+          "upper": 87.5,
+          "coverage": 25.0
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": null,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 3,
+      "captured": true,
+      "observed_seconds": 73.0,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P05-google-antigravity-gemini-975c8f6d83",
+      "config_id": "google-antigravity-gemini",
+      "template_id": "P05",
+      "scores": {
+        "relevance": {
+          "lower": 61.53846153846154,
+          "upper": 61.53846153846154,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 93.02325581395348,
+          "coverage": 6.976744186046512
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 93.02325581395348,
+          "coverage": 6.976744186046512
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 44.795,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P06-google-antigravity-gemini-131fff2a81",
+      "config_id": "google-antigravity-gemini",
+      "template_id": "P06",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 67.5
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 32.5,
+          "coverage": 67.5
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 3,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 73.319,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "target_error"
+    },
+    {
+      "case_id": "P07-google-antigravity-gemini-565af8e5f1",
+      "config_id": "google-antigravity-gemini",
+      "template_id": "P07",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 67.5
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 32.5,
+          "coverage": 67.5
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 3,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 46.083,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "target_error"
+    },
+    {
+      "case_id": "P08-google-antigravity-gemini-d53e0b3d73",
+      "config_id": "google-antigravity-gemini",
+      "template_id": "P08",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 72.3404255319149
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 27.659574468085108,
+          "coverage": 72.3404255319149
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 5,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 121.451,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "target_declined"
+    },
+    {
+      "case_id": "P09-google-antigravity-gemini-0a7b5971b0",
+      "config_id": "google-antigravity-gemini",
+      "template_id": "P09",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 73.46938775510205
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 26.53061224489796,
+          "coverage": 73.46938775510205
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 6,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 43.511,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "target_error"
+    },
+    {
+      "case_id": "P10-google-antigravity-gemini-7720a1981a",
+      "config_id": "google-antigravity-gemini",
+      "template_id": "P10",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 82.66666666666667
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 17.333333333333336,
+          "coverage": 82.66666666666667
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 7,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 48.967,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "target_error"
+    },
+    {
+      "case_id": "P11-google-antigravity-gemini-67d59d12a4",
+      "config_id": "google-antigravity-gemini",
+      "template_id": "P11",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 95.0,
+          "coverage": 10.0
+        },
+        "raw_correctness": {
+          "lower": 5.0,
+          "upper": 95.0,
+          "coverage": 10.0
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 0,
+      "unknown_gates": 9,
+      "captured": true,
+      "observed_seconds": 49.147,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P01-xai-grok-f9e1dd0e98",
+      "config_id": "xai-grok",
+      "template_id": "P01",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        },
+        "raw_correctness": {
+          "lower": 11.538461538461538,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 81.019,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P02-xai-grok-1487d5fcaf",
+      "config_id": "xai-grok",
+      "template_id": "P02",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 8.108108108108109
+        },
+        "raw_correctness": {
+          "lower": 8.108108108108109,
+          "upper": 100.0,
+          "coverage": 8.108108108108109
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 100.959,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P03-xai-grok-b15f4ba5a2",
+      "config_id": "xai-grok",
+      "template_id": "P03",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        },
+        "raw_correctness": {
+          "lower": 10.638297872340425,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 6,
+      "captured": true,
+      "observed_seconds": 102.115,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P04-xai-grok-bf26c793ce",
+      "config_id": "xai-grok",
+      "template_id": "P04",
+      "scores": {
+        "relevance": {
+          "lower": 61.53846153846154,
+          "upper": 100.0,
+          "coverage": 61.53846153846154
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 25.0
+        },
+        "raw_correctness": {
+          "lower": 12.5,
+          "upper": 87.5,
+          "coverage": 25.0
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": null,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 3,
+      "captured": true,
+      "observed_seconds": 136.333,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P05-xai-grok-3b26435c47",
+      "config_id": "xai-grok",
+      "template_id": "P05",
+      "scores": {
+        "relevance": {
+          "lower": 61.53846153846154,
+          "upper": 61.53846153846154,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        },
+        "raw_correctness": {
+          "lower": 6.976744186046512,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 91.812,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P06-xai-grok-b967e39edf",
+      "config_id": "xai-grok",
+      "template_id": "P06",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 92.5,
+          "coverage": 27.500000000000004
+        },
+        "raw_correctness": {
+          "lower": 20.0,
+          "upper": 92.5,
+          "coverage": 27.500000000000004
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 187.983,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P07-xai-grok-b2b5cbc9e7",
+      "config_id": "xai-grok",
+      "template_id": "P07",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 20.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 146.876,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P08-xai-grok-bbb0cd123b",
+      "config_id": "xai-grok",
+      "template_id": "P08",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 23.404255319148938
+        },
+        "raw_correctness": {
+          "lower": 12.76595744680851,
+          "upper": 89.36170212765957,
+          "coverage": 23.404255319148938
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 6,
+      "captured": true,
+      "observed_seconds": 125.739,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P09-xai-grok-4958a01ad4",
+      "config_id": "xai-grok",
+      "template_id": "P09",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 57.14285714285714
+        },
+        "raw_correctness": {
+          "lower": 57.14285714285714,
+          "upper": 100.0,
+          "coverage": 57.14285714285714
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 3,
+      "captured": true,
+      "observed_seconds": 109.745,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P10-xai-grok-0d6fe94070",
+      "config_id": "xai-grok",
+      "template_id": "P10",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 69.33333333333334
+        },
+        "raw_correctness": {
+          "lower": 69.33333333333334,
+          "upper": 100.0,
+          "coverage": 69.33333333333334
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 27890.755,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P11-xai-grok-8f7e6c48c5",
+      "config_id": "xai-grok",
+      "template_id": "P11",
+      "scores": {
+        "relevance": {
+          "lower": 76.92307692307693,
+          "upper": 100.0,
+          "coverage": 76.92307692307693
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        },
+        "raw_correctness": {
+          "lower": 5.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": null,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 9,
+      "captured": true,
+      "observed_seconds": 66.11,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P01-meta-muse-85f5b62317",
+      "config_id": "meta-muse",
+      "template_id": "P01",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        },
+        "raw_correctness": {
+          "lower": 11.538461538461538,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 170.851,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P02-meta-muse-8281ec0cfa",
+      "config_id": "meta-muse",
+      "template_id": "P02",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 16.216216216216218
+        },
+        "raw_correctness": {
+          "lower": 16.216216216216218,
+          "upper": 100.0,
+          "coverage": 16.216216216216218
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 242.912,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P03-meta-muse-a6499f0e81",
+      "config_id": "meta-muse",
+      "template_id": "P03",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        },
+        "raw_correctness": {
+          "lower": 10.638297872340425,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 6,
+      "captured": true,
+      "observed_seconds": 109.787,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P04-meta-muse-b4107c17f7",
+      "config_id": "meta-muse",
+      "template_id": "P04",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 12.5
+        },
+        "raw_correctness": {
+          "lower": 12.5,
+          "upper": 100.0,
+          "coverage": 12.5
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 323.385,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P05-meta-muse-774310f60d",
+      "config_id": "meta-muse",
+      "template_id": "P05",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 93.02325581395348,
+          "coverage": 6.976744186046512
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 93.02325581395348,
+          "coverage": 6.976744186046512
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 134.454,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P06-meta-muse-6ebc270c0c",
+      "config_id": "meta-muse",
+      "template_id": "P06",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 92.5,
+          "coverage": 27.500000000000004
+        },
+        "raw_correctness": {
+          "lower": 20.0,
+          "upper": 92.5,
+          "coverage": 27.500000000000004
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 118.346,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P07-meta-muse-bcd95c087c",
+      "config_id": "meta-muse",
+      "template_id": "P07",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 7.5,
+          "upper": 87.5,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 135.321,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P08-meta-muse-8f43cc81d3",
+      "config_id": "meta-muse",
+      "template_id": "P08",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 23.404255319148938
+        },
+        "raw_correctness": {
+          "lower": 23.404255319148938,
+          "upper": 100.0,
+          "coverage": 23.404255319148938
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 6,
+      "captured": true,
+      "observed_seconds": 27924.743,
+      "observation_gap": false,
+      "within_budget": null,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P09-meta-muse-9bcf464485",
+      "config_id": "meta-muse",
+      "template_id": "P09",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 73.46938775510205
+        },
+        "raw_correctness": {
+          "lower": 73.46938775510205,
+          "upper": 100.0,
+          "coverage": 73.46938775510205
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 2,
+      "captured": true,
+      "observed_seconds": 176.344,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P10-meta-muse-dbc1c04bac",
+      "config_id": "meta-muse",
+      "template_id": "P10",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 76.0
+        },
+        "raw_correctness": {
+          "lower": 76.0,
+          "upper": 100.0,
+          "coverage": 76.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 3,
+      "captured": true,
+      "observed_seconds": 148.008,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P11-meta-muse-d24a121aa4",
+      "config_id": "meta-muse",
+      "template_id": "P11",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        },
+        "raw_correctness": {
+          "lower": 5.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 9,
+      "captured": true,
+      "observed_seconds": 130.744,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P01-hermes-agent-13303903f3",
+      "config_id": "hermes-agent",
+      "template_id": "P01",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        },
+        "raw_correctness": {
+          "lower": 11.538461538461538,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 150.246,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P02-hermes-agent-d6092e2c1a",
+      "config_id": "hermes-agent",
+      "template_id": "P02",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 64.86486486486487
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 35.13513513513514,
+          "coverage": 64.86486486486487
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 3,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 602.44,
+      "observation_gap": false,
+      "within_budget": false,
+      "context": "independence_not_established",
+      "delivery": "target_timeout"
+    },
+    {
+      "case_id": "P03-hermes-agent-7425fa905b",
+      "config_id": "hermes-agent",
+      "template_id": "P03",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        },
+        "raw_correctness": {
+          "lower": 10.638297872340425,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 6,
+      "captured": true,
+      "observed_seconds": 158.98,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P04-hermes-agent-ce2cb6cc9c",
+      "config_id": "hermes-agent",
+      "template_id": "P04",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 20.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 423.632,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P05-hermes-agent-709d3f1ebb",
+      "config_id": "hermes-agent",
+      "template_id": "P05",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        },
+        "raw_correctness": {
+          "lower": 6.976744186046512,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 127.244,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P06-hermes-agent-12c69931bc",
+      "config_id": "hermes-agent",
+      "template_id": "P06",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 67.5
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 32.5,
+          "coverage": 67.5
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 3,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 602.102,
+      "observation_gap": false,
+      "within_budget": false,
+      "context": "independence_not_established",
+      "delivery": "target_timeout"
+    },
+    {
+      "case_id": "P07-hermes-agent-21aca03982",
+      "config_id": "hermes-agent",
+      "template_id": "P07",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 20.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 434.594,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P08-hermes-agent-23daed9be9",
+      "config_id": "hermes-agent",
+      "template_id": "P08",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 72.3404255319149
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 27.659574468085108,
+          "coverage": 72.3404255319149
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 5,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 601.926,
+      "observation_gap": false,
+      "within_budget": false,
+      "context": "independence_not_established",
+      "delivery": "target_timeout"
+    },
+    {
+      "case_id": "P09-hermes-agent-7a58550c25",
+      "config_id": "hermes-agent",
+      "template_id": "P09",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 83.6734693877551
+        },
+        "raw_correctness": {
+          "lower": 83.6734693877551,
+          "upper": 100.0,
+          "coverage": 83.6734693877551
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 1,
+      "captured": true,
+      "observed_seconds": 94.677,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P10-hermes-agent-10f0697429",
+      "config_id": "hermes-agent",
+      "template_id": "P10",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 82.66666666666667
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 17.333333333333336,
+          "coverage": 82.66666666666667
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 7,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 601.975,
+      "observation_gap": false,
+      "within_budget": false,
+      "context": "independence_not_established",
+      "delivery": "target_timeout"
+    },
+    {
+      "case_id": "P11-hermes-agent-b6671c51aa",
+      "config_id": "hermes-agent",
+      "template_id": "P11",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        },
+        "raw_correctness": {
+          "lower": 5.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 9,
+      "captured": true,
+      "observed_seconds": 261.292,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P01-opencode-ef97efdd5a",
+      "config_id": "opencode",
+      "template_id": "P01",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        },
+        "raw_correctness": {
+          "lower": 11.538461538461538,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 153.127,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P02-opencode-c7d13308ed",
+      "config_id": "opencode",
+      "template_id": "P02",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 64.86486486486487
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 35.13513513513514,
+          "coverage": 64.86486486486487
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 3,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 600.216,
+      "observation_gap": false,
+      "within_budget": false,
+      "context": "independence_not_established",
+      "delivery": "target_timeout"
+    },
+    {
+      "case_id": "P03-opencode-0585b0dd2c",
+      "config_id": "opencode",
+      "template_id": "P03",
+      "scores": {
+        "relevance": {
+          "lower": 61.53846153846154,
+          "upper": 100.0,
+          "coverage": 61.53846153846154
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 21.27659574468085
+        },
+        "raw_correctness": {
+          "lower": 10.638297872340425,
+          "upper": 89.36170212765957,
+          "coverage": 21.27659574468085
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": null,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 252.452,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P04-opencode-ad98c87140",
+      "config_id": "opencode",
+      "template_id": "P04",
+      "scores": {
+        "relevance": {
+          "lower": 38.46153846153847,
+          "upper": 38.46153846153847,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 80.0,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 244.555,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P05-opencode-59b1540453",
+      "config_id": "opencode",
+      "template_id": "P05",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        },
+        "raw_correctness": {
+          "lower": 6.976744186046512,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 545.283,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P06-opencode-1f397edd20",
+      "config_id": "opencode",
+      "template_id": "P06",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 67.5
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 32.5,
+          "coverage": 67.5
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 3,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 600.078,
+      "observation_gap": false,
+      "within_budget": false,
+      "context": "independence_not_established",
+      "delivery": "target_timeout"
+    },
+    {
+      "case_id": "P07-opencode-bf9319ff44",
+      "config_id": "opencode",
+      "template_id": "P07",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 67.5
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 32.5,
+          "coverage": 67.5
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 3,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 600.073,
+      "observation_gap": false,
+      "within_budget": false,
+      "context": "independence_not_established",
+      "delivery": "target_timeout"
+    },
+    {
+      "case_id": "P08-opencode-7a3b608c66",
+      "config_id": "opencode",
+      "template_id": "P08",
+      "scores": {
+        "relevance": {
+          "lower": 38.46153846153847,
+          "upper": 38.46153846153847,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 23.404255319148938
+        },
+        "raw_correctness": {
+          "lower": 6.382978723404255,
+          "upper": 82.97872340425532,
+          "coverage": 23.404255319148938
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 6,
+      "captured": false,
+      "observed_seconds": 600.12,
+      "observation_gap": false,
+      "within_budget": false,
+      "context": "independence_not_established",
+      "delivery": "target_timeout"
+    },
+    {
+      "case_id": "P09-opencode-d04ee53629",
+      "config_id": "opencode",
+      "template_id": "P09",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 67.3469387755102
+        },
+        "raw_correctness": {
+          "lower": 57.14285714285714,
+          "upper": 89.79591836734694,
+          "coverage": 67.3469387755102
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 2,
+      "captured": true,
+      "observed_seconds": 485.99,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P10-opencode-14347563c9",
+      "config_id": "opencode",
+      "template_id": "P10",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 76.0
+        },
+        "raw_correctness": {
+          "lower": 76.0,
+          "upper": 100.0,
+          "coverage": 76.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 3,
+      "captured": true,
+      "observed_seconds": 388.639,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P11-opencode-abb4ea8664",
+      "config_id": "opencode",
+      "template_id": "P11",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 78.33333333333333
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 21.666666666666668,
+          "coverage": 78.33333333333333
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 7,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 600.127,
+      "observation_gap": false,
+      "within_budget": false,
+      "context": "independence_not_established",
+      "delivery": "target_timeout"
+    },
+    {
+      "case_id": "P01-oh-my-pi-b0b94d2bcb",
+      "config_id": "oh-my-pi",
+      "template_id": "P01",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        },
+        "raw_correctness": {
+          "lower": 11.538461538461538,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 225.344,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P02-oh-my-pi-ab32ebd11e",
+      "config_id": "oh-my-pi",
+      "template_id": "P02",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 8.108108108108109
+        },
+        "raw_correctness": {
+          "lower": 8.108108108108109,
+          "upper": 100.0,
+          "coverage": 8.108108108108109
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 434.284,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P03-oh-my-pi-94f2d51bf4",
+      "config_id": "oh-my-pi",
+      "template_id": "P03",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        },
+        "raw_correctness": {
+          "lower": 10.638297872340425,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 6,
+      "captured": true,
+      "observed_seconds": 415.182,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P04-oh-my-pi-c305b9e43e",
+      "config_id": "oh-my-pi",
+      "template_id": "P04",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 67.5
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 32.5,
+          "coverage": 67.5
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 3,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 600.119,
+      "observation_gap": false,
+      "within_budget": false,
+      "context": "independence_not_established",
+      "delivery": "target_timeout"
+    },
+    {
+      "case_id": "P05-oh-my-pi-0e86756a16",
+      "config_id": "oh-my-pi",
+      "template_id": "P05",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        },
+        "raw_correctness": {
+          "lower": 6.976744186046512,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 282.538,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P06-oh-my-pi-0bdeda499c",
+      "config_id": "oh-my-pi",
+      "template_id": "P06",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 27.500000000000004
+        },
+        "raw_correctness": {
+          "lower": 27.500000000000004,
+          "upper": 100.0,
+          "coverage": 27.500000000000004
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 592.492,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P07-oh-my-pi-f74f0d46f5",
+      "config_id": "oh-my-pi",
+      "template_id": "P07",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 7.5,
+          "upper": 87.5,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 349.008,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P08-oh-my-pi-3f5a5f781a",
+      "config_id": "oh-my-pi",
+      "template_id": "P08",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 72.3404255319149
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 27.659574468085108,
+          "coverage": 72.3404255319149
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 5,
+      "unknown_gates": 2,
+      "captured": false,
+      "observed_seconds": 600.227,
+      "observation_gap": false,
+      "within_budget": false,
+      "context": "independence_not_established",
+      "delivery": "target_timeout"
+    },
+    {
+      "case_id": "P09-oh-my-pi-764c4d441e",
+      "config_id": "oh-my-pi",
+      "template_id": "P09",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 57.14285714285714
+        },
+        "raw_correctness": {
+          "lower": 57.14285714285714,
+          "upper": 100.0,
+          "coverage": 57.14285714285714
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 3,
+      "captured": true,
+      "observed_seconds": 221.133,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P10-oh-my-pi-7a67f62cf4",
+      "config_id": "oh-my-pi",
+      "template_id": "P10",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 76.0
+        },
+        "raw_correctness": {
+          "lower": 76.0,
+          "upper": 100.0,
+          "coverage": 76.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 3,
+      "captured": true,
+      "observed_seconds": 411.303,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P11-oh-my-pi-617d0d5edf",
+      "config_id": "oh-my-pi",
+      "template_id": "P11",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        },
+        "raw_correctness": {
+          "lower": 5.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 9,
+      "captured": true,
+      "observed_seconds": 150.514,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "not_reviewed"
+    },
+    {
+      "case_id": "P01-vibe-trading-e506c2127a",
+      "config_id": "vibe-trading",
+      "template_id": "P01",
+      "scores": {
+        "relevance": {
+          "lower": 38.46153846153847,
+          "upper": 61.53846153846154,
+          "coverage": 76.92307692307693
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 88.46153846153845,
+          "coverage": 11.538461538461538
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 88.46153846153845,
+          "coverage": 11.538461538461538
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 86.097,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P02-vibe-trading-c8612104de",
+      "config_id": "vibe-trading",
+      "template_id": "P02",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 45.45454545454545,
+          "coverage": 54.54545454545454
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 91.8918918918919,
+          "coverage": 8.108108108108109
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 91.8918918918919,
+          "coverage": 8.108108108108109
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 147.879,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P03-vibe-trading-2afbee4bfd",
+      "config_id": "vibe-trading",
+      "template_id": "P03",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 76.92307692307693,
+          "coverage": 23.076923076923077
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 0.0
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 0.0
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 7,
+      "captured": true,
+      "observed_seconds": 88.207,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P04-vibe-trading-9d11a5541e",
+      "config_id": "vibe-trading",
+      "template_id": "P04",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 12.5
+        },
+        "raw_correctness": {
+          "lower": 12.5,
+          "upper": 100.0,
+          "coverage": 12.5
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 40.627,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P05-vibe-trading-4deaacb0a2",
+      "config_id": "vibe-trading",
+      "template_id": "P05",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        },
+        "raw_correctness": {
+          "lower": 6.976744186046512,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 96.944,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P06-vibe-trading-ed101ab6bc",
+      "config_id": "vibe-trading",
+      "template_id": "P06",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 20.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 237.537,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P07-vibe-trading-032502424b",
+      "config_id": "vibe-trading",
+      "template_id": "P07",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 20.0,
+          "upper": 100.0,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 167.796,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P08-vibe-trading-81e0d2dd8f",
+      "config_id": "vibe-trading",
+      "template_id": "P08",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 76.92307692307693,
+          "coverage": 23.076923076923077
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 93.61702127659575,
+          "coverage": 6.382978723404255
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 93.61702127659575,
+          "coverage": 6.382978723404255
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 0,
+      "unknown_gates": 7,
+      "captured": true,
+      "observed_seconds": 160.298,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P09-vibe-trading-35ca940c9f",
+      "config_id": "vibe-trading",
+      "template_id": "P09",
+      "scores": {
+        "relevance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 87.75510204081633,
+          "coverage": 12.244897959183673
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 87.75510204081633,
+          "coverage": 12.244897959183673
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 0,
+      "unknown_gates": 8,
+      "captured": true,
+      "observed_seconds": 119.771,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P10-vibe-trading-8fdf3d99b1",
+      "config_id": "vibe-trading",
+      "template_id": "P10",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 76.0
+        },
+        "raw_correctness": {
+          "lower": 69.33333333333334,
+          "upper": 93.33333333333333,
+          "coverage": 76.0
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 3,
+      "captured": true,
+      "observed_seconds": 156.665,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P11-vibe-trading-ee4e1ccd71",
+      "config_id": "vibe-trading",
+      "template_id": "P11",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        },
+        "raw_correctness": {
+          "lower": 5.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 9,
+      "captured": true,
+      "observed_seconds": 104.957,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P01-xai-grok-bot-native-7e1cb7bf41",
+      "config_id": "xai-grok-bot-native",
+      "template_id": "P01",
+      "scores": {
+        "relevance": {
+          "lower": 76.92307692307693,
+          "upper": 100.0,
+          "coverage": 76.92307692307693
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        },
+        "raw_correctness": {
+          "lower": 11.538461538461538,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": null,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 263.874,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "substantive_memo"
+    },
+    {
+      "case_id": "P02-xai-grok-bot-native-26e4a01974",
+      "config_id": "xai-grok-bot-native",
+      "template_id": "P02",
+      "scores": {
+        "relevance": {
+          "lower": 72.72727272727273,
+          "upper": 72.72727272727273,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 91.8918918918919,
+          "coverage": 16.216216216216218
+        },
+        "raw_correctness": {
+          "lower": 8.108108108108109,
+          "upper": 91.8918918918919,
+          "coverage": 16.216216216216218
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": false,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 197.843,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P03-xai-grok-bot-native-d612379f12",
+      "config_id": "xai-grok-bot-native",
+      "template_id": "P03",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        },
+        "raw_correctness": {
+          "lower": 10.638297872340425,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 6,
+      "captured": true,
+      "observed_seconds": 207.07,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P04-xai-grok-bot-native-2f1e123981",
+      "config_id": "xai-grok-bot-native",
+      "template_id": "P04",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 12.5
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 87.5,
+          "coverage": 12.5
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 569.37,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "substantive_memo"
+    },
+    {
+      "case_id": "P05-xai-grok-bot-native-10c8d3225b",
+      "config_id": "xai-grok-bot-native",
+      "template_id": "P05",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        },
+        "raw_correctness": {
+          "lower": 6.976744186046512,
+          "upper": 100.0,
+          "coverage": 6.976744186046512
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 169.087,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P06-xai-grok-bot-native-18d2d2c79c",
+      "config_id": "xai-grok-bot-native",
+      "template_id": "P06",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 27.500000000000004
+        },
+        "raw_correctness": {
+          "lower": 27.500000000000004,
+          "upper": 100.0,
+          "coverage": 27.500000000000004
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 359.208,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P07-xai-grok-bot-native-f2fc1af366",
+      "config_id": "xai-grok-bot-native",
+      "template_id": "P07",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 7.5,
+          "upper": 87.5,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 280.411,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P08-xai-grok-bot-native-8d65e57383",
+      "config_id": "xai-grok-bot-native",
+      "template_id": "P08",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 40.42553191489361
+        },
+        "raw_correctness": {
+          "lower": 29.78723404255319,
+          "upper": 89.36170212765957,
+          "coverage": 40.42553191489361
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 387.851,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P09-xai-grok-bot-native-5551900c27",
+      "config_id": "xai-grok-bot-native",
+      "template_id": "P09",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 57.14285714285714
+        },
+        "raw_correctness": {
+          "lower": 57.14285714285714,
+          "upper": 100.0,
+          "coverage": 57.14285714285714
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 3,
+      "captured": true,
+      "observed_seconds": 102.458,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "substantive_memo"
+    },
+    {
+      "case_id": "P10-xai-grok-bot-native-a891df4a66",
+      "config_id": "xai-grok-bot-native",
+      "template_id": "P10",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 69.33333333333334
+        },
+        "raw_correctness": {
+          "lower": 69.33333333333334,
+          "upper": 100.0,
+          "coverage": 69.33333333333334
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 209.176,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P11-xai-grok-bot-native-ad33254079",
+      "config_id": "xai-grok-bot-native",
+      "template_id": "P11",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        },
+        "raw_correctness": {
+          "lower": 5.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 9,
+      "captured": true,
+      "observed_seconds": 70.996,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P01-meta-muse-native-8352ba4791",
+      "config_id": "meta-muse-native",
+      "template_id": "P01",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        },
+        "raw_correctness": {
+          "lower": 11.538461538461538,
+          "upper": 100.0,
+          "coverage": 11.538461538461538
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 151.553,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "substantive_memo"
+    },
+    {
+      "case_id": "P02-meta-muse-native-742504123a",
+      "config_id": "meta-muse-native",
+      "template_id": "P02",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 16.216216216216218
+        },
+        "raw_correctness": {
+          "lower": 16.216216216216218,
+          "upper": 100.0,
+          "coverage": 16.216216216216218
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 5472.129,
+      "observation_gap": true,
+      "within_budget": false,
+      "context": "not_observed_in_available_capture",
+      "delivery": "substantive_memo"
+    },
+    {
+      "case_id": "P03-meta-muse-native-15231f1033",
+      "config_id": "meta-muse-native",
+      "template_id": "P03",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        },
+        "raw_correctness": {
+          "lower": 10.638297872340425,
+          "upper": 100.0,
+          "coverage": 10.638297872340425
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 6,
+      "captured": true,
+      "observed_seconds": 317.409,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "independence_not_established",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P04-meta-muse-native-450be6f973",
+      "config_id": "meta-muse-native",
+      "template_id": "P04",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 12.5
+        },
+        "raw_correctness": {
+          "lower": 12.5,
+          "upper": 100.0,
+          "coverage": 12.5
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 5277.208,
+      "observation_gap": true,
+      "within_budget": false,
+      "context": "observed_context_contamination",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P05-meta-muse-native-04b4c4b5f5",
+      "config_id": "meta-muse-native",
+      "template_id": "P05",
+      "scores": {
+        "relevance": {
+          "lower": 61.53846153846154,
+          "upper": 100.0,
+          "coverage": 61.53846153846154
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 93.02325581395348,
+          "coverage": 6.976744186046512
+        },
+        "raw_correctness": {
+          "lower": 0.0,
+          "upper": 93.02325581395348,
+          "coverage": 6.976744186046512
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": null,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 0,
+      "unknown_gates": 5,
+      "captured": true,
+      "observed_seconds": 143.384,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "observed_context_contamination",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P06-meta-muse-native-7e8f898c17",
+      "config_id": "meta-muse-native",
+      "template_id": "P06",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 27.500000000000004
+        },
+        "raw_correctness": {
+          "lower": 27.500000000000004,
+          "upper": 100.0,
+          "coverage": 27.500000000000004
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 658.858,
+      "observation_gap": false,
+      "within_budget": false,
+      "context": "not_observed_in_available_capture",
+      "delivery": "substantive_memo"
+    },
+    {
+      "case_id": "P07-meta-muse-native-da20668fb2",
+      "config_id": "meta-muse-native",
+      "template_id": "P07",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "coverage": 20.0
+        },
+        "raw_correctness": {
+          "lower": 7.5,
+          "upper": 87.5,
+          "coverage": 20.0
+        }
+      },
+      "all_pass": false,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": false,
+        "raw_correctness": false
+      },
+      "failed_gates": 1,
+      "unknown_gates": 4,
+      "captured": true,
+      "observed_seconds": 125.275,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "observed_context_contamination",
+      "delivery": "substantive_memo"
+    },
+    {
+      "case_id": "P08-meta-muse-native-5dfa128c03",
+      "config_id": "meta-muse-native",
+      "template_id": "P08",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 23.404255319148938
+        },
+        "raw_correctness": {
+          "lower": 23.404255319148938,
+          "upper": 100.0,
+          "coverage": 23.404255319148938
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 6,
+      "captured": true,
+      "observed_seconds": 110.499,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "observed_context_contamination",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P09-meta-muse-native-89557d62a9",
+      "config_id": "meta-muse-native",
+      "template_id": "P09",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 73.46938775510205
+        },
+        "raw_correctness": {
+          "lower": 73.46938775510205,
+          "upper": 100.0,
+          "coverage": 73.46938775510205
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 2,
+      "captured": true,
+      "observed_seconds": 91.996,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "observed_context_contamination",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P10-meta-muse-native-265319cdce",
+      "config_id": "meta-muse-native",
+      "template_id": "P10",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 72.0
+        },
+        "raw_correctness": {
+          "lower": 72.0,
+          "upper": 100.0,
+          "coverage": 72.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 3,
+      "captured": true,
+      "observed_seconds": 168.165,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "not_observed_in_available_capture",
+      "delivery": "partial_unresolved"
+    },
+    {
+      "case_id": "P11-meta-muse-native-6a0f69d853",
+      "config_id": "meta-muse-native",
+      "template_id": "P11",
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        },
+        "raw_correctness": {
+          "lower": 5.0,
+          "upper": 100.0,
+          "coverage": 5.0
+        }
+      },
+      "all_pass": null,
+      "axis_all_pass": {
+        "relevance": true,
+        "correctness": null,
+        "raw_correctness": null
+      },
+      "failed_gates": 0,
+      "unknown_gates": 9,
+      "captured": true,
+      "observed_seconds": 202.845,
+      "observation_gap": false,
+      "within_budget": true,
+      "context": "observed_context_contamination",
+      "delivery": "partial_unresolved"
+    }
+  ],
+  "summary": [
+    {
+      "config_id": "openai-codex",
+      "name": "Codex",
+      "color": "#172a20",
+      "glyph": "C",
+      "surface": "public-web / CLI",
+      "pilot": false,
+      "is_paper": false,
+      "n": 10,
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 100.0,
+          "coverage": 28.13008748733991
+        },
+        "raw_correctness": {
+          "lower": 28.13008748733991,
+          "upper": 100.0,
+          "coverage": 28.13008748733991
+        }
+      }
+    },
+    {
+      "config_id": "meta-muse",
+      "name": "Muse",
+      "color": "#538c90",
+      "glyph": "M",
+      "surface": "public-web / browser",
+      "pilot": false,
+      "is_paper": false,
+      "n": 10,
+      "scores": {
+        "relevance": {
+          "lower": 100.0,
+          "upper": 100.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 88.55232558139535,
+          "coverage": 27.170490134885416
+        },
+        "raw_correctness": {
+          "lower": 24.472815716280763,
+          "upper": 97.30232558139535,
+          "coverage": 27.170490134885416
+        }
+      }
+    },
+    {
+      "config_id": "xai-grok-bot-native",
+      "name": "Grok Bot",
+      "color": "#315d4d",
+      "glyph": "X",
+      "surface": "native public research",
+      "pilot": false,
+      "is_paper": false,
+      "n": 10,
+      "scores": {
+        "relevance": {
+          "lower": 97.27272727272728,
+          "upper": 97.27272727272728,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 69.1891891891892,
+          "coverage": 26.573298066568725
+        },
+        "raw_correctness": {
+          "lower": 22.198657468523873,
+          "upper": 95.62535940195515,
+          "coverage": 26.573298066568725
+        }
+      }
+    },
+    {
+      "config_id": "meta-muse-native",
+      "name": "Muse Native",
+      "color": "#4b909f",
+      "glyph": "M",
+      "surface": "native public research",
+      "pilot": false,
+      "is_paper": false,
+      "n": 10,
+      "scores": {
+        "relevance": {
+          "lower": 96.15384615384616,
+          "upper": 100.0,
+          "coverage": 96.15384615384616
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 89.30232558139535,
+          "coverage": 26.770490134885414
+        },
+        "raw_correctness": {
+          "lower": 24.822815716280765,
+          "upper": 98.05232558139535,
+          "coverage": 26.770490134885414
+        }
+      }
+    },
+    {
+      "config_id": "claude-code-desktop",
+      "name": "Claude Code",
+      "color": "#bf8068",
+      "glyph": "A",
+      "surface": "public-web / desktop",
+      "pilot": false,
+      "is_paper": false,
+      "n": 10,
+      "scores": {
+        "relevance": {
+          "lower": 93.42657342657343,
+          "upper": 97.27272727272728,
+          "coverage": 96.15384615384616
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 89.1891891891892,
+          "coverage": 27.49322387954607
+        },
+        "raw_correctness": {
+          "lower": 25.432413068735258,
+          "upper": 97.9391891891892,
+          "coverage": 27.49322387954607
+        }
+      }
+    },
+    {
+      "config_id": "xai-grok",
+      "name": "Grok",
+      "color": "#171b1a",
+      "glyph": "X",
+      "surface": "public-web / browser",
+      "pilot": false,
+      "is_paper": false,
+      "n": 10,
+      "scores": {
+        "relevance": {
+          "lower": 90.0,
+          "upper": 96.15384615384616,
+          "coverage": 93.84615384615385
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 79.25,
+          "coverage": 25.310359596183446
+        },
+        "raw_correctness": {
+          "lower": 22.246529808949404,
+          "upper": 96.93617021276596,
+          "coverage": 25.310359596183446
+        }
+      }
+    },
+    {
+      "config_id": "oh-my-pi",
+      "name": "oh-my-pi",
+      "color": "#93678e",
+      "glyph": "π",
+      "surface": "public-web / CLI",
+      "pilot": false,
+      "is_paper": false,
+      "n": 10,
+      "scores": {
+        "relevance": {
+          "lower": 80.0,
+          "upper": 80.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 70.0,
+          "coverage": 35.12064328412671
+        },
+        "raw_correctness": {
+          "lower": 19.886600730935218,
+          "upper": 84.76595744680851,
+          "coverage": 35.12064328412671
+        }
+      }
+    },
+    {
+      "config_id": "vibe-trading",
+      "name": "Vibe-Trading",
+      "color": "#78944f",
+      "glyph": "V",
+      "surface": "restricted native loop",
+      "pilot": false,
+      "is_paper": false,
+      "n": 10,
+      "scores": {
+        "relevance": {
+          "lower": 60.0,
+          "upper": 79.93006993006993,
+          "coverage": 80.06993006993007
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 87.3264015209304,
+          "coverage": 16.721272897674254
+        },
+        "raw_correctness": {
+          "lower": 13.381007751937986,
+          "upper": 96.65973485426373,
+          "coverage": 16.721272897674254
+        }
+      }
+    },
+    {
+      "config_id": "hermes-agent",
+      "name": "Hermes",
+      "color": "#9a8060",
+      "glyph": "H",
+      "surface": "public-web / CLI",
+      "pilot": false,
+      "is_paper": false,
+      "n": 10,
+      "scores": {
+        "relevance": {
+          "lower": 60.0,
+          "upper": 60.0,
+          "coverage": 100.0
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 60.0,
+          "coverage": 43.366046850958845
+        },
+        "raw_correctness": {
+          "lower": 14.628851144614204,
+          "upper": 71.26280429365536,
+          "coverage": 43.366046850958845
+        }
+      }
+    },
+    {
+      "config_id": "opencode",
+      "name": "OpenCode",
+      "color": "#777881",
+      "glyph": "O",
+      "surface": "public-web / CLI",
+      "pilot": false,
+      "is_paper": false,
+      "n": 10,
+      "scores": {
+        "relevance": {
+          "lower": 43.84615384615385,
+          "upper": 47.69230769230769,
+          "coverage": 96.15384615384616
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 20.0,
+          "coverage": 49.320273222358466
+        },
+        "raw_correctness": {
+          "lower": 15.714087792464833,
+          "upper": 66.39381457010636,
+          "coverage": 49.320273222358466
+        }
+      }
+    },
+    {
+      "config_id": "google-antigravity-gemini",
+      "name": "Gemini",
+      "color": "#4a77b4",
+      "glyph": "G",
+      "surface": "public-web / browser",
+      "pilot": false,
+      "is_paper": false,
+      "n": 10,
+      "scores": {
+        "relevance": {
+          "lower": 32.30769230769231,
+          "upper": 36.15384615384615,
+          "coverage": 96.15384615384616
+        },
+        "correctness": {
+          "lower": 0.0,
+          "upper": 28.802325581395348,
+          "coverage": 47.779364967164504
+        },
+        "raw_correctness": {
+          "lower": 1.75,
+          "upper": 53.9706350328355,
+          "coverage": 47.779364967164504
+        }
+      }
+    }
+  ],
+  "totals": {
+    "cases": 121,
+    "task_criteria": 157,
+    "criterion_decisions": 1727,
+    "judge_votes": 5181,
+    "labels": {
+      "pass": 612,
+      "unknown": 882,
+      "fail": 233
+    },
+    "consensus_routes": {
+      "unanimous": 1620,
+      "insufficient_agreement": 26,
+      "pass_fail_split_pending_expert": 16,
+      "critical_nonunanimity_pending_expert": 49,
+      "two_matching_plus_unknown": 15,
+      "independent_deterministic_verifier": 1
+    },
+    "research_configurations": 11,
+    "separate_paper_outputs": 11,
+    "financial_grades_released": 0
+  }
+}

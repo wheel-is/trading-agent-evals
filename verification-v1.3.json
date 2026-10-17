@@ -1,0 +1,17 @@
+{
+  "cases": 121,
+  "criteria": 1727,
+  "judge_votes": 5181,
+  "all_quotes_exact": true,
+  "release_gate_blocks_financial_grades": true,
+  "all_static_links_resolve": true,
+  "static_links_checked": 296,
+  "javascript_tests": 14,
+  "new_deterministic_tests": 31,
+  "baseline_tests": 213,
+  "primary_reference_limit": "Partial BLS P09 facts and independently recomputed illustrative PageRank error. Full historical financial reference coverage incomplete.",
+  "expert_calibration_complete": false,
+  "original_rubric_used": true,
+  "no_four_check_proxy": true,
+  "candidate_not_released_financial_accuracy": true
+}

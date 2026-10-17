@@ -1,35 +1,529 @@
 {
   "schema_version": "1.0",
-  "grading_run_id": "formal-eval-20261017",
-  "created_at": "2026-10-17T18:44:55.979066+00:00",
+  "grading_run_id": "20261017-rubric-r1",
+  "created_at": "2026-10-17T20:44:26.943355+00:00",
   "status": "blocked",
   "retrospective_or_prospective": "post_hoc",
   "target_selection": {
-    "file": "formal-eval-20261017/data-v3/selection.json",
-    "sha256": "0e293a66439e686ae41b6937718dbff18bad432cb18104f0e36be2f9ca26a67f"
+    "file": "identity-map.json",
+    "sha256": "5338103fb9c9bb3069751cc766da41bb2b4c9be278c00ec3f149238420bd89d2"
   },
   "rubric": {
-    "file": "grading-build-handoff/research-rubric.json",
+    "file": "research-rubric.json",
     "sha256": "2523dca82072df6b78f87dcd6f7d95cab5e5908e53d8e8dddfe772caa698bbf4"
   },
   "applicability": {
-    "file": "formal-eval-20261017/data-v3/applicability.json",
-    "sha256": "423cdd5c73d6b1b8c44cd7e76e84574d01ea94f6f8b0e5d42245fa2988ad4ba9"
+    "file": "applicability-index.json",
+    "sha256": "e8fee142f653abf0de6699a4713f43f036d4e2d4dd7b791b9a6c61a6e3e12bab"
   },
-  "sourcepacks": [],
-  "calibration": null,
-  "code_version": "formal-import-1.0.1+cde2dddc52ff79535df947d2f7bc22d1fbb7c3ac9739a69d1ca93ae56b55da91",
-  "judge_configs": [],
+  "sourcepacks": [
+    {
+      "file": "sourcepacks/answer-ccd99cfb5b50.json",
+      "sha256": "692c189c3d57f21862dec297d0dc28ec465b2c67a2705536c1b7cb1c4c44bf4e"
+    },
+    {
+      "file": "sourcepacks/answer-7f25c28e1eaf.json",
+      "sha256": "789a873acc1eabe2b7673ba7de48acf0d32658939aa185a31bc8894310f3d15e"
+    },
+    {
+      "file": "sourcepacks/answer-0b0ec8e85d2d.json",
+      "sha256": "1262a871391d6b9c880d59a3b37d23d2bba17c85eb853277eef86366718d4e9a"
+    },
+    {
+      "file": "sourcepacks/answer-81e7b46e2442.json",
+      "sha256": "5428bf1a4ed6870eda9e7d1e6db77bd42c238f2713a52f3babadce7cd37f457e"
+    },
+    {
+      "file": "sourcepacks/answer-7fbe9e504c6e.json",
+      "sha256": "db8a1c00147ff95954c7d67959b20e0e57fda935372a783381356a99732739d1"
+    },
+    {
+      "file": "sourcepacks/answer-b0b7bac38d7e.json",
+      "sha256": "62136ae1a95789ee9fe5c2ff303dfdf5bb09bc8666921f57d42112cd494f5ed3"
+    },
+    {
+      "file": "sourcepacks/answer-a93affcd45eb.json",
+      "sha256": "5101780e42e54c6ca2a3adab33266213377c2ad8940cf07cd50513e9d8c1592d"
+    },
+    {
+      "file": "sourcepacks/answer-2c018091c312.json",
+      "sha256": "8738e4e338e7308bfed32246e2a1541d77be64586abcab08c7e8fa82c9bc3f42"
+    },
+    {
+      "file": "sourcepacks/answer-e114ea5f3945.json",
+      "sha256": "2c2df5a47530190f9af4688405993bf988dae8a94cc1e1aa1bbeceadb1e8709a"
+    },
+    {
+      "file": "sourcepacks/answer-c751bb637111.json",
+      "sha256": "ef3c8f8fda78edc779d670482b7c6f1f946491a871304d8dd6c3de5369e33c81"
+    },
+    {
+      "file": "sourcepacks/answer-f6e9021f79f8.json",
+      "sha256": "437fbbd002616bb3197be1880cf25e95bb43d046e8a9969ccb9d45c79710976e"
+    },
+    {
+      "file": "sourcepacks/answer-4c5e7bc86eb9.json",
+      "sha256": "7b377ffba29ecc1dcd8768694b0bc6ec09aacb56b648195f411de6f227d38c31"
+    },
+    {
+      "file": "sourcepacks/answer-e043f107b7eb.json",
+      "sha256": "1f7973cb1da37c3b877e72d380ae9a6c7e18a048fce8c8a6390f0c87cd6b2876"
+    },
+    {
+      "file": "sourcepacks/answer-07d78c8ca037.json",
+      "sha256": "7e56389aabd4cd0218a28125935b28d511c4aae2608b3420bfc1ddd0e8cd7f53"
+    },
+    {
+      "file": "sourcepacks/answer-61ae8209b8c8.json",
+      "sha256": "e4fadd7a1218163805bb38c41c940fb79f2f872234644a429d9f00c3642f0b5d"
+    },
+    {
+      "file": "sourcepacks/answer-23813904f851.json",
+      "sha256": "f233ab6f4cd2c99e6c1e8cfd87858a9577841f9c4192ed4a02c57b54bdb45eb0"
+    },
+    {
+      "file": "sourcepacks/answer-e6fa95ef604e.json",
+      "sha256": "bce797ee97ff02e38bd836723f0046cb012a9159d880e1ffc6864511b74b33bb"
+    },
+    {
+      "file": "sourcepacks/answer-2abb5d650649.json",
+      "sha256": "98d0d3cbcc6a259229dd237fab108505c18e30d097fe3473cbc8927074dd3240"
+    },
+    {
+      "file": "sourcepacks/answer-b023ca582097.json",
+      "sha256": "91e49319a4d3f2a92a93b930fc270a9e5efb95b1623014c10425753850b2763d"
+    },
+    {
+      "file": "sourcepacks/answer-7ccb85c98304.json",
+      "sha256": "872b39d98c94bd1778876d3e3be2c4276b211ff9d998843c1038e7930c335fe2"
+    },
+    {
+      "file": "sourcepacks/answer-a0325db75e77.json",
+      "sha256": "31d4dcbeb2c7f4b8a613e4c8acf8073848a0ad28eb9e24c8f6a2b98d824808c2"
+    },
+    {
+      "file": "sourcepacks/answer-5f9718d2919a.json",
+      "sha256": "dfc88b7fd8e2e857eb171f11eb2e7dd3d6ee23af1ccc0623ed700b6c78f5ea92"
+    },
+    {
+      "file": "sourcepacks/answer-b81a484bbf3e.json",
+      "sha256": "c9afc96a8af60cc686a372199f4dd4e2094ddfd158ba6a2da6193f8db5b2141d"
+    },
+    {
+      "file": "sourcepacks/answer-e0316a16197c.json",
+      "sha256": "c6bad4bd983da1fe5b6f7b399609407b7f4586d1ad72872a70ddbc152faf6606"
+    },
+    {
+      "file": "sourcepacks/answer-dd6908dde4ac.json",
+      "sha256": "bd4ebe05f7632f57d585026be2919c6601d9ca2bbc4ee2c0d39884adf42a38b5"
+    },
+    {
+      "file": "sourcepacks/answer-19cf8053241b.json",
+      "sha256": "f24fab8dd29b176be72153f6e4ca24096de0f00e8210bcd8c89eb352ae075ac9"
+    },
+    {
+      "file": "sourcepacks/answer-269b28f853f5.json",
+      "sha256": "2e2105bfc7059e77be3fc8770171a7182fc3ed04d6b09fdbbe96eca7ef2cb67a"
+    },
+    {
+      "file": "sourcepacks/answer-f511dad06935.json",
+      "sha256": "5fdcc10afdb135348b062b987744cd985800323541f691e069cbbeab334649bd"
+    },
+    {
+      "file": "sourcepacks/answer-9e01ee2e20c2.json",
+      "sha256": "d1c9e61a8259f05056505cee2fae27338d58d6e3de593f1039df980f70c0a4f4"
+    },
+    {
+      "file": "sourcepacks/answer-5b1ff8043fdb.json",
+      "sha256": "34ac32e2b542874bc6e4c443fbd92dbd53a1676e733d8ce2f39193fd3ac7396c"
+    },
+    {
+      "file": "sourcepacks/answer-2346bc996288.json",
+      "sha256": "81bf00d978141e202d5624abf877d38d20d0630ca804d9e69e21c0810565c19c"
+    },
+    {
+      "file": "sourcepacks/answer-f3ee36e75577.json",
+      "sha256": "1c3b866be79923c1155191eee3abdb834f9f3937529bdee5da65a41808ebbaa5"
+    },
+    {
+      "file": "sourcepacks/answer-d48eac0c2e8d.json",
+      "sha256": "000c012122766411efbbcd0f3735cd869d988f1e6021c8ee9e175b5b5172fd19"
+    },
+    {
+      "file": "sourcepacks/answer-df1124e26498.json",
+      "sha256": "34f1e90a48c5c12e64b90164735e61f37c2422fe3cd18fb9dc73661ea850904b"
+    },
+    {
+      "file": "sourcepacks/answer-2d82c92f67b2.json",
+      "sha256": "55f27b0341194c76a8c73186953e3db34c575f35c8c0fb7d993b02d7363aefc7"
+    },
+    {
+      "file": "sourcepacks/answer-e4c1c371c0f0.json",
+      "sha256": "40e410060626882497c468598a6039fd42ed2491127ce19d2e962fb104491f39"
+    },
+    {
+      "file": "sourcepacks/answer-b77629da228a.json",
+      "sha256": "1bc6eb56140a72b76c674ba053a6fa9ef4bd3cb4f508079f2f45e067c0c09f7a"
+    },
+    {
+      "file": "sourcepacks/answer-569d854a305e.json",
+      "sha256": "dfe4a5ef333f7228f661b9804b3c598fd4d3c066a19a126d1dc948ca8129c102"
+    },
+    {
+      "file": "sourcepacks/answer-b12b25611d67.json",
+      "sha256": "edc2fc6d74b885bb0cf3d551d8c83f80a8a836a9212bf3b9fd078d50b4061b01"
+    },
+    {
+      "file": "sourcepacks/answer-efcfe0ad9885.json",
+      "sha256": "192df6f9814add7f7e8bd706986dc6d9d66f072600039a2e881f84eaa726e859"
+    },
+    {
+      "file": "sourcepacks/answer-d815e94aab39.json",
+      "sha256": "dbb61152a8c3c6b4384424314c676abac8aac2affe4f62c0a9d1beec7f082047"
+    },
+    {
+      "file": "sourcepacks/answer-106e29502010.json",
+      "sha256": "35e7c2cfebd7d34a8bc7b78c2f4464bae3b4b39da5d79c29ace4fdbcabc55f77"
+    },
+    {
+      "file": "sourcepacks/answer-4af5fdc1af4f.json",
+      "sha256": "98578bb134401f66d40002fd2ba148133a5dd02ab000f0a72d0fba9cc6c4913e"
+    },
+    {
+      "file": "sourcepacks/answer-a53aaf0da1bf.json",
+      "sha256": "608ad4b49f4b0aa3d93fa0b3fa608eabfb50653b194964eb6fcb2e2cb740ed57"
+    },
+    {
+      "file": "sourcepacks/answer-c9decdbc2b75.json",
+      "sha256": "1a30366d9f97f41a85b55cb9f88e9d0e8ef6e92e898d95324a978ae042d8f62e"
+    },
+    {
+      "file": "sourcepacks/answer-c4e0aea3fcf9.json",
+      "sha256": "c7f266b38e6b9dbe84e15bde7787c914b4e74c9fff343040425f42936a6dae96"
+    },
+    {
+      "file": "sourcepacks/answer-9eed15b579fe.json",
+      "sha256": "5004c8e3d164037072a78984864ef9846883d22565c2b58e49074131e3056596"
+    },
+    {
+      "file": "sourcepacks/answer-01e1ede14cbb.json",
+      "sha256": "cdfdec49856799d5a6586ba3851cd49c0430529a52be4a3feab133268694f18a"
+    },
+    {
+      "file": "sourcepacks/answer-cad595beed02.json",
+      "sha256": "93ef07f82fe5cf21454d4d9e602a79fb6458c0932f529843156a3433b4f1c0a7"
+    },
+    {
+      "file": "sourcepacks/answer-4c4d97262ff3.json",
+      "sha256": "1a2279a78565e16d803b03bbdcefe4d51261f274f7e75d66d53d009a622d8543"
+    },
+    {
+      "file": "sourcepacks/answer-8e1170492f55.json",
+      "sha256": "1cd1a28ba6806dfd74083f37b5fd0aeac5e416e4d8a8178480355f0ad6edb0ae"
+    },
+    {
+      "file": "sourcepacks/answer-016b8dcd0d52.json",
+      "sha256": "9661a9e9661b975e511d4882060f7b1a9374b538a1d5e05d4e01fe8d5f3b3387"
+    },
+    {
+      "file": "sourcepacks/answer-8e60bf862c00.json",
+      "sha256": "5f13b83fd140deab33ed8482b282d5f7fb1f6ef9a04202659f6a19f3f91075ce"
+    },
+    {
+      "file": "sourcepacks/answer-1370132b7f49.json",
+      "sha256": "e9335327d7b0f860162ae69802169d19070943bac59be0c5a3d987876a62da75"
+    },
+    {
+      "file": "sourcepacks/answer-ab94d852b7c2.json",
+      "sha256": "5718985c2310c524771ffb7f4709de06502c1430df448bc8c024267f24f901ba"
+    },
+    {
+      "file": "sourcepacks/answer-a76335717f18.json",
+      "sha256": "2ea43ece969b621b6506c10822b9eb929d154f960cc4fc52333cff7fb6d610a8"
+    },
+    {
+      "file": "sourcepacks/answer-655a1b61a3fc.json",
+      "sha256": "cd18566b5376b2726431cc2dbbb47579863d9af7aaafd17c054123e2bace7a40"
+    },
+    {
+      "file": "sourcepacks/answer-d23bdc747943.json",
+      "sha256": "3c13698d5fbba8cc8856bd1dab83066859f3dc522d5acbcc8fe9d83eda303d68"
+    },
+    {
+      "file": "sourcepacks/answer-8a2aaf9d3c5f.json",
+      "sha256": "8dfd8af2d54de0f09b4dd209c98fc09361dd15373ef6dfc49490d9edee966417"
+    },
+    {
+      "file": "sourcepacks/answer-3b48413fe196.json",
+      "sha256": "412fbaa03db9f196b05e8d2aa444e84dabc376b292392b76a5a0949a50fded0a"
+    },
+    {
+      "file": "sourcepacks/answer-48a5c5f6dc29.json",
+      "sha256": "d5fc2ec6ab256e8c66291912bd86b2572db73cda56d7edf5ec58b43ae6039672"
+    },
+    {
+      "file": "sourcepacks/answer-008a3bb4155d.json",
+      "sha256": "9ffb80333a8b29fa4f1652073dc0d4aca1599bcdc4d182fae5c686135b70d3e6"
+    },
+    {
+      "file": "sourcepacks/answer-0ca03bd5b0b4.json",
+      "sha256": "b4eb6ca4e2873f700583a2a00f861fc5c88e42a2f03a07ee236783372fc772f7"
+    },
+    {
+      "file": "sourcepacks/answer-020a7b2e886c.json",
+      "sha256": "da9aaffcfe9d0caaec48426bb701e6c2d08d12a07a95e6fa727552f2757602f2"
+    },
+    {
+      "file": "sourcepacks/answer-15ea961b86c8.json",
+      "sha256": "aaefe31daa3d007b0c3550e069d57cdfbec21880303c6d100797425a92deef68"
+    },
+    {
+      "file": "sourcepacks/answer-bace468b7d2f.json",
+      "sha256": "639a0cc1037d6a17d5960c86b0762b156c40a6ed0bcd318ff5905d420c535195"
+    },
+    {
+      "file": "sourcepacks/answer-462d4cf45de2.json",
+      "sha256": "049abbb8a3bef9a3a960a7faeb37a4cb8d0f8abceceb3a7d3acd516d9b94cf2a"
+    },
+    {
+      "file": "sourcepacks/answer-9267df4a7102.json",
+      "sha256": "d9b6b0045eb9abae26816a0c5b036bc100d3ac5d89303a3767b9f909057623fb"
+    },
+    {
+      "file": "sourcepacks/answer-709e214bb334.json",
+      "sha256": "027517c2781b481a416c3e105c54518eafd5390e3eb5ab62e729ca7609611acc"
+    },
+    {
+      "file": "sourcepacks/answer-07f5aa2934a0.json",
+      "sha256": "eafbb45abe4c3b7c6a0b4ad126d4c4773a3e07a08ef687d2808727d1abd2ac65"
+    },
+    {
+      "file": "sourcepacks/answer-09264fefb765.json",
+      "sha256": "1d1cb2bf8c7d3362c1218805c35065a4c20ef8a2005fcb7bf81a9df0c4f4d69c"
+    },
+    {
+      "file": "sourcepacks/answer-ac1e1e37a572.json",
+      "sha256": "c189ecbba3fb4807c784b0a3944c6065a77a82279a7a195759f81aa05ea3ef66"
+    },
+    {
+      "file": "sourcepacks/answer-752b11771c8c.json",
+      "sha256": "76421a5e0241ac79676a9492f0d607ea846d2e0ae28751286db6e6ac7fa6cbf6"
+    },
+    {
+      "file": "sourcepacks/answer-28048d1146f4.json",
+      "sha256": "c5560d4b50fb1c34f41bb9d036492086f10cf28a7e5c54fc065e49a0dd62f7d4"
+    },
+    {
+      "file": "sourcepacks/answer-d301068c11f2.json",
+      "sha256": "4362b6c48ed57bae42f8d5cc8503d4dbd5dd252a93b3b4b0a0946e2299d937e6"
+    },
+    {
+      "file": "sourcepacks/answer-b834420eda3f.json",
+      "sha256": "d03094e06fb1bfbaada3580b7fa1495cb47182fbdbb9d3e41689a484f62ec69c"
+    },
+    {
+      "file": "sourcepacks/answer-6107092d4447.json",
+      "sha256": "87b5c9ab381c74ab73eb68ea5cdfd1755a9921bfd5f5a2c49315a19d7380de44"
+    },
+    {
+      "file": "sourcepacks/answer-d34400c32225.json",
+      "sha256": "24955b5582feeda7ac108a6d6f6c0f86bd066df9c8b386f0226a66c3f5ead0e6"
+    },
+    {
+      "file": "sourcepacks/answer-87520bb0d102.json",
+      "sha256": "23de9fc756e714e46944116fef79203fc9e8a3c83c58ae990def6e4e7e1f48aa"
+    },
+    {
+      "file": "sourcepacks/answer-c05c5c5671b5.json",
+      "sha256": "28fae43556faeb5ff508e6f0db4c300b09c6cdd65944d89f3af2456221c89e66"
+    },
+    {
+      "file": "sourcepacks/answer-9578d9d57327.json",
+      "sha256": "476b58dcfdf3c71a1179d2e80f3ef116e18eefa5ce48ac6b5067185dd45e4417"
+    },
+    {
+      "file": "sourcepacks/answer-feeb5c92b89d.json",
+      "sha256": "578bc5cf9a3ffc5dc7fcdd1445d24e005dfb8daf80219edc25e33635a0f60ea6"
+    },
+    {
+      "file": "sourcepacks/answer-212f2752842f.json",
+      "sha256": "5b683cfd3e89c4a43bbc8dd5e3dad9c65207fa8dbf128ddeffe7ee65c56f4225"
+    },
+    {
+      "file": "sourcepacks/answer-e6e86b1e6988.json",
+      "sha256": "99e805b9cde77826671ab5be42ee6c6bb115ee5f6c1e72b2e724b3542303aa14"
+    },
+    {
+      "file": "sourcepacks/answer-c168405d76a9.json",
+      "sha256": "97e60f62ab4e2927f9e7d3437abf4b23f4437d8c1b4445e94256d75e6e5e452b"
+    },
+    {
+      "file": "sourcepacks/answer-7b1cc34dfcf5.json",
+      "sha256": "c298fd16034f4d405fb9f17ac65a462c0a9be16f29b392993287d0839675cdbf"
+    },
+    {
+      "file": "sourcepacks/answer-613f70845caa.json",
+      "sha256": "9d16ae68adf2c56fc6a500ff344f0dafed714c3571a98e497bc899e28cf91c46"
+    },
+    {
+      "file": "sourcepacks/answer-d440adbbbc1e.json",
+      "sha256": "68f0e2d3ff562ac08e8a84c456f04c015b4611dd4c76381c3a95f942247f9d9c"
+    },
+    {
+      "file": "sourcepacks/answer-af1e1d729df0.json",
+      "sha256": "c2a9621261957e2c12b6dbba537f108db34e755894dbb9156ab71298be853e5b"
+    },
+    {
+      "file": "sourcepacks/answer-4acf97dedc01.json",
+      "sha256": "a052204a81dd266e0bee5e3e1796c20ea53c7f4537dbdc0a9e4c072e335e0851"
+    },
+    {
+      "file": "sourcepacks/answer-cf6a1576095c.json",
+      "sha256": "84aa69a7d4654fcf3306c4c17f2d9e1fa9f83d4eb17d677c61f5f4b65d9cb757"
+    },
+    {
+      "file": "sourcepacks/answer-242ce9ff892f.json",
+      "sha256": "280534ef0aecdd0e33f77570640c054ff1d95cfe2f88601b8ae9c98a86925813"
+    },
+    {
+      "file": "sourcepacks/answer-43859a6357ad.json",
+      "sha256": "19cb7c495ff5b50395139f5a01d19f27b762898e8b2032373cf5c57b85ced1c5"
+    },
+    {
+      "file": "sourcepacks/answer-c540a539c667.json",
+      "sha256": "39b79bfd90eed4ed4667d8f6a904c7f639d643a4a855e7b8e79e23ad2903d4df"
+    },
+    {
+      "file": "sourcepacks/answer-c7a7a087a69e.json",
+      "sha256": "a7142bd34091eb8ba0b859b1c4f06f2078c2437d9e72f6e369ebe92f86607d64"
+    },
+    {
+      "file": "sourcepacks/answer-bc578dfd289f.json",
+      "sha256": "5517257c13214c41bc97390ae1666b9b91aa9dd7baa0fa9141f9c857e0786978"
+    },
+    {
+      "file": "sourcepacks/answer-7788918ee3ab.json",
+      "sha256": "80d43148d9418767e6f78cd77a1c1ba1f76e5785062e92398ad4508c5e9e7d61"
+    },
+    {
+      "file": "sourcepacks/answer-e24a74e948a0.json",
+      "sha256": "c179f8c58720994741e3e5e068dda979d2f712aeadab5b5c24079757245676c7"
+    },
+    {
+      "file": "sourcepacks/answer-c09d5f9a6507.json",
+      "sha256": "93b1dd52fc80e4e7c37963efda20c1610d9a5c0f42bdfd0708cf188901ea77a1"
+    },
+    {
+      "file": "sourcepacks/answer-8590758b8b0d.json",
+      "sha256": "b2aae1bd1312e3ee6c6969c20bb2c462815439c966b5f5a3acd799a9f529b42c"
+    },
+    {
+      "file": "sourcepacks/answer-259e50e3c117.json",
+      "sha256": "5d3ca9b9d5e51aee5b4af5bd63e1ee6585adf2a16d3c9d718a7512b7c2ce8a61"
+    },
+    {
+      "file": "sourcepacks/answer-ed6b1ecff46c.json",
+      "sha256": "b4f82ae52e8d50b69db2098aecf2cf3f1c0e8b50dcfff19c04b904053eba56a6"
+    },
+    {
+      "file": "sourcepacks/answer-e6ddfa1df134.json",
+      "sha256": "23eaf6457a479822bf72a70c2305f59f3bcd3d2429754a8caf8099e3a4002335"
+    },
+    {
+      "file": "sourcepacks/answer-8addb198ee27.json",
+      "sha256": "e4b94a9517811520d495c827873529ed3d2f7e02d9ff50a82ea2f7b8a5f978b7"
+    },
+    {
+      "file": "sourcepacks/answer-58f98176e93c.json",
+      "sha256": "88876f5b03da04ad3b763379b2408b682ac85fe772b195c4bc4ef27785f1a1a1"
+    },
+    {
+      "file": "sourcepacks/answer-7c8642b67ed1.json",
+      "sha256": "a35ae8982852c9cf1459e934edce77366e8fdd23066eae4f32067f8002a7b3b7"
+    },
+    {
+      "file": "sourcepacks/answer-8a823b94f8a7.json",
+      "sha256": "d2036a4796594de6324dd7b2415ae94f4098bb63ed61867956aec49e2409784a"
+    },
+    {
+      "file": "sourcepacks/answer-1479894a4e50.json",
+      "sha256": "26afb9ddb169673b223b49997a280737d8cb9660f31b9efd5169b7a8ce5c003e"
+    },
+    {
+      "file": "sourcepacks/answer-b7a416e084f1.json",
+      "sha256": "5a3cb94ad1526da4f7a0d66d8baaeb42609b5496321f92657bb24e70079ccdf5"
+    },
+    {
+      "file": "sourcepacks/answer-ca2bb8c54726.json",
+      "sha256": "e5dfb2e47959cfbfc80f894012545b83b0d656468f0832e0ad91a9fe07c6c42b"
+    },
+    {
+      "file": "sourcepacks/answer-74b8135be12a.json",
+      "sha256": "ceaf25240fa4d116a86e69582f8b360bfa3ca8b27fb2561f8eafba2411c98a0c"
+    },
+    {
+      "file": "sourcepacks/answer-ec33abbafde3.json",
+      "sha256": "57c4e2627bd433ba53d0ac1cc19812358dc299da9ce2d594b7ddc23fd38e9e1f"
+    },
+    {
+      "file": "sourcepacks/answer-3ef0ada6f315.json",
+      "sha256": "a5071c37da3194ba57b5adaeff27e08c3341fe1f69ae0cf713a73c2536c7a911"
+    },
+    {
+      "file": "sourcepacks/answer-86ccdb1583b8.json",
+      "sha256": "efd1a14a660bebd9fa2294516f7b9ab84dafae2704a8efc07d2207abf30e40c6"
+    },
+    {
+      "file": "sourcepacks/answer-d42f4c2d14c5.json",
+      "sha256": "19b97a034e10fd7905a863b52591cd22fd256d932da636b28b8d7b71e300e66d"
+    },
+    {
+      "file": "sourcepacks/answer-dadc6536d3b2.json",
+      "sha256": "4bb8e043e2adc08e5a04c32e2df0eafea18a29d00f28a7cbbbfa8616da8ea9ed"
+    },
+    {
+      "file": "sourcepacks/answer-c43c88914e02.json",
+      "sha256": "9b327bf4f215b9bae045e363665bba41cd67930e8a1513018bc582fb7318f41c"
+    },
+    {
+      "file": "sourcepacks/answer-e8393f9b4121.json",
+      "sha256": "e1806e634e36827c94971c3ea62c734ca9c74d63e216f88ca84390e2cf4d41ae"
+    },
+    {
+      "file": "sourcepacks/answer-afc8e4bfa56b.json",
+      "sha256": "451a20139664b68caa641e8ecb61a14649356bcbdbe236b544c957d6f6c0243d"
+    },
+    {
+      "file": "sourcepacks/answer-47013f1d18a8.json",
+      "sha256": "cfbe6734bbda54fea1480ad13df3645b222f01d9c70ff8df9308cd12625e9d88"
+    },
+    {
+      "file": "sourcepacks/answer-9d0336c29363.json",
+      "sha256": "65fe83ca71d14f72a7fd1e222700d91a028a888e3abb2815edca502fabedaca9"
+    }
+  ],
+  "calibration": {
+    "file": "calibration.json",
+    "sha256": "119b3c6bb7acc5f94cf41aad7665794473ca1f9261a2ddbfc815df9a936dc7dd"
+  },
+  "code_version": "original-rubric-jury-candidate-1",
+  "judge_configs": [
+    {
+      "file": "judge-configs.json",
+      "sha256": "b751ef39f1cc484b3161de6786027d862cb5aee9e6ac1391835b969eadae3775"
+    }
+  ],
   "scope": "recommendations_only",
   "scope_notes": [
-    "No new target executions or trades. This pass imports and checks archived captures.",
-    "P01 pilots, native research, public-web and paper treatments remain separate.",
-    "The financial engine has only partial independent arithmetic primitives and synthetic tests; full per-template verifier acceptance is unfinished."
+    "121 selected research cases reviewed; all 11 task templates and 157 checks retained.",
+    "Jango paper has 11 outputs but a different execution treatment and is not assigned this research rubric.",
+    "Candidate grades and scores are uncalibrated automated review results, separate from blocked financial release.",
+    "No target reruns, actual investment returns, new selection or new four-check proxy."
   ],
   "release_prerequisites": {
     "rubric_approved": false,
     "sourcepacks_validated": false,
-    "deterministic_tests_pass": false,
+    "deterministic_tests_pass": true,
     "semantic_routes_calibrated_or_human": false
   }
 }

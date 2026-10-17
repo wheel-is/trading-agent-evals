@@ -1,0 +1,209 @@
+{
+  "status": "partial_primary_verification",
+  "primary_facts": {
+    "sourcepack_version": "P09-primary-facts-2",
+    "status": "partially_verified_primary_records_not_full_template_pack",
+    "retrieval_surface": "web tool; independent evaluator retrieval, not target citations alone",
+    "retrieved_at": "2026-10-17",
+    "cutoff": "2026-09-30T20:00:00Z",
+    "evidence_file": "bls-releases-web-observation.txt",
+    "facts": [
+      {
+        "source_id": "BLS-EMP-20260904",
+        "url": "https://www.bls.gov/news.release/archives/empsit_09042026.htm",
+        "availability": "2026-09-04T08:30:00-04:00",
+        "entity": "CES0000000001 total nonfarm payrolls, SA",
+        "observations": {
+          "2026-06 monthly change thousands": "31",
+          "2026-07 monthly change thousands": "21",
+          "2026-08 monthly change thousands": "162",
+          "prior 12 months average monthly gain thousands": "31"
+        },
+        "support": "Release header, introductory paragraph, establishment summary, revision paragraph (web lines185-198,244-247,289-290).",
+        "vintage_basis": "Date-specific archived news release, values explicitly preliminary/revised within this edition; no later series substituted."
+      },
+      {
+        "source_id": "BLS-UNRATE-20260904",
+        "url": "https://www.bls.gov/news.release/archives/empsit_09042026.htm",
+        "availability": "2026-09-04T08:30:00-04:00",
+        "entity": "U-3 unemployment rate SA",
+        "observations": {
+          "2026-07 percent": "4.1",
+          "2026-08 percent": "4.1"
+        },
+        "support": "Introductory and household summary: unemployment rate unchanged at4.1%. Latest and preceding value confirmed by unchanged statement.",
+        "vintage_basis": "Same archived release."
+      },
+      {
+        "source_id": "BLS-CPI-20260911",
+        "url": "https://www.bls.gov/news.release/archives/cpi_09112026.htm",
+        "availability": "2026-09-11T08:30:00-04:00",
+        "entity": "CPI-U all items; SA monthly changes and NSA12-month change",
+        "observations": {
+          "2026-06 SA monthly percent": "-0.4",
+          "2026-07 SA monthly percent": "0.1",
+          "2026-08 SA monthly percent": "0.4",
+          "2026-07 NSA year/year percent": "3.4",
+          "2026-08 NSA year/year percent": "3.4",
+          "2025-08 NSA index": "323.976",
+          "2026-08 NSA index": "334.980",
+          "2026-07 NSA index": "333.918"
+        },
+        "support": "Release header and introductory paragraphs, TableA month headers and Allitems row (web lines175-216).",
+        "vintage_basis": "Date-specific archived release with July/August comparison in same September edition."
+      },
+      {
+        "source_id": "BLS-CPI-20260812",
+        "url": "https://www.bls.gov/news.release/archives/cpi_08122026.htm",
+        "availability": "2026-08-12 (date-specific archive; exact time not yet separately verified)",
+        "entity": "CPI-U all-items NSA index CUUR0000SA0",
+        "observations": {
+          "2025-07": "323.048",
+          "2026-07": "333.918"
+        },
+        "support": "Table1 headers and Allitems row, evaluator web observation lines434-460.",
+        "vintage_basis": "Date-specific BLS archived release; earlier than September30 decision even with date-only precision."
+      }
+    ],
+    "unverified": [
+      "Full-precision ALFRED vintage CSVs could not be retrieved through evaluator webtool.",
+      "Federal Reserve G17 September18 archive could not be retrieved; failure is not contradiction.",
+      "Other declared discretionary series/methods not covered by these facts.",
+      "This validates specified input facts, not every factual/process assertion in a target response.",
+      "No qualified expert review or judge calibration supplied."
+    ],
+    "additional_evidence_files": [
+      "P09-corroboration-web-observation.txt",
+      "cpi-nsa-index-web-observation.txt"
+    ]
+  },
+  "independent_calculations": {
+    "version": "independent-reference-calculations-1",
+    "input_pack_sha256": "295ee89a789dea1174eefaf7a162bd20b8b860dbdbbde7ef698d1ad4653b1750",
+    "inputs_authority": "Independent BLS retrieval; not agreement among target answers. Methods reflect delegated conventions and are not forced into a single regime.",
+    "calculations": [
+      {
+        "method": "August-vs-July payroll/CPI monthly acceleration",
+        "growth": "141",
+        "inflation": "0.3",
+        "growth_sign": "rising",
+        "inflation_sign": "rising",
+        "allocation": {
+          "GLD": "0.5",
+          "DBC": "0.5"
+        }
+      },
+      {
+        "method": "Payroll3mmean versus12mmean, compounded3m CPI annualized minus12m headline",
+        "growth": "40.33333333333333333333333333",
+        "cpi_factor": "1.000983984",
+        "annualized_cpi_percent": "0.394174915888070857696498500",
+        "inflation_minus_3_4": "-3.005825084111929142303501500",
+        "growth_sign": "rising",
+        "inflation_sign": "falling",
+        "allocation": {
+          "SPY": "1"
+        }
+      },
+      {
+        "method": "Published one-decimal unemployment and NSA CPI YoY changes; carry prior state with no initial state",
+        "growth": "0.0",
+        "inflation": "0.0",
+        "growth_sign": "unknown",
+        "inflation_sign": "unknown",
+        "allocation": null
+      },
+      {
+        "method": "Full-precision NSA CPI YoY August versus July",
+        "july_yoy_percent": "3.364825041479903915207647200",
+        "august_yoy_percent": "3.396547892436476776057485700",
+        "change_pp": "0.031722850956572860849838500",
+        "inflation_sign": "rising"
+      }
+    ],
+    "limits": [
+      "Input factual verification and deterministic arithmetic do not establish rubric approval or expert/jury calibration.",
+      "Different declared defensible transformations are permitted.",
+      "ALFRED/Fed source gaps remain for other declared calculations."
+    ]
+  },
+  "P11_actual_response_example_check": {
+    "verifier": "root-independent-iterative-and-Gaussian-PageRank-1",
+    "input_graph_from_saved_response": {
+      "nodes": [
+        "AAPL",
+        "AMZN",
+        "MSFT",
+        "GOOGL",
+        "NVDA"
+      ],
+      "edges": [
+        [
+          "AAPL",
+          "MSFT"
+        ],
+        [
+          "AAPL",
+          "GOOGL"
+        ],
+        [
+          "MSFT",
+          "NVDA"
+        ],
+        [
+          "AMZN",
+          "NVDA"
+        ]
+      ],
+      "damping": 0.85,
+      "dangling": "uniform",
+      "teleport": "uniform"
+    },
+    "iterative_reference": {
+      "AAPL": 0.12640227524099146,
+      "AMZN": 0.12640227524099146,
+      "MSFT": 0.18012324221834516,
+      "GOOGL": 0.18012324221834516,
+      "NVDA": 0.3869489650813269
+    },
+    "linear_reference": {
+      "AAPL": 0.1264022752409543,
+      "AMZN": 0.1264022752409543,
+      "MSFT": 0.18012324221835987,
+      "GOOGL": 0.18012324221835987,
+      "NVDA": 0.3869489650813713
+    },
+    "reference_max_abs_difference": 4.4353409833775004e-14,
+    "claimed_scores": {
+      "AAPL": 0.099311,
+      "AMZN": 0.099311,
+      "MSFT": 0.211428,
+      "GOOGL": 0.211428,
+      "NVDA": 0.378521
+    },
+    "claimed_max_abs_error": 0.03130475778165484,
+    "declared_output_precision_tolerance": 5e-07,
+    "full_corpus_result_inferred": false,
+    "target_code_executed": false
+  },
+  "deterministic_findings": {
+    "findings": [
+      {
+        "blind_id": "answer-d48eac0c2e8d",
+        "criterion_id": "RESEARCH-P11-C-CLAIMS",
+        "label": "fail",
+        "rationale": "The saved response asserts converged PageRank scores for its explicitly illustrative five-node graph. Independent iterative and Gaussian-elimination calculations agree within1e-8 but the claimed vector differs by more than0.03, far beyond six-decimal display precision. This disproves the additional calculation only; no full S&P ranking is inferred.",
+        "response_quote": "the converged scores after power iteration are:",
+        "response_sha256": "1639eb7584e6e8d41598a5914697858833a202f6ea1a481aa315e58ee24ce0be",
+        "blinded_response_sha256": "1639eb7584e6e8d41598a5914697858833a202f6ea1a481aa315e58ee24ce0be",
+        "evidence": {
+          "file": "sources/P11-root-independent-calculation.json",
+          "sha256": "7f3dcc123d33ba956d3fab88ef397c701ebbf6820a59cffec6a381e95f5fa252"
+        },
+        "grade_scope": "candidate only; financial release prerequisites still unmet"
+      }
+    ]
+  },
+  "complete_historical_sourcepacks_validated": 0,
+  "note": "Full source observations and machine-readable task sourcepack drafts are in the Desktop grading export."
+}
