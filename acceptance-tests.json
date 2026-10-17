@@ -1,0 +1,174 @@
+{
+  "status": "required_implementation_tests_not_yet_all_implemented",
+  "tests": [
+    {
+      "id": "AC-01",
+      "area": "inputs",
+      "expected": "Reject changed raw response, original input, source or indexed artifact hashes; preserve original files.",
+      "required": true
+    },
+    {
+      "id": "AC-02",
+      "area": "mapping",
+      "expected": "All 126 original task checks have exactly one retain/adapt/exclude mapping; 157 derived checks have unique IDs, fixed axes/weights and accounted common checks.",
+      "required": true
+    },
+    {
+      "id": "AC-03",
+      "area": "arithmetic",
+      "expected": "All scoring-examples.json cases match existing scoring.py, including raw versus gated values and null/all-pass behavior.",
+      "required": true
+    },
+    {
+      "id": "AC-04",
+      "area": "unknowns",
+      "expected": "Unknown stays in denominator, unknown critical forces lower zero, and unknown is never silently pass or N/A.",
+      "required": true
+    },
+    {
+      "id": "AC-05",
+      "area": "abstention",
+      "expected": "Missing feasible required output fails; permitted honest unresolved selection stays partial with substantive correctness unresolved; an empty basket cannot pass vacuously.",
+      "required": true
+    },
+    {
+      "id": "AC-06",
+      "area": "provenance",
+      "expected": "UTF-8 byte spans and physical-LF/JSON-pointer provenance reproduce the exact retained text, including Unicode separators and blank table cells.",
+      "required": true
+    },
+    {
+      "id": "AC-07",
+      "area": "time",
+      "expected": "Known future publication fails; date-only cutoff overlap stays unknown; retrieval time does not become publication/decision time.",
+      "required": true
+    },
+    {
+      "id": "AC-08",
+      "area": "P01",
+      "expected": "Independent company/share-class cap ranking catches free-float, price-only, membership and contender/tie mistakes.",
+      "required": true
+    },
+    {
+      "id": "AC-09",
+      "area": "P02",
+      "expected": "13F option/debt exclusion, reported-value units, amendment semantics, manager/class deduplication and top-ten consensus recompute correctly.",
+      "required": true
+    },
+    {
+      "id": "AC-10",
+      "area": "P03",
+      "expected": "Three-member identity and lower-bound $500k/window checks reject midpoint and trade-date lookahead shortcuts.",
+      "required": true
+    },
+    {
+      "id": "AC-11",
+      "area": "P04",
+      "expected": "A dual-role insider cannot count twice; plan/grant/gift/exercise exclusions and acceptance/transaction chronology are checked; partial screen is not exhaustive absence.",
+      "required": true
+    },
+    {
+      "id": "AC-12",
+      "area": "P05",
+      "expected": "Historical consensus endpoints and six-month prices reconstruct declared formulas; current revised estimates cannot substitute for the decision vintage.",
+      "required": true
+    },
+    {
+      "id": "AC-13",
+      "area": "P06_P07",
+      "expected": "Two distinct evidence-supported discretionary baskets can pass; unsupported market boundaries, popularity-only bottlenecks and inconsistent financial definitions fail the relevant checks.",
+      "required": true
+    },
+    {
+      "id": "AC-14",
+      "area": "P08",
+      "expected": "Rank-first/take-five/confirm/no-backfill and zero-baseline growth rules survive near-tie, tiny-base and parent-duplication adversarial cases.",
+      "required": true
+    },
+    {
+      "id": "AC-15",
+      "area": "P09",
+      "expected": "All four prescribed ETF maps and release-vintage/zero/missing/initialization cases work, including exact 50/50 weights.",
+      "required": true
+    },
+    {
+      "id": "AC-16",
+      "area": "P10",
+      "expected": "Supplied assumptions stay distinct from verified SoFi facts; stale aggregate fallback, instrument approval gaps, exact trigger boundaries, fee formula and no-execution policy are respected.",
+      "required": true
+    },
+    {
+      "id": "AC-17",
+      "area": "P11",
+      "expected": "Handwritten edge fixtures and an independent linear solver catch reversed edges, duplicate/self/subsidiary/analyst mentions, dangling mass, isolates, wrong damping and false toy-to-real claims.",
+      "required": true
+    },
+    {
+      "id": "AC-18",
+      "area": "oracle",
+      "expected": "Evaluated targets cannot access evaluator-only labels/reference results; graders treat target text as untrusted data.",
+      "required": true
+    },
+    {
+      "id": "AC-19",
+      "area": "calibration",
+      "expected": "At least 220 expert-labeled checks across templates and 100 critical negatives; report agreement/confusion matrices and uncertainty, enforcing local >=95% agreement and <=1% observed critical false-pass thresholds.",
+      "required": true
+    },
+    {
+      "id": "AC-20",
+      "area": "jury",
+      "expected": "Pass/fail splits and critical non-unanimity stay pending/unknown until expert adjudication; invalid evidence cannot gain a pass by majority.",
+      "required": true
+    },
+    {
+      "id": "AC-21",
+      "area": "judge_bias",
+      "expected": "Changing product names, answer order, verbosity or irrelevant instructions does not change known-ground-truth verdicts beyond the recorded calibration tolerance.",
+      "required": true
+    },
+    {
+      "id": "AC-22",
+      "area": "release",
+      "expected": "Missing source validation, rubric approval, deterministic checks or semantic calibration/human route blocks all financial release.",
+      "required": true
+    },
+    {
+      "id": "AC-23",
+      "area": "capture_timing",
+      "expected": "Known post-deadline Working remains a budget miss after a gap; first recovered outcome/Copy are not exact provider completion/runtime.",
+      "required": true
+    },
+    {
+      "id": "AC-24",
+      "area": "multipart",
+      "expected": "Progress messages, main memo, footer/labels and later memo revisions preserve separate identity; labels never become artifact contents.",
+      "required": true
+    },
+    {
+      "id": "AC-25",
+      "area": "versioning",
+      "expected": "Changed rubric/source/judge/response creates a new version and disclosed regrade; cached results require all identity hashes.",
+      "required": true
+    },
+    {
+      "id": "AC-26",
+      "area": "selection",
+      "expected": "Technical retries remain distinct, real errors/timeouts remain attempted trials, blocked access is coverage, and no latest-success cherry-picking occurs.",
+      "required": true
+    },
+    {
+      "id": "AC-27",
+      "area": "report",
+      "expected": "Separate relevance, raw/gated correctness intervals, weighted coverage, quality all-pass, delivery, timing/scope and benchmark all-pass; no unvalidated or upper-bound leaderboard winner.",
+      "required": true
+    },
+    {
+      "id": "AC-28",
+      "area": "export",
+      "expected": "Every report link resolves, copies match SHA-256 inventories, and all original exported captures/checksum records remain unchanged.",
+      "required": true
+    }
+  ],
+  "definition_of_done": "All required tests implemented/passing plus actual source validation, rubric review and calibrated or expert-adjudicated semantic grading; arithmetic alone is insufficient."
+}

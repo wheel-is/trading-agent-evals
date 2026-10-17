@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-10-17T19:44:13.748935+00:00",
+  "offline_checks_pass": true,
+  "checks": {
+    "added_input_hashes": 540,
+    "unchanged_v1_files": 1191,
+    "selected_cases": 132,
+    "captured_outputs": 115,
+    "product_tracks": 12,
+    "paper_cases_separate": 11,
+    "exact_text_roundtrips": 264,
+    "financial_grades_released": 0,
+    "static_relative_links": 33,
+    "javascript_unit_tests": 10,
+    "prerender": {
+      "all_requested_products_visible_without_script": [
+        "Grok",
+        "Grok Bot",
+        "Muse",
+        "Muse Native",
+        "Claude Code",
+        "Jango"
+      ],
+      "initial_configuration_rows": 14,
+      "static_coverage_rows": 11,
+      "javascript_retained": true,
+      "initial_case_text_present": true,
+      "browser_render_verified": false
+    }
+  },
+  "financial_grade_release": "blocked",
+  "visual_browser_verification": false
+}

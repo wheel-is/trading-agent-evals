@@ -1,0 +1,3790 @@
+{
+  "schema_version": "1.0",
+  "rubric_version": "research-grading-build-draft-1",
+  "status": "build_contract_complete_domain_review_and_calibration_required_before_financial_grading",
+  "created_at": "2026-10-17T00:57:55.664876+00:00",
+  "retrospective_use": "These explicit P02-P11 adaptations were assembled after existing outputs. Retrospective scores must be labeled post-hoc; never claim preregistration.",
+  "scope": "Recommendations-only; web-only and native-computation treatments stay separate. Paper/execution scoring requires a different track.",
+  "weights": {
+    "critical": 5,
+    "major": 3,
+    "minor": 1
+  },
+  "weight_status": "Local proposed defaults, not empirically validated standards.",
+  "common_source_mapping": {
+    "included": [
+      "C-BASE-01",
+      "C-BASE-02",
+      "C-BASE-06"
+    ],
+    "excluded": {
+      "C-BASE-03": "No execution receipts required; false action claims remain auditable.",
+      "C-BASE-04": "No authorized paper environment in this scope; observed prohibited activity is a separate scope-invalidity finding.",
+      "C-BASE-05": "No deployed/restart strategy required."
+    }
+  },
+  "tasks": [
+    {
+      "template_id": "P01",
+      "name": "S&P1",
+      "native_contract": {
+        "recommendation_request": "Starting from hypothetical cash, recommend the current S&P 500 company-level market-capitalization leader and target allocation as of the reference close. Recommend 100% in a sufficiently verified leader, otherwise retain hypothetical cash with any provisional candidate clearly labeled. Explain future review and switching conditions without execution.",
+        "conventions": [
+          "Eligible companies must be S&P 500 constituents at the decision cutoff; verify membership with dated evidence.",
+          "Rank total company-level equity market capitalization at the reference close, combining share classes where appropriate. Do not substitute index free-float weight or share price alone.",
+          "If capitalization is exactly tied, use lexicographic company-name order.",
+          "Compare the chosen candidate against the closest credible contenders using consistent valuation times and documented figures.",
+          "Describe a daily post-close review, unchanged-leader inaction, and switching at the next regular session as a proposed policy only."
+        ],
+        "missing_data_policy": "Do not invent unavailable current data or infer a verified leader from an incomplete screen. Distinguish verified facts, provisional candidates, stale or inconsistent inputs, and unresolved ranking evidence; retain hypothetical cash if the leader cannot be sufficiently established."
+      },
+      "output_requirements": [
+        "Give the decision, ticker, company name, target allocation and evidence-supported recommendation status.",
+        "Provide a dated contender comparison with market-cap basis, S&P membership evidence and precise source URLs.",
+        "List unresolved evidence that could change the leader and conditional future hold/switch rules."
+      ],
+      "effective_decision_cutoff": "2026-10-16T03:15:00Z",
+      "criteria": [
+        {
+          "id": "RESEARCH-P01-R1",
+          "axis": "relevance",
+          "text": "Addresses the single-company S&P 500 market-cap-leader mandate.",
+          "weight": 5,
+          "dealbreaker": false,
+          "source_mapping": {
+            "id": "P01-R1",
+            "original_weight": 5,
+            "adaptation": "Preserves the research mandate without requiring action."
+          },
+          "required": true,
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P01-R2-RECOMMENDATION",
+          "axis": "relevance",
+          "text": "Provides a dated company-and-ticker recommendation, or an explicit unresolved recommendation when the available evidence cannot determine the leader.",
+          "weight": 3,
+          "dealbreaker": false,
+          "source_mapping": {
+            "id": "P01-R2",
+            "original_weight": 5,
+            "adaptation": "Atomic recommendation-output component; no implementation artifact."
+          },
+          "required": true,
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P01-R2-SOURCES",
+          "axis": "relevance",
+          "text": "Supplies identifiable dated sources for the recommendation's decision-driving facts.",
+          "weight": 1,
+          "dealbreaker": false,
+          "source_mapping": {
+            "id": "P01-R2",
+            "original_weight": 5,
+            "adaptation": "Research source artifact replaces execution artifact; presence alone does not establish truth."
+          },
+          "required": true,
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P01-R2-EVIDENCE-MAP",
+          "axis": "relevance",
+          "text": "Connects each decision-driving factual claim to the cited evidence used for that claim.",
+          "weight": 1,
+          "dealbreaker": false,
+          "source_mapping": {
+            "id": "P01-R2",
+            "original_weight": 5,
+            "adaptation": "Atomic research evidence mapping; entailment is scored separately under correctness."
+          },
+          "required": true,
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P01-R3",
+          "axis": "relevance",
+          "text": "Explains the conditional rule: compare eligible company market caps after a market close and, if the verified leader changes, recommend changing the full allocation at the next regular-session opportunity.",
+          "weight": 3,
+          "dealbreaker": false,
+          "source_mapping": {
+            "id": "P01-R3",
+            "original_weight": 3,
+            "adaptation": "Assesses explanation of future decision conditions; no monitoring deployment or execution is required or implied."
+          },
+          "required": true,
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P01-C1",
+          "axis": "correctness",
+          "text": "The recommended company is the verified market-cap leader in the point-in-time eligible S&P 500 universe at the common specified close under the frozen company/share-class capitalization rule.",
+          "weight": 5,
+          "dealbreaker": true,
+          "source_mapping": {
+            "id": "P01-C1",
+            "original_weight": 5,
+            "adaptation": "Verifies recommendation truth using validated primary records and an independent ranking; no held position is required."
+          },
+          "required": true,
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P01-C2",
+          "axis": "correctness",
+          "text": "The proposed strategy allocation assigns 100% of its target allocation to the verified eligible leader.",
+          "weight": 5,
+          "dealbreaker": true,
+          "source_mapping": {
+            "id": "P01-C2",
+            "original_weight": 5,
+            "adaptation": "Tests the recommended allocation rule, not order submission, filled holdings, fees, or cash rounding."
+          },
+          "required": true,
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P01-C4",
+          "axis": "correctness",
+          "text": "The recommendation's conditional rule retains the same sole company while it remains the verified leader, rather than recommending an unrelated switch.",
+          "weight": 3,
+          "dealbreaker": false,
+          "source_mapping": {
+            "id": "P01-C4",
+            "original_weight": 3,
+            "adaptation": "Tests the conditional recommendation rule; no current account holding is assumed when none was supplied."
+          },
+          "required": true,
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P01-C-TIME",
+          "axis": "correctness",
+          "text": "Decision-driving evidence was available by the common research decision cutoff, and market values and eligibility are aligned to the declared market close.",
+          "weight": 5,
+          "dealbreaker": true,
+          "source_mapping": {
+            "id": "C-BASE-01",
+            "original_weight": 5,
+            "adaptation": "Checks point-in-time research provenance; distinguishes the research cutoff from the valuation close."
+          },
+          "required": true,
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P01-C-EVIDENCE",
+          "axis": "correctness",
+          "text": "Every decision-driving factual claim is entailed by validated evidence, with primary records supporting eligibility, capitalization inputs, and market-close values; unresolved conflicts are disclosed.",
+          "weight": 5,
+          "dealbreaker": true,
+          "source_mapping": {
+            "id": "C-BASE-02",
+            "original_weight": 5,
+            "adaptation": "Requires source validation and claim-level support, not merely plausible citations or judge memory."
+          },
+          "required": true,
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P01-C-CLAIMS",
+          "axis": "correctness",
+          "text": "No additional material claim contradicts verified evidence or misstates the recommendation as an executed action or deployed monitor.",
+          "weight": 3,
+          "dealbreaker": false,
+          "source_mapping": {
+            "id": "C-BASE-06",
+            "original_weight": 3,
+            "adaptation": "Audits the research answer and any claimed actions; no implementation is requested."
+          },
+          "required": true,
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        }
+      ],
+      "expected_denominators": {
+        "relevance": 13,
+        "correctness": 26
+      }
+    },
+    {
+      "template_id": "P02",
+      "name": "Hedge Fund Consensus",
+      "native_contract": {
+        "recommendation_request": "Produce a dated research recommendation for the 10 U.S.-listed stocks with the highest manager-consensus counts, each at 10% target weight, from a declared roster of exactly 20 distinct long-term hedge-fund managers. Explain the new-filing-cycle-only recommendation update rule.",
+        "conventions": [
+          "The common completed 13F reporting quarter is 2026-06-30. Use filings and amendments for that quarter publicly available by the common research cutoff, not original trade dates or early filings for a later incomplete cycle.",
+          "Roster choice is delegated to the target. Declare the 20-manager roster, evidence of long-term investment approach, adviser/manager identities and deduplication rules before reporting the stock ranking. A roster is not invalid merely because another defensible roster differs; do not replace managers to manufacture a preferred result.",
+          "Derive each manager top 10 from reported market values of eligible stock holdings. Exclude put/call option rows and non-stock instruments; identify U.S.-listed common shares or ADRs and disclose the issuer/share-class aggregation and ticker mapping before counting.",
+          "Use the latest valid filing snapshot available by cutoff; distinguish amendments that restate holdings from amendments adding entries and avoid duplicate counting. Explain any unresolved filing-version conflict.",
+          "Count each eligible stock at most once per distinct manager. Declare deterministic top-10 holding and consensus-ranking tie rules before reporting results. Incomplete filings or fewer than 20 supported managers cannot establish a complete consensus ranking."
+        ],
+        "missing_data_policy": "If the complete 20-manager roster, filings, mappings or ranking cannot be verified within the budget, give the evidenced partial table and exact missing coverage. Label any suggested basket provisional; do not call a partial sample the verified top 10."
+      },
+      "output_requirements": [
+        "Roster with identifiers and admissibility reasons; filing URLs, dates, quarter and amendment policy.",
+        "Manager-level eligible top-10 holdings with reported values and source mappings, or an explicit coverage gap.",
+        "Consensus counts and ranking/tie computation; a 10-name, 10%-each recommendation only if established, otherwise unresolved/provisional status."
+      ],
+      "effective_decision_cutoff": "2026-10-16T03:15:00Z",
+      "criteria": [
+        {
+          "id": "RESEARCH-P02-R1",
+          "axis": "relevance",
+          "text": "Produces a top-10 consensus basket, not a ranking by total dollars owned.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P02-R1",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P02-R2",
+          "axis": "relevance",
+          "text": "Defines the selected 20-manager roster.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P02-R2",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P02-R3",
+          "axis": "relevance",
+          "text": "Documents the selected manager roster and the conditional update rule restricted to a new completed filing cycle; no persisted runtime or rebalance is required.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P02-R3",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P02-C1",
+          "axis": "correctness",
+          "text": "The declared roster contains exactly 20 distinct admissible long-term managers under the frozen eligibility and deduplication policy.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P02-C1",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P02-C2",
+          "axis": "correctness",
+          "text": "Each manager’s top-10 holdings are derived from the correct public filing snapshot.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P02-C2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P02-C3",
+          "axis": "correctness",
+          "text": "A stock’s consensus count equals the number of distinct roster managers including it in their top 10.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P02-C3",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P02-C4",
+          "axis": "correctness",
+          "text": "The selected 10 U.S.-listed stocks are the highest-ranked eligible names under the declared tie rule.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P02-C4",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P02-C5",
+          "axis": "correctness",
+          "text": "The basket uses equal target weights.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P02-C5",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P02-C6",
+          "axis": "correctness",
+          "text": "The proposed recommendation-update policy changes the basket only after the defined completed new-filing cycle.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P02-C6",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P02-C-TIME",
+          "axis": "correctness",
+          "text": "Decision-driving evidence was available by the effective decision cutoff, with correct observation period, release vintage and valuation/eligibility time alignment.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-01",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P02-C-EVIDENCE",
+          "axis": "correctness",
+          "text": "Decision-driving factual claims are supported by validated records that entail them; dates, entities, units, coverage and material conflicts are handled explicitly.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-02",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P02-C-CLAIMS",
+          "axis": "correctness",
+          "text": "No additional material claim contradicts verified evidence or falsely describes unperformed computation, execution, approval or monitoring as completed.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-06",
+            "original_weight": 3,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        }
+      ],
+      "expected_denominators": {
+        "relevance": 11,
+        "correctness": 37
+      }
+    },
+    {
+      "template_id": "P03",
+      "name": "Congressional Conviction",
+      "native_contract": {
+        "recommendation_request": "Screen public STOCK Act disclosures available by cutoff for new purchase triggers, recommend at most five qualifying U.S.-listed names at equal weights, and explain conditional six-month/disclosed-sale exits. No account holdings have been supplied.",
+        "conventions": [
+          "Use the 30-calendar-day interval (research cutoff minus 30 days, research cutoff], based on public disclosure availability, for the current entry screen. Original trade dates are recorded but are not the actionable information clock.",
+          "Require purchases attributed to at least three distinct members. Spouse/dependent transactions disclosed by a member may count under that reporting member, who still counts once; label ownership attribution explicitly.",
+          "The sum of disclosed range lower bounds must reach $500,000 for confirmed qualification. Report upper-bound-only or midpoint-based possibilities separately as unconfirmed; never present interval midpoints as observed exact amounts.",
+          "Declare deterministic selection and tie rules before presenting picks if more than five names qualify. Equal weights refer to the selected qualifying names. If none qualify, state no new allocation/cash pending a verified trigger.",
+          "For this research convention, the holding clock starts when the threshold first becomes publicly confirmable, lasts six calendar months (last calendar day when an anniversary date is absent), and ends earlier when any member whose purchase helped qualify that entry publicly discloses a sale of that security. Clearly distinguish this frozen interpretation from wording delegated in the original.",
+          "No incumbent holding or historical entry state is supplied. Explain exits conditionally rather than inventing held positions. Any reported performance starts at actionable disclosure availability and uses disclosed pricing/return conventions."
+        ],
+        "missing_data_policy": "Public-disclosure access or coverage gaps leave the screen unresolved, not evidence that no stock qualifies. Separate verified nonqualification from insufficient evidence; do not infer purchase sizes or sale status."
+      },
+      "output_requirements": [
+        "Disclosure ledger with member, ownership attribution, ticker, transaction date, availability date, purchase range and primary source.",
+        "Per-security distinct-member count, confirmed lower-bound total and window calculation.",
+        "Up to five equally weighted recommendations or explicit unresolved/no-trigger status; conditional exit and performance-clock rules."
+      ],
+      "effective_decision_cutoff": "2026-10-16T03:15:00Z",
+      "criteria": [
+        {
+          "id": "RESEARCH-P03-R1",
+          "axis": "relevance",
+          "text": "Evaluates the specified congressional-conviction trigger rather than copying a generic Congress portfolio.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P03-R1",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P03-R2",
+          "axis": "relevance",
+          "text": "Produces qualifying names, disclosed purchase evidence and an allocation or justified no-buy decision.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P03-R2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P03-R3",
+          "axis": "relevance",
+          "text": "Addresses both the six-month holding period and disclosed-sale exit.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P03-R3",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P03-C1",
+          "axis": "correctness",
+          "text": "Each selected security is U.S.-listed.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P03-C1",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P03-C2",
+          "axis": "correctness",
+          "text": "Each entry trigger contains purchases disclosed by at least three distinct members of Congress.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P03-C2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P03-C3",
+          "axis": "correctness",
+          "text": "The trigger’s purchase total reaches $500,000 under the frozen transaction-range policy.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P03-C3",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P03-C4",
+          "axis": "correctness",
+          "text": "The qualifying disclosures fall within the defined 30-day window.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P03-C4",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P03-C5",
+          "axis": "correctness",
+          "text": "The recommended basket contains at most five qualifying names.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P03-C5",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P03-C6",
+          "axis": "correctness",
+          "text": "Selected names receive equal target weights.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P03-C6",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P03-C7",
+          "axis": "correctness",
+          "text": "The conditional exit policy uses six calendar months or public availability of a qualifying member sale under the frozen rule; no actual position or exit is assumed.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P03-C7",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P03-C8",
+          "axis": "correctness",
+          "text": "Any reported performance begins at public disclosure availability rather than original transaction dates.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P03-C8",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P03-C-TIME",
+          "axis": "correctness",
+          "text": "Decision-driving evidence was available by the effective decision cutoff, with correct observation period, release vintage and valuation/eligibility time alignment.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-01",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P03-C-EVIDENCE",
+          "axis": "correctness",
+          "text": "Decision-driving factual claims are supported by validated records that entail them; dates, entities, units, coverage and material conflicts are handled explicitly.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-02",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P03-C-CLAIMS",
+          "axis": "correctness",
+          "text": "No additional material claim contradicts verified evidence or falsely describes unperformed computation, execution, approval or monitoring as completed.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-06",
+            "original_weight": 3,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        }
+      ],
+      "expected_denominators": {
+        "relevance": 13,
+        "correctness": 47
+      }
+    },
+    {
+      "template_id": "P04",
+      "name": "Insider Cluster",
+      "native_contract": {
+        "recommendation_request": "Screen SEC Form 4 filings for qualifying S&P 500 insider purchase clusters and recommend at most five names, with conditional six-month or qualifying-insider-sale exits.",
+        "conventions": [
+          "Use S&P 500 membership effective at the reference market close. A cluster requires a CEO or CFO and a second distinct person who is a director, with roles supported as of the transaction dates. A dual-role person cannot satisfy both required people alone.",
+          "Use transaction dates within the trailing 30 calendar dates ending on 2026-10-15 for the current purchase cluster, while requiring each relevant filing to have become publicly available by the research cutoff. Record both transaction dates and SEC acceptance times.",
+          "Count only supported open-market purchases. Exclude grants, gifts, option exercises and automatic-plan transactions; use transaction codes, footnotes and plan disclosures together, and leave uncertain classifications unresolved rather than assuming that a purchase code alone proves eligibility.",
+          "Declare deterministic selection/tie rules when more than five companies qualify and declare target weights, which the original leaves unspecified, before presenting the recommendation.",
+          "For this research convention, six months runs from public availability of the final filing that establishes the cluster; the early exit is public disclosure of an open-market sale by any qualifying insider. Keep qualifying insider identities attached to each recommendation. No incumbent holdings are supplied."
+        ],
+        "missing_data_policy": "If membership, roles, plan status or filings cannot be established, identify the specific unresolved candidates and evidence gaps. Do not treat partial searching as a complete no-qualifier result."
+      },
+      "output_requirements": [
+        "Company/membership evidence and cluster ledger with distinct insider identities, roles, transaction codes, dates, SEC acceptance times, footnotes and source URLs.",
+        "At most five names, declared weights and selection rule, or explicit unresolved/no-trigger result.",
+        "Per-name qualifying insider identity set and conditional exit rules."
+      ],
+      "effective_decision_cutoff": "2026-10-16T03:15:00Z",
+      "criteria": [
+        {
+          "id": "RESEARCH-P04-R1",
+          "axis": "relevance",
+          "text": "Evaluates the CEO/CFO-plus-director cluster, not generic insider buying.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P04-R1",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P04-R2",
+          "axis": "relevance",
+          "text": "Provides cluster-event evidence and a recommendation, explicitly provisional/unresolved result or supported no-qualifier finding, with conditional future exits.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P04-R2",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P04-R3",
+          "axis": "relevance",
+          "text": "Explains transaction exclusions and the conditional holding/exit policy without claiming deployed monitoring.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P04-R3",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P04-C1",
+          "axis": "correctness",
+          "text": "Every selected company belongs to the relevant S&P 500 universe snapshot.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P04-C1",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P04-C2",
+          "axis": "correctness",
+          "text": "Each qualifying cluster contains the required CEO-or-CFO buyer and at least one director.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P04-C2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P04-C3",
+          "axis": "correctness",
+          "text": "Qualifying purchases fall within the frozen 30-day window.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P04-C3",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P04-C4",
+          "axis": "correctness",
+          "text": "No grant, gift, option exercise or automatic-plan transaction is counted as an eligible purchase.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P04-C4",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P04-C5",
+          "axis": "correctness",
+          "text": "The recommended basket contains at most five names.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P04-C5",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P04-C6",
+          "axis": "correctness",
+          "text": "The conditional exit policy uses six months from the final cluster-establishing filing availability or a qualifying insider open-market sale, as frozen.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P04-C6",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P04-C7",
+          "axis": "correctness",
+          "text": "The memo or returned evidence identifies the distinct insiders whose purchases establish each proposed cluster and whose future sales would trigger the conditional exit.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P04-C7",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P04-C-TIME",
+          "axis": "correctness",
+          "text": "Decision-driving evidence was available by the effective decision cutoff, with correct observation period, release vintage and valuation/eligibility time alignment.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-01",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P04-C-EVIDENCE",
+          "axis": "correctness",
+          "text": "Decision-driving factual claims are supported by validated records that entail them; dates, entities, units, coverage and material conflicts are handled explicitly.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-02",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P04-C-CLAIMS",
+          "axis": "correctness",
+          "text": "No additional material claim contradicts verified evidence or falsely describes unperformed computation, execution, approval or monitoring as completed.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-06",
+            "original_weight": 3,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        }
+      ],
+      "expected_denominators": {
+        "relevance": 13,
+        "correctness": 40
+      }
+    },
+    {
+      "template_id": "P05",
+      "name": "Revision Leaders",
+      "native_contract": {
+        "recommendation_request": "Reconstruct the latest completed month-end recommendation: rank S&P 500 companies by 30-day upward earnings-estimate revision strength and breadth combined with six-month price momentum, then recommend five qualifying names at equal weights if the data support that result.",
+        "conventions": [
+          "The evaluation month-end is 2026-09-30 at 16:00 America/New_York. Constituents, estimate vintages and decision inputs must have been available by that decision time, even when a historical record is retrieved later. Do not use post-month-end revisions as if known then.",
+          "Before presenting rankings, declare the consensus provider, fiscal forecast period, 30-day endpoint convention, upward-revision strength and breadth formulas, normalization, six-calendar-month momentum/price adjustment convention, composite weights, qualification threshold, missing-data treatment and deterministic ties. These choices are delegated; a defensible alternative is not wrong merely because it differs from another target.",
+          "Show point-in-time consensus snapshots for the relevant endpoints. Current consensus, narrative analyst enthusiasm, price momentum alone, or an unsupported proxy cannot establish historical revision strength and breadth.",
+          "Use the S&P 500 membership effective at the month-end. Declare how fewer than five qualifying companies are handled and distinguish a partial candidate sample from a universe-wide top-five ranking.",
+          "Explain the monthly review/recommendation-update rule without deploying a schedule or claiming executed rebalances."
+        ],
+        "missing_data_policy": "If suitable historical consensus coverage is unavailable, explicitly state that the ranking is unresolved. A clearly labeled illustrative methodology or provisional watchlist may be included, but cannot be described as the verified top five."
+      },
+      "output_requirements": [
+        "Predeclared reproducible formula and source/vintage conventions.",
+        "Universe and coverage statement; decision-driving estimates, revision counts/breadth, prices, scores and ties with dated sources.",
+        "Five equal-weight recommendations if established, otherwise specific missing inputs and unresolved/provisional status."
+      ],
+      "effective_decision_cutoff": "2026-09-30T20:00:00Z",
+      "criteria": [
+        {
+          "id": "RESEARCH-P05-R1",
+          "axis": "relevance",
+          "text": "Builds the specified estimate-revision-plus-momentum ranking rather than a price-only strategy.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P05-R1",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P05-R2",
+          "axis": "relevance",
+          "text": "Declares data source, scoring formula, missing-data policy and deterministic ties before presenting the ranking; no executed rebalance is required.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P05-R2",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P05-R3",
+          "axis": "relevance",
+          "text": "Provides the month-end recommendation or explicit unresolved status and explains monthly review as a conditional policy.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P05-R3",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P05-C1",
+          "axis": "correctness",
+          "text": "The ranking universe is the frozen S&P 500 constituent set.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P05-C1",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P05-C2",
+          "axis": "correctness",
+          "text": "Revision inputs represent the declared 30-day strength of upward consensus earnings-estimate changes.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P05-C2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P05-C3",
+          "axis": "correctness",
+          "text": "Revision breadth is computed according to the preregistered definition.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P05-C3",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P05-C4",
+          "axis": "correctness",
+          "text": "Price momentum uses the specified six-month lookback and declared adjustment convention.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P05-C4",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P05-C5",
+          "axis": "correctness",
+          "text": "Scores are reproducible from the precommitted formula without post-result parameter changes.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P05-C5",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P05-C6",
+          "axis": "correctness",
+          "text": "The top five qualifying names are selected under the declared missing-data and tie rules.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P05-C6",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P05-C7",
+          "axis": "correctness",
+          "text": "The five selected recommendations, if established, have equal target weights.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P05-C7",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P05-C8",
+          "axis": "correctness",
+          "text": "The proposed evaluation/recommendation-update policy uses the frozen month-end schedule and September 30 decision vintage.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P05-C8",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P05-C-TIME",
+          "axis": "correctness",
+          "text": "Decision-driving evidence was available by the effective decision cutoff, with correct observation period, release vintage and valuation/eligibility time alignment.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-01",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P05-C-EVIDENCE",
+          "axis": "correctness",
+          "text": "Decision-driving factual claims are supported by validated records that entail them; dates, entities, units, coverage and material conflicts are handled explicitly.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-02",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P05-C-CLAIMS",
+          "axis": "correctness",
+          "text": "No additional material claim contradicts verified evidence or falsely describes unperformed computation, execution, approval or monitoring as completed.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-06",
+            "original_weight": 3,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        }
+      ],
+      "expected_denominators": {
+        "relevance": 13,
+        "correctness": 43
+      }
+    },
+    {
+      "template_id": "P06",
+      "name": "Oligopoly Champions",
+      "native_contract": {
+        "recommendation_request": "Produce an evidence-based recommendation of no more than five publicly traded market-share leaders in highly concentrated industries, prioritizing durable pricing power, ROIC and free-cash-flow quality. Explain quarterly review and replacement only after material deterioration.",
+        "conventions": [
+          "The target selects and declares product, geographic and time-period market boundaries; concentration measures/admission thresholds; consistent ROIC and free-cash-flow definitions; target weights; and the material-deterioration rule before presenting conclusions.",
+          "Concentration and leadership evidence must refer to the same defined market and period. Do not use a broad corporate market share to establish leadership in a narrower industry without support.",
+          "Explain pricing power and business-quality conclusions using dated supporting evidence and explicit uncertainty. Compare material alternatives where needed to substantiate the selected strongest leader.",
+          "There is no single predetermined correct stock basket. Independently defensible selections and declared metric conventions remain admissible; subsequent realized returns do not validate an ex-ante judgment.",
+          "No incumbent holdings are supplied. Explain a conditional review/replacement rule rather than asserting that an actual held position should be changed."
+        ],
+        "missing_data_policy": "Omit or mark provisional any selection whose market concentration, leadership or financial quality cannot be supported. Do not invent market shares or pad the list to five."
+      },
+      "output_requirements": [
+        "Defined markets and concentration/leadership evidence with dates and source URLs.",
+        "Up to five names with weights, pricing-power rationale, consistent ROIC/FCF calculations or identified limitations.",
+        "Quarterly review criteria and observable material-deterioration conditions for a future replacement recommendation."
+      ],
+      "effective_decision_cutoff": "2026-10-16T03:15:00Z",
+      "criteria": [
+        {
+          "id": "RESEARCH-P06-R1",
+          "axis": "relevance",
+          "text": "Addresses concentrated-industry leadership rather than selecting familiar large companies.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P06-R1",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P06-R2",
+          "axis": "relevance",
+          "text": "Evaluates pricing power, ROIC and free-cash-flow quality in the selection rationale.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P06-R2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P06-R3",
+          "axis": "relevance",
+          "text": "Provides a basket of no more than five names and evidence-based conditional quarterly review/replacement rules.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P06-R3",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P06-C1",
+          "axis": "correctness",
+          "text": "Each selected industry’s concentration claim is supported within a clearly defined market.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P06-C1",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P06-C2",
+          "axis": "correctness",
+          "text": "Each chosen company’s market-share leadership is supported for the same market and period.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P06-C2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P06-C3",
+          "axis": "correctness",
+          "text": "ROIC and free-cash-flow comparisons use disclosed, consistent metric definitions.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P06-C3",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P06-C4",
+          "axis": "correctness",
+          "text": "Pricing-power and business-quality conclusions follow from the cited evidence, with uncertainty preserved.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P06-C4",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P06-C5",
+          "axis": "correctness",
+          "text": "The proposed basket contains no more than five publicly traded companies.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P06-C5",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P06-C6",
+          "axis": "correctness",
+          "text": "The proposed evidence-review policy is quarterly; no scheduler or lifecycle replay is required in this research track.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P06-C6",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P06-C7",
+          "axis": "correctness",
+          "text": "The proposed replacement rule requires supported material deterioration of leadership or business quality under the declared convention.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P06-C7",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P06-C-TIME",
+          "axis": "correctness",
+          "text": "Decision-driving evidence was available by the effective decision cutoff, with correct observation period, release vintage and valuation/eligibility time alignment.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-01",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P06-C-EVIDENCE",
+          "axis": "correctness",
+          "text": "Decision-driving factual claims are supported by validated records that entail them; dates, entities, units, coverage and material conflicts are handled explicitly.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-02",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P06-C-CLAIMS",
+          "axis": "correctness",
+          "text": "No additional material claim contradicts verified evidence or falsely describes unperformed computation, execution, approval or monitoring as completed.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-06",
+            "original_weight": 3,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        }
+      ],
+      "expected_denominators": {
+        "relevance": 13,
+        "correctness": 40
+      }
+    },
+    {
+      "template_id": "P07",
+      "name": "AI Bottleneck",
+      "native_contract": {
+        "recommendation_request": "Make a current monthly research assessment of the binding AI-infrastructure bottleneck across compute chips, memory, networking, cooling and electrical power. Recommend three publicly traded companies with the most direct economic exposure and strongest supported free-cash-flow outlook, or state why that basket remains unresolved.",
+        "conventions": [
+          "Declare geography, planning horizon, evidence freshness, meaning of binding constraint, direct-economic-exposure measure, FCF forecast horizon and allocation rule before reporting the conclusion. These are target-declared assumptions, not hidden fixed answers.",
+          "Assess all five named constraint categories and support why the chosen one actually limits expansion. Generic demand growth, popularity or a large addressable market is not itself evidence of a binding bottleneck.",
+          "For each proposed company, connect the limiting constraint to its business economics and FCF outlook, separating reported facts, management guidance, independent estimates and assumptions.",
+          "Allow competing, evidence-supported bottleneck hypotheses at the same cutoff. Do not use later outcomes as if they were available evidence.",
+          "Explain monthly reassessment and rotation only when new evidence shows a changed bottleneck. With no incumbent portfolio supplied, make any rotation recommendation conditional."
+        ],
+        "missing_data_policy": "If the constraint or three sufficiently supported exposures cannot be established, give the leading hypotheses and evidence gaps. Mark any incomplete or speculative basket provisional rather than claiming the full mandate is satisfied."
+      },
+      "output_requirements": [
+        "Five-category comparison with dated decision-driving evidence and declared horizon/geography.",
+        "Binding-bottleneck conclusion and counterevidence/uncertainty.",
+        "Three-company recommendation with declared weights, exposure and FCF assumptions, or explicit unresolved/provisional status; conditional rotation triggers."
+      ],
+      "effective_decision_cutoff": "2026-10-16T03:15:00Z",
+      "criteria": [
+        {
+          "id": "RESEARCH-P07-R1",
+          "axis": "relevance",
+          "text": "Compares compute chips, memory, networking, cooling and power to identify a binding constraint.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P07-R1",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P07-R2",
+          "axis": "relevance",
+          "text": "Connects the bottleneck to three public companies’ economic exposure and free-cash-flow outlook.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P07-R2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P07-R3",
+          "axis": "relevance",
+          "text": "Addresses monthly reassessment and evidence-based rotation rather than automatic monthly turnover.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P07-R3",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P07-C1",
+          "axis": "correctness",
+          "text": "The selected bottleneck is supported by time-valid evidence of an actual limiting constraint.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P07-C1",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P07-C2",
+          "axis": "correctness",
+          "text": "Evidence distinguishes a binding constraint from generic AI demand or popularity.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P07-C2",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P07-C3",
+          "axis": "correctness",
+          "text": "Every chosen company’s direct economic exposure to the selected constraint is supported.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P07-C3",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P07-C4",
+          "axis": "correctness",
+          "text": "Free-cash-flow outlook assumptions are explicit and internally consistent with the evidence.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P07-C4",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P07-C5",
+          "axis": "correctness",
+          "text": "The recommended basket, if established, contains three publicly traded companies.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P07-C5",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P07-C6",
+          "axis": "correctness",
+          "text": "The proposed reassessment policy is monthly; no deployed monitoring is required.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P07-C6",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P07-C7",
+          "axis": "correctness",
+          "text": "The proposed rotation policy requires new evidence of a changed binding bottleneck rather than automatic monthly turnover.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P07-C7",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P07-C-TIME",
+          "axis": "correctness",
+          "text": "Decision-driving evidence was available by the effective decision cutoff, with correct observation period, release vintage and valuation/eligibility time alignment.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-01",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P07-C-EVIDENCE",
+          "axis": "correctness",
+          "text": "Decision-driving factual claims are supported by validated records that entail them; dates, entities, units, coverage and material conflicts are handled explicitly.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-02",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P07-C-CLAIMS",
+          "axis": "correctness",
+          "text": "No additional material claim contradicts verified evidence or falsely describes unperformed computation, execution, approval or monitoring as completed.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-06",
+            "original_weight": 3,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "grounded_expert_or_calibrated_semantic_review_plus_numeric_checks",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        }
+      ],
+      "expected_denominators": {
+        "relevance": 13,
+        "correctness": 40
+      }
+    },
+    {
+      "template_id": "P08",
+      "name": "Lobbying-to-Revenue",
+      "native_contract": {
+        "recommendation_request": "For the latest completed federal-lobbying filing quarter, identify the five U.S.-listed companies with fastest year-over-year disclosed spending growth, then recommend only those five candidates whose government-contract awards or reported backlog growth provide business confirmation. Weight confirmed selections equally.",
+        "conventions": [
+          "Use Q2 2026 versus Q2 2025, with filings/amendments publicly available by the common cutoff. The Q3 reporting cycle is not treated as complete. Compare equivalent federal-lobbying reporting periods and consistent expenditure/income bases.",
+          "The frozen selection order is rank first, take five, then confirm; do not backfill from lower-ranked candidates. Document parent/subsidiary identity mapping and remove duplicate spending.",
+          "Use (current-quarter spend minus prior-year same-quarter spend) divided by prior-year spend when the prior-year denominator is positive. Zero/nonpositive baselines have undefined percentage growth and are listed separately, not assigned invented finite or infinite ranks. Disclose tiny-base sensitivity without silently changing the ranking population.",
+          "Declare the U.S.-listed comparison universe/coverage, deterministic tie rule, contract/backlog confirmation window and definition, treatment of award announcements versus obligations, and numeric reversal thresholds before presenting selections.",
+          "Contract awards or backlog growth can confirm business activity but do not prove lobbying caused it. Separate timing/coincidence from causation.",
+          "Explain quarterly screen updates and conditional exit if either lobbying momentum or contract evidence reverses; do not claim deployed monitoring."
+        ],
+        "missing_data_policy": "Incomplete universe coverage cannot establish the five fastest companies. Identify partial coverage and absent confirmation explicitly. If none of the verified top five qualifies, recommend no new stock allocation/cash pending confirmation."
+      },
+      "output_requirements": [
+        "Comparable-quarter lobbying source ledger, entity mapping, growth values and universe coverage.",
+        "Top-five ranking followed by separate contract/backlog confirmation evidence and dates.",
+        "Equal-weight confirmed subset or explicit unresolved/no-confirmation status, with quarterly update and reversal conditions."
+      ],
+      "effective_decision_cutoff": "2026-10-16T03:15:00Z",
+      "criteria": [
+        {
+          "id": "RESEARCH-P08-R1",
+          "axis": "relevance",
+          "text": "Combines lobbying-spend growth with evidence of contracts or backlog, rather than lobbying alone.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P08-R1",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P08-R2",
+          "axis": "relevance",
+          "text": "Produces up to five qualifying U.S.-listed names and a supported allocation or no-buy decision.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P08-R2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P08-R3",
+          "axis": "relevance",
+          "text": "Addresses quarterly screening and the two reversal-based exit conditions.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P08-R3",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P08-C1",
+          "axis": "correctness",
+          "text": "Year-over-year lobbying growth uses comparable disclosed federal-spending periods.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P08-C1",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P08-C2",
+          "axis": "correctness",
+          "text": "Entity mappings attribute lobbying spend to the correct listed company without duplicate counting.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P08-C2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P08-C3",
+          "axis": "correctness",
+          "text": "The selected candidates follow the preregistered fastest-growth ranking and confirmation order.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P08-C3",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P08-C4",
+          "axis": "correctness",
+          "text": "Every selected name has qualifying contract-award or reported-backlog-growth confirmation.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P08-C4",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P08-C5",
+          "axis": "correctness",
+          "text": "Selected qualifying names are equally weighted.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P08-C5",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P08-C6",
+          "axis": "correctness",
+          "text": "The proposed screen-update policy is quarterly.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P08-C6",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P08-C7",
+          "axis": "correctness",
+          "text": "The conditional exit policy is triggered by reversal of either lobbying momentum or qualifying contract/backlog evidence under the declared thresholds.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P08-C7",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P08-C8",
+          "axis": "correctness",
+          "text": "The report does not present correlation as proof that lobbying caused an award.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P08-C8",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P08-C-TIME",
+          "axis": "correctness",
+          "text": "Decision-driving evidence was available by the effective decision cutoff, with correct observation period, release vintage and valuation/eligibility time alignment.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-01",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P08-C-EVIDENCE",
+          "axis": "correctness",
+          "text": "Decision-driving factual claims are supported by validated records that entail them; dates, entities, units, coverage and material conflicts are handled explicitly.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-02",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P08-C-CLAIMS",
+          "axis": "correctness",
+          "text": "No additional material claim contradicts verified evidence or falsely describes unperformed computation, execution, approval or monitoring as completed.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-06",
+            "original_weight": 3,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        }
+      ],
+      "expected_denominators": {
+        "relevance": 13,
+        "correctness": 47
+      }
+    },
+    {
+      "template_id": "P09",
+      "name": "Four-Regime Rotation",
+      "native_contract": {
+        "recommendation_request": "Reconstruct the latest completed month-end U.S. growth/inflation classification from predefined, revision-aware public series and recommend the exact ETF allocation prescribed by the resulting regime.",
+        "conventions": [
+          "The evaluation month-end is 2026-09-30 at 16:00 America/New_York. Use release vintages actually available by that time, not later revised observations. Distinguish observation period, publication time and vintage.",
+          "Before giving the classification, declare exact growth and inflation series identifiers, release/lag policy, transformations and comparison windows, rising/falling sign rule, zero-change rule, missing-release policy and initialization rule. Series/formula choice is delegated; publish enough inputs to reproduce it.",
+          "Preserve the exact map: growth rising/inflation falling -> 100% SPY; both falling -> 100% TLT; both rising -> 50% GLD plus 50% DBC; growth falling/inflation rising -> 50% GLD plus 50% SGOV.",
+          "No prior portfolio or regime state is supplied. State the initial recommendation and explain that later changes are recommended only when the monthly regime changes; do not invent a prior regime or assert a trade occurred.",
+          "Record the method and vintage ledger in the response for trace retention; do not create a scheduled strategy."
+        ],
+        "missing_data_policy": "If point-in-time vintages or required values cannot be recovered, leave the regime and allocation unresolved and show the conditional map. Do not substitute current revised data without explicitly labeling that calculation provisional."
+      },
+      "output_requirements": [
+        "Series identifiers, transformations, comparison values, release/vintage times and dated source URLs.",
+        "Reproducible growth and inflation signs and resulting prescribed allocation, or exact unresolved inputs.",
+        "All four mapping rules and conditional monthly change/initialization rule."
+      ],
+      "effective_decision_cutoff": "2026-09-30T20:00:00Z",
+      "criteria": [
+        {
+          "id": "RESEARCH-P09-R1",
+          "axis": "relevance",
+          "text": "Reconstructs the four growth/inflation regimes and prescribed ETF recommendation instead of proposing a discretionary allocation.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P09-R1",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P09-R2",
+          "axis": "relevance",
+          "text": "Defines economic series, transformations and release-vintage handling.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P09-R2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P09-R3",
+          "axis": "relevance",
+          "text": "Provides the month-end classification or explicit unresolved inputs and explains initialization and change-only recommendation updates.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P09-R3",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P09-C1",
+          "axis": "correctness",
+          "text": "Rising/falling classifications are reproducible from the predeclared series and transformations.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P09-C1",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P09-C2",
+          "axis": "correctness",
+          "text": "The growth-up / inflation-down regime targets SPY.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P09-C2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P09-C3",
+          "axis": "correctness",
+          "text": "The growth-down / inflation-down regime targets TLT.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P09-C3",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P09-C4",
+          "axis": "correctness",
+          "text": "The growth-up / inflation-up regime targets 50% GLD and 50% DBC.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P09-C4",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P09-C5",
+          "axis": "correctness",
+          "text": "The growth-down / inflation-up regime targets 50% GLD and 50% SGOV.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P09-C5",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P09-C6",
+          "axis": "correctness",
+          "text": "The proposed classification policy evaluates the frozen month-end and uses only releases/vintages available then.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P09-C6",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P09-C7",
+          "axis": "correctness",
+          "text": "The conditional policy changes the recommendation only when the monthly regime changes, with the declared initialization rule and no invented incumbent regime.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P09-C7",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P09-C8",
+          "axis": "correctness",
+          "text": "The delivered method/vintage ledger identifies the exact series, transformations, release vintages and resulting or unresolved regime; runtime persistence is not required.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P09-C8",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P09-C-TIME",
+          "axis": "correctness",
+          "text": "Decision-driving evidence was available by the effective decision cutoff, with correct observation period, release vintage and valuation/eligibility time alignment.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-01",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P09-C-EVIDENCE",
+          "axis": "correctness",
+          "text": "Decision-driving factual claims are supported by validated records that entail them; dates, entities, units, coverage and material conflicts are handled explicitly.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-02",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P09-C-CLAIMS",
+          "axis": "correctness",
+          "text": "No additional material claim contradicts verified evidence or falsely describes unperformed computation, execution, approval or monitoring as completed.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-06",
+            "original_weight": 3,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        }
+      ],
+      "expected_denominators": {
+        "relevance": 13,
+        "correctness": 49
+      }
+    },
+    {
+      "template_id": "P10",
+      "name": "Public-Disclosure-Faithful SoFi Classic Robo",
+      "native_contract": {
+        "recommendation_request": "Produce a recommendations-only public-disclosure-faithful SoFi Classic-style portfolio memo for the supplied 10+ year horizon, Moderately Aggressive profile and tax-neutral simulation assumptions. Research the latest supported public model; if it cannot be verified, report the dated 83% stocks / 14% broad USD bonds / 2% gold / 1% non-interest-bearing cash aggregate fallback as stale and provisional. Explain the supplied review, allocation, cost and rebalance rules without accessing or changing any paper or live account.",
+        "conventions": [
+          "The common research-only override supersedes every paper-account, initial-order, implementation, continuous-monitoring and no-confirmation instruction in the original. The supplied profile is settled; do not request further personal classification.",
+          "Treat the April 2026 83/14/2/1 aggregate mix, 0.25% annual advisory-fee assumption and supplied operational thresholds as user-supplied task terms, not independently verified statements about SoFi. Label independently verified public-disclosure facts separately.",
+          "No approved instrument-level fallback mapping, disclosure pack or model-approval authority has been supplied. Publicly listed funds are not automatically approved. Do not fabricate current SoFi holdings, approval, venue eligibility, instruments or weights.",
+          "If a latest approved public target cannot be verified, present the dated aggregate fallback and missing source, clearly marked stale/provisional. If approved instrument mapping is also absent, keep any implementation recommendation on hold/cash pending verification; a temporary 100% cash/no-action status is distinct from the model target of 1% cash and is not a claimed compliant implemented portfolio.",
+          "Any proposed model targets must be long-only and total 100%, with 1% non-interest-bearing cash; the broad USD bond sleeve must include long-Treasury and mortgage-backed exposure rather than being replaced by municipal bonds. Only approved ETFs, mutual funds and cash qualify; no individual stocks, margin, direct leverage or off-model trades.",
+          "Explain the supplied rebalance conditions. For this memo, approximately 5 percentage points means a strict absolute deviation greater than 5.0 points; cash at least $50 above its 1% target and cash below 0.25% are separate triggers. Investable cash below $50 is held pending that threshold, except that an independently triggered risk/profile/model correction is not represented as disabled by the idle-cash threshold. Describe ambiguity if applying these without an account snapshot.",
+          "Describe use of inflows to reduce underweights first where practical, broker-default lot handling, no automated tax-loss harvesting or tax-aware optimization, market-day monitoring as a conditional policy, at-least-quarterly model review, approved/versioned model changes and the zero-to-three-week implementation window. None is deployed here.",
+          "For the supplied fee assumption, describe monthly fee as 0.0025/12 times that month's average daily invested assets excluding cash, with fund expenses separately identified and not double-counted. Do not invent an amount without account values.",
+          "Address backward-looking returns/risk, forward-looking capital-market estimates, benchmark-relative expectations, exposures, liquidity, total costs and risk analytics at the level evidence supports. Any independent optimization, covariance method, objective, lambda or volatility target must be labeled an independent approximation with explicit assumptions; never attribute an undisclosed method or a 12% volatility target to SoFi."
+        ],
+        "missing_data_policy": "Missing disclosures or approved instruments require a specific gap statement and stale/provisional aggregate recommendation plus no-action/cash-pending-verification status. Missing data must not cause fabricated current allocations, venue verification, approval or results; no actual account is queried."
+      },
+      "output_requirements": [
+        "Source/assumption ledger separating verified public SoFi disclosures from supplied task terms and independent approximations.",
+        "Supported model or stale 83/14/2/1 aggregate fallback; instrument-level approval/verification gaps; target weights versus temporary no-action/cash status.",
+        "Portfolio analytics with assumptions and gaps, fee/expense treatment, benchmark and conditional rebalance/review rules.",
+        "Proposed model-version record: effective date, supplied profile, target holdings/weights where verified, cash target, sources, assumptions, benchmark, independently estimated return/risk if available, fees, triggers, implementation status not deployed, and rationale."
+      ],
+      "effective_decision_cutoff": "2026-10-16T03:15:00Z",
+      "criteria": [
+        {
+          "id": "RESEARCH-P10-R1",
+          "axis": "relevance",
+          "text": "Addresses the supplied Moderately Aggressive, 10+ year, tax-neutral research profile and public-disclosure-faithful model rather than a generic optimizer.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-R1",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-R2",
+          "axis": "relevance",
+          "text": "Gives the evidence-supported recommendation, or specified stale/provisional fallback and no-action status, without reopening settled profile questions or claiming execution.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-R2",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-R3",
+          "axis": "relevance",
+          "text": "Explains conditional model review, monitoring, fees, rebalance triggers and proposed version records without deploying them.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-R3",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C2",
+          "axis": "correctness",
+          "text": "Any model described as current is supported by the approved public disclosure snapshot.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C3",
+          "axis": "correctness",
+          "text": "When a current approved model is unverified, reports the supplied April-2026 83/14/2/1 aggregate fallback as stale/provisional; missing instrument approval remains explicit and no mapping is invented.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C3",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C4",
+          "axis": "correctness",
+          "text": "The fallback is explicitly marked stale and identifies the missing source.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C4",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C5",
+          "axis": "correctness",
+          "text": "Any model target is long-only and sums to 100%, including 1% non-interest-bearing cash; temporary no-action/100%-cash status is clearly distinct from the model target.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C5",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C6",
+          "axis": "correctness",
+          "text": "Any proposed instrument-level mapping satisfies the supported approved fund/cash universe and long-Treasury/mortgage-backed requirements; absent approval is left unresolved, not fabricated.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C6",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C7",
+          "axis": "correctness",
+          "text": "No proposed model introduces individual stocks, margin, direct leverage or off-model instruments.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C7",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C9",
+          "axis": "correctness",
+          "text": "Explains the frozen strict >5.0-percentage-point, cash >=$50 above target, and cash <0.25% triggers, distinguishing policy from execution without an account snapshot.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C9",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C10",
+          "axis": "correctness",
+          "text": "The conditional policy uses eligible inflows to reduce underweights before selling where practical.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C10",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C11",
+          "axis": "correctness",
+          "text": "Explains the $50 investable-cash threshold and its declared exception for independently triggered profile/risk/model correction.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C11",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C12",
+          "axis": "correctness",
+          "text": "States the supplied monthly advisory-fee formula as 0.0025/12 times average daily invested assets excluding cash; computes an amount only when inputs exist.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C12",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C13",
+          "axis": "correctness",
+          "text": "Separately identifies underlying fund expenses without double counting.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C13",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C14",
+          "axis": "correctness",
+          "text": "The conditional policy uses broker-default lot handling without automated tax-loss harvesting or tax-aware optimization; no broker operation is required.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C14",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C15",
+          "axis": "correctness",
+          "text": "Independent optimization assumptions are not attributed to SoFi’s undisclosed proprietary methodology.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C15",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C16",
+          "axis": "correctness",
+          "text": "Describes market-day account monitoring and at-least-quarterly model review as conditional policy only.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C16",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C17",
+          "axis": "correctness",
+          "text": "Provides the requested proposed model-version fields and identifies missing approval/data; does not claim approval or implementation.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C17",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C18",
+          "axis": "correctness",
+          "text": "The conditional model-change policy uses the declared zero-to-three-week window without claiming deployment.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P10-C18",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C-TIME",
+          "axis": "correctness",
+          "text": "Decision-driving evidence was available by the effective decision cutoff, with correct observation period, release vintage and valuation/eligibility time alignment.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-01",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C-EVIDENCE",
+          "axis": "correctness",
+          "text": "Decision-driving factual claims are supported by validated records that entail them; dates, entities, units, coverage and material conflicts are handled explicitly.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-02",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P10-C-CLAIMS",
+          "axis": "correctness",
+          "text": "No additional material claim contradicts verified evidence or falsely describes unperformed computation, execution, approval or monitoring as completed.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-06",
+            "original_weight": 3,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        }
+      ],
+      "expected_denominators": {
+        "relevance": 13,
+        "correctness": 75
+      }
+    },
+    {
+      "template_id": "P11",
+      "name": "Google PageRank",
+      "native_contract": {
+        "recommendation_request": "Research and compute, if feasible within the permitted native public-research and isolated-computation scope and budget, the original earnings-mention PageRank recommendation over a frozen S&P 500 universe. Supply an auditable graph and scores before claiming a top-10, equal-weight recommendation. Otherwise report exactly why the ranking is unresolved; a familiar-company list or invented scores is not a substitute.",
+        "conventions": [
+          "Before reporting ranks, declare the frozen constituent universe and effective timestamp, latest completed earnings-cycle definition and completion cutoff, required source coverage, and a transparent policy for fiscal calendars that do not align with calendar quarters. The latest completed cycle must be justified using evidence available by the common research cutoff; do not quietly use a convenient incomplete subset.",
+          "Use primary-source company earnings releases, prepared remarks and company-published earnings-call transcripts for that cycle. Transcript Q&A is permitted only for statements made by the reporting company's representatives; analyst questions do not create company-mention edges. Mark unavailable primary transcripts and resulting corpus gaps.",
+          "Nodes are all constituents in the declared frozen universe, including isolates and dangling nodes. An accepted edge is reporting company A -> explicitly mentioned company B, with B confidently mapped to an eligible U.S.-listed stock in that universe. Exclude self-mentions, generic words, subsidiaries and ambiguous entities; do not convert a subsidiary mention into its parent.",
+          "Collapse repeated mentions to one unweighted directed edge per ordered pair per cycle. Preserve exact supporting mention, source URL, publication date, reporting company, resolved company/ticker and exclusion reason for ambiguous candidates.",
+          "Use damping 0.85, uniform teleportation across all frozen nodes, and uniform redistribution of dangling-node mass. Define scores to sum to 1. Use power iteration until L1 difference between successive score vectors is at most 1e-10, or disclose non-convergence; rank raw converged scores descending, and break exact numerical ties by ascending canonical ticker after declaring share-class identity.",
+          "Expose the full edge list, node list, parameters, calculation method and scores (or a complete retrievable public artifact containing them) so an independent implementation can reproduce the ranking. A claimed calculation without graph/source inputs cannot establish the top 10.",
+          "Use native public market/filing/search/browser tools and the product's isolated computation/artifact output for this public-research case. Keep data, code, graph and result artifacts in a dedicated new case folder. No general host/shell access, pre-existing files, private accounts/connectors, installations, trading or background activity is authorized. If permitted data access or isolated computation cannot establish the corpus and PageRank result within the budget, disclose the exact gap; never claim unperformed code execution or computed results.",
+          "If the full ranking is established, recommend the 10 highest-ranked eligible stocks at 10% each. Explain that a future recommendation changes only after a new completed earnings cycle; no rebalance or scheduled collection is deployed."
+        ],
+        "missing_data_policy": "If universe/corpus coverage, entity mapping, graph artifacts or actual computation is incomplete, report a specific inability and unresolved ranking. A small demonstrator graph is permissible only when clearly labeled illustrative and never presented as the S&P 500 result."
+      },
+      "output_requirements": [
+        "Frozen universe/cycle definition and source-coverage ledger with publication dates and gaps.",
+        "Mention-to-ticker evidence, exclusions and complete deduplicated directed edges including all isolated nodes.",
+        "Actual auditable PageRank calculation, convergence diagnostics and scores with 10 equal-weight selections if established; otherwise explicit computation/data inability and unresolved recommendation."
+      ],
+      "effective_decision_cutoff": "2026-10-16T03:15:00Z",
+      "criteria": [
+        {
+          "id": "RESEARCH-P11-R1",
+          "axis": "relevance",
+          "text": "Addresses the earnings-mention directed graph, with actual auditable computation when feasible or exact unresolved data/computation limits; does not substitute web-link popularity.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-R1",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-R2",
+          "axis": "relevance",
+          "text": "Provides full graph/score evidence and ten equal-weight recommendations if established, otherwise explicitly identifies missing corpus/graph/computation; a labeled toy graph is not a full result.",
+          "weight": 5,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-R2",
+            "original_weight": 5,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-R3",
+          "axis": "relevance",
+          "text": "Declares frozen universe/cycle conventions and the conditional earnings-cycle-only update rule.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-R3",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "calibrated_rubric_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C1",
+          "axis": "correctness",
+          "text": "The graph uses the frozen S&P 500 universe and latest completed earnings-cycle source corpus.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-C1",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C2",
+          "axis": "correctness",
+          "text": "Every accepted edge follows the direction reporting company A → mentioned company B.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-C2",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C3",
+          "axis": "correctness",
+          "text": "Repeated mentions collapse to one edge per ordered company pair per cycle.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-C3",
+            "original_weight": 3,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C4",
+          "axis": "correctness",
+          "text": "Self-mentions, generic words, subsidiaries and unresolved entity ambiguities do not create edges.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-C4",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C5",
+          "axis": "correctness",
+          "text": "PageRank uses damping factor 0.85.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-C5",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C6",
+          "axis": "correctness",
+          "text": "Dangling nodes are redistributed according to the frozen standard PageRank convention.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-C6",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C7",
+          "axis": "correctness",
+          "text": "PageRank scores match an independent implementation within the declared numerical tolerance.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-C7",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "independent_pagerank_recomputation",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C8",
+          "axis": "correctness",
+          "text": "The 10 highest-ranked eligible U.S.-listed stocks are selected using the deterministic tie rule.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-C8",
+            "original_weight": 5,
+            "adaptation": "Decision/output proposition retained under the run-specific frozen research contract."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C9",
+          "axis": "correctness",
+          "text": "The ten selected recommendations, if established, receive 10% target weight each.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-C9",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C10",
+          "axis": "correctness",
+          "text": "The conditional recommendation-update rule changes the basket only after a new completed earnings cycle.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-C10",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "conditional_policy",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C11",
+          "axis": "correctness",
+          "text": "The response or retrievable returned artifact maps accepted edges to reporting entity, resolved mention, exact supporting text, URL and publication/availability date; runtime persistence is not required.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "P11-C11",
+            "original_weight": 3,
+            "adaptation": "Research-only semantics; actual execution/lifecycle is not inferred."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C-TIME",
+          "axis": "correctness",
+          "text": "Decision-driving evidence was available by the effective decision cutoff, with correct observation period, release vintage and valuation/eligibility time alignment.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-01",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C-EVIDENCE",
+          "axis": "correctness",
+          "text": "Decision-driving factual claims are supported by validated records that entail them; dates, entities, units, coverage and material conflicts are handled explicitly.",
+          "weight": 5,
+          "dealbreaker": true,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-02",
+            "original_weight": 5,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        },
+        {
+          "id": "RESEARCH-P11-C-CLAIMS",
+          "axis": "correctness",
+          "text": "No additional material claim contradicts verified evidence or falsely describes unperformed computation, execution, approval or monitoring as completed.",
+          "weight": 3,
+          "dealbreaker": false,
+          "required": true,
+          "source_mapping": {
+            "id": "C-BASE-06",
+            "original_weight": 3,
+            "adaptation": "Common research evidence/claim check."
+          },
+          "assessment_scope": "delivered_claim_or_required_output",
+          "verifier_route": "reference_data_and_deterministic_checks_with_grounded_review",
+          "label_policy": "Apply BUILD-SPEC.md section 5; permitted abstention remains in denominator as unknown where no substantive claim can be established, never as a verified pass."
+        }
+      ],
+      "expected_denominators": {
+        "relevance": 13,
+        "correctness": 60
+      }
+    }
+  ],
+  "source_mapping": [
+    {
+      "template_id": "P01",
+      "original_criteria": [
+        {
+          "source_id": "P01-R1",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P01-R1"
+          ],
+          "reason": "Existing explicit P01 research adaptation; retained unchanged."
+        },
+        {
+          "source_id": "P01-R2",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P01-R2-RECOMMENDATION",
+            "RESEARCH-P01-R2-SOURCES",
+            "RESEARCH-P01-R2-EVIDENCE-MAP"
+          ],
+          "reason": "Existing explicit P01 research adaptation; retained unchanged."
+        },
+        {
+          "source_id": "P01-R3",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P01-R3"
+          ],
+          "reason": "Existing explicit P01 research adaptation; retained unchanged."
+        },
+        {
+          "source_id": "P01-C1",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P01-C1"
+          ],
+          "reason": "Existing explicit P01 research adaptation; retained unchanged."
+        },
+        {
+          "source_id": "P01-C2",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P01-C2"
+          ],
+          "reason": "Existing explicit P01 research adaptation; retained unchanged."
+        },
+        {
+          "source_id": "P01-C3",
+          "action": "exclude",
+          "derived_ids": [],
+          "reason": "Actual switch execution is outside research scope; conditional timing is assessed in the research relevance rule."
+        },
+        {
+          "source_id": "P01-C4",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P01-C4"
+          ],
+          "reason": "Existing explicit P01 research adaptation; retained unchanged."
+        },
+        {
+          "source_id": "P01-C5",
+          "action": "exclude",
+          "derived_ids": [],
+          "reason": "Actual after-every-close monitoring/replay is outside a single research deliverable."
+        }
+      ]
+    },
+    {
+      "template_id": "P02",
+      "original_criteria": [
+        {
+          "source_id": "P02-R1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P02-R1"
+          ]
+        },
+        {
+          "source_id": "P02-R2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P02-R2"
+          ]
+        },
+        {
+          "source_id": "P02-R3",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P02-R3"
+          ]
+        },
+        {
+          "source_id": "P02-C1",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P02-C1"
+          ]
+        },
+        {
+          "source_id": "P02-C2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P02-C2"
+          ]
+        },
+        {
+          "source_id": "P02-C3",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P02-C3"
+          ]
+        },
+        {
+          "source_id": "P02-C4",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P02-C4"
+          ]
+        },
+        {
+          "source_id": "P02-C5",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P02-C5"
+          ]
+        },
+        {
+          "source_id": "P02-C6",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P02-C6"
+          ]
+        }
+      ]
+    },
+    {
+      "template_id": "P03",
+      "original_criteria": [
+        {
+          "source_id": "P03-R1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P03-R1"
+          ]
+        },
+        {
+          "source_id": "P03-R2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P03-R2"
+          ]
+        },
+        {
+          "source_id": "P03-R3",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P03-R3"
+          ]
+        },
+        {
+          "source_id": "P03-C1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P03-C1"
+          ]
+        },
+        {
+          "source_id": "P03-C2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P03-C2"
+          ]
+        },
+        {
+          "source_id": "P03-C3",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P03-C3"
+          ]
+        },
+        {
+          "source_id": "P03-C4",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P03-C4"
+          ]
+        },
+        {
+          "source_id": "P03-C5",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P03-C5"
+          ]
+        },
+        {
+          "source_id": "P03-C6",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P03-C6"
+          ]
+        },
+        {
+          "source_id": "P03-C7",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P03-C7"
+          ]
+        },
+        {
+          "source_id": "P03-C8",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P03-C8"
+          ]
+        }
+      ]
+    },
+    {
+      "template_id": "P04",
+      "original_criteria": [
+        {
+          "source_id": "P04-R1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P04-R1"
+          ]
+        },
+        {
+          "source_id": "P04-R2",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P04-R2"
+          ]
+        },
+        {
+          "source_id": "P04-R3",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P04-R3"
+          ]
+        },
+        {
+          "source_id": "P04-C1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P04-C1"
+          ]
+        },
+        {
+          "source_id": "P04-C2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P04-C2"
+          ]
+        },
+        {
+          "source_id": "P04-C3",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P04-C3"
+          ]
+        },
+        {
+          "source_id": "P04-C4",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P04-C4"
+          ]
+        },
+        {
+          "source_id": "P04-C5",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P04-C5"
+          ]
+        },
+        {
+          "source_id": "P04-C6",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P04-C6"
+          ]
+        },
+        {
+          "source_id": "P04-C7",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P04-C7"
+          ]
+        }
+      ]
+    },
+    {
+      "template_id": "P05",
+      "original_criteria": [
+        {
+          "source_id": "P05-R1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P05-R1"
+          ]
+        },
+        {
+          "source_id": "P05-R2",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P05-R2"
+          ]
+        },
+        {
+          "source_id": "P05-R3",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P05-R3"
+          ]
+        },
+        {
+          "source_id": "P05-C1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P05-C1"
+          ]
+        },
+        {
+          "source_id": "P05-C2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P05-C2"
+          ]
+        },
+        {
+          "source_id": "P05-C3",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P05-C3"
+          ]
+        },
+        {
+          "source_id": "P05-C4",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P05-C4"
+          ]
+        },
+        {
+          "source_id": "P05-C5",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P05-C5"
+          ]
+        },
+        {
+          "source_id": "P05-C6",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P05-C6"
+          ]
+        },
+        {
+          "source_id": "P05-C7",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P05-C7"
+          ]
+        },
+        {
+          "source_id": "P05-C8",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P05-C8"
+          ]
+        }
+      ]
+    },
+    {
+      "template_id": "P06",
+      "original_criteria": [
+        {
+          "source_id": "P06-R1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P06-R1"
+          ]
+        },
+        {
+          "source_id": "P06-R2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P06-R2"
+          ]
+        },
+        {
+          "source_id": "P06-R3",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P06-R3"
+          ]
+        },
+        {
+          "source_id": "P06-C1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P06-C1"
+          ]
+        },
+        {
+          "source_id": "P06-C2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P06-C2"
+          ]
+        },
+        {
+          "source_id": "P06-C3",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P06-C3"
+          ]
+        },
+        {
+          "source_id": "P06-C4",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P06-C4"
+          ]
+        },
+        {
+          "source_id": "P06-C5",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P06-C5"
+          ]
+        },
+        {
+          "source_id": "P06-C6",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P06-C6"
+          ]
+        },
+        {
+          "source_id": "P06-C7",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P06-C7"
+          ]
+        }
+      ]
+    },
+    {
+      "template_id": "P07",
+      "original_criteria": [
+        {
+          "source_id": "P07-R1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P07-R1"
+          ]
+        },
+        {
+          "source_id": "P07-R2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P07-R2"
+          ]
+        },
+        {
+          "source_id": "P07-R3",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P07-R3"
+          ]
+        },
+        {
+          "source_id": "P07-C1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P07-C1"
+          ]
+        },
+        {
+          "source_id": "P07-C2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P07-C2"
+          ]
+        },
+        {
+          "source_id": "P07-C3",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P07-C3"
+          ]
+        },
+        {
+          "source_id": "P07-C4",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P07-C4"
+          ]
+        },
+        {
+          "source_id": "P07-C5",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P07-C5"
+          ]
+        },
+        {
+          "source_id": "P07-C6",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P07-C6"
+          ]
+        },
+        {
+          "source_id": "P07-C7",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P07-C7"
+          ]
+        }
+      ]
+    },
+    {
+      "template_id": "P08",
+      "original_criteria": [
+        {
+          "source_id": "P08-R1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P08-R1"
+          ]
+        },
+        {
+          "source_id": "P08-R2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P08-R2"
+          ]
+        },
+        {
+          "source_id": "P08-R3",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P08-R3"
+          ]
+        },
+        {
+          "source_id": "P08-C1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P08-C1"
+          ]
+        },
+        {
+          "source_id": "P08-C2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P08-C2"
+          ]
+        },
+        {
+          "source_id": "P08-C3",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P08-C3"
+          ]
+        },
+        {
+          "source_id": "P08-C4",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P08-C4"
+          ]
+        },
+        {
+          "source_id": "P08-C5",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P08-C5"
+          ]
+        },
+        {
+          "source_id": "P08-C6",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P08-C6"
+          ]
+        },
+        {
+          "source_id": "P08-C7",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P08-C7"
+          ]
+        },
+        {
+          "source_id": "P08-C8",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P08-C8"
+          ]
+        }
+      ]
+    },
+    {
+      "template_id": "P09",
+      "original_criteria": [
+        {
+          "source_id": "P09-R1",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P09-R1"
+          ]
+        },
+        {
+          "source_id": "P09-R2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P09-R2"
+          ]
+        },
+        {
+          "source_id": "P09-R3",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P09-R3"
+          ]
+        },
+        {
+          "source_id": "P09-C1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P09-C1"
+          ]
+        },
+        {
+          "source_id": "P09-C2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P09-C2"
+          ]
+        },
+        {
+          "source_id": "P09-C3",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P09-C3"
+          ]
+        },
+        {
+          "source_id": "P09-C4",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P09-C4"
+          ]
+        },
+        {
+          "source_id": "P09-C5",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P09-C5"
+          ]
+        },
+        {
+          "source_id": "P09-C6",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P09-C6"
+          ]
+        },
+        {
+          "source_id": "P09-C7",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P09-C7"
+          ]
+        },
+        {
+          "source_id": "P09-C8",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P09-C8"
+          ]
+        }
+      ]
+    },
+    {
+      "template_id": "P10",
+      "original_criteria": [
+        {
+          "source_id": "P10-R1",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-R1"
+          ]
+        },
+        {
+          "source_id": "P10-R2",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-R2"
+          ]
+        },
+        {
+          "source_id": "P10-R3",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-R3"
+          ]
+        },
+        {
+          "source_id": "P10-C1",
+          "action": "exclude",
+          "derived_ids": [],
+          "reason": "Access to the named paper account is prohibited in recommendations-only research."
+        },
+        {
+          "source_id": "P10-C2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P10-C2"
+          ]
+        },
+        {
+          "source_id": "P10-C3",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-C3"
+          ]
+        },
+        {
+          "source_id": "P10-C4",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P10-C4"
+          ]
+        },
+        {
+          "source_id": "P10-C5",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-C5"
+          ]
+        },
+        {
+          "source_id": "P10-C6",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-C6"
+          ]
+        },
+        {
+          "source_id": "P10-C7",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-C7"
+          ]
+        },
+        {
+          "source_id": "P10-C8",
+          "action": "exclude",
+          "derived_ids": [],
+          "reason": "Initial order submission is prohibited in recommendations-only research."
+        },
+        {
+          "source_id": "P10-C9",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-C9"
+          ]
+        },
+        {
+          "source_id": "P10-C10",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-C10"
+          ]
+        },
+        {
+          "source_id": "P10-C11",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-C11"
+          ]
+        },
+        {
+          "source_id": "P10-C12",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-C12"
+          ]
+        },
+        {
+          "source_id": "P10-C13",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-C13"
+          ]
+        },
+        {
+          "source_id": "P10-C14",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-C14"
+          ]
+        },
+        {
+          "source_id": "P10-C15",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P10-C15"
+          ]
+        },
+        {
+          "source_id": "P10-C16",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-C16"
+          ]
+        },
+        {
+          "source_id": "P10-C17",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-C17"
+          ]
+        },
+        {
+          "source_id": "P10-C18",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P10-C18"
+          ]
+        }
+      ]
+    },
+    {
+      "template_id": "P11",
+      "original_criteria": [
+        {
+          "source_id": "P11-R1",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P11-R1"
+          ]
+        },
+        {
+          "source_id": "P11-R2",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P11-R2"
+          ]
+        },
+        {
+          "source_id": "P11-R3",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P11-R3"
+          ]
+        },
+        {
+          "source_id": "P11-C1",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P11-C1"
+          ]
+        },
+        {
+          "source_id": "P11-C2",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P11-C2"
+          ]
+        },
+        {
+          "source_id": "P11-C3",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P11-C3"
+          ]
+        },
+        {
+          "source_id": "P11-C4",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P11-C4"
+          ]
+        },
+        {
+          "source_id": "P11-C5",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P11-C5"
+          ]
+        },
+        {
+          "source_id": "P11-C6",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P11-C6"
+          ]
+        },
+        {
+          "source_id": "P11-C7",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P11-C7"
+          ]
+        },
+        {
+          "source_id": "P11-C8",
+          "action": "retain",
+          "derived_ids": [
+            "RESEARCH-P11-C8"
+          ]
+        },
+        {
+          "source_id": "P11-C9",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P11-C9"
+          ]
+        },
+        {
+          "source_id": "P11-C10",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P11-C10"
+          ]
+        },
+        {
+          "source_id": "P11-C11",
+          "action": "adapt",
+          "derived_ids": [
+            "RESEARCH-P11-C11"
+          ]
+        }
+      ]
+    }
+  ]
+}

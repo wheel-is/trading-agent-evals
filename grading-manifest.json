@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "grading_run_id": "formal-eval-20261017",
+  "created_at": "2026-10-17T18:44:55.979066+00:00",
+  "status": "blocked",
+  "retrospective_or_prospective": "post_hoc",
+  "target_selection": {
+    "file": "formal-eval-20261017/data-v3/selection.json",
+    "sha256": "0e293a66439e686ae41b6937718dbff18bad432cb18104f0e36be2f9ca26a67f"
+  },
+  "rubric": {
+    "file": "grading-build-handoff/research-rubric.json",
+    "sha256": "2523dca82072df6b78f87dcd6f7d95cab5e5908e53d8e8dddfe772caa698bbf4"
+  },
+  "applicability": {
+    "file": "formal-eval-20261017/data-v3/applicability.json",
+    "sha256": "423cdd5c73d6b1b8c44cd7e76e84574d01ea94f6f8b0e5d42245fa2988ad4ba9"
+  },
+  "sourcepacks": [],
+  "calibration": null,
+  "code_version": "formal-import-1.0.1+cde2dddc52ff79535df947d2f7bc22d1fbb7c3ac9739a69d1ca93ae56b55da91",
+  "judge_configs": [],
+  "scope": "recommendations_only",
+  "scope_notes": [
+    "No new target executions or trades. This pass imports and checks archived captures.",
+    "P01 pilots, native research, public-web and paper treatments remain separate.",
+    "The financial engine has only partial independent arithmetic primitives and synthetic tests; full per-template verifier acceptance is unfinished."
+  ],
+  "release_prerequisites": {
+    "rubric_approved": false,
+    "sourcepacks_validated": false,
+    "deterministic_tests_pass": false,
+    "semantic_routes_calibrated_or_human": false
+  }
+}
