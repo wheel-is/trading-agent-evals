@@ -1,131 +1,24 @@
 {
-  "version": "report-1.4-tests-categories-paper",
+  "version": "report-1.5-jango-astra-public-summary",
+  "publication_scope": "Charts, aggregate and per-criterion score summaries, methodology. New raw responses, input prompts, traces, detailed votes and account captures remain private. Existing public baseline files are unchanged except the four report views/data listed here.",
+  "base_commit": "872ea1e38dcfa2a057d8e0701203e94c4855de01",
   "files": {
-    ".nojekyll": {
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    "BUILD-SPEC.md": {
-      "bytes": 25386,
-      "sha256": "d878d8fbe3c948f9f4287ebf0fdd9b1f3082e021a9c3b00a11e95246b083c88c"
-    },
-    "GRADES.html": {
-      "bytes": 2583419,
-      "sha256": "4f2b75219093f945757b123b789c9185090c97837dfe873c0528025ea2240a09"
-    },
-    "JANGO.html": {
-      "bytes": 379492,
-      "sha256": "6f197a6e2d86fbbf070e74b3655ede1bbdd7825c5c2527d852d904fc8160dfc5"
-    },
-    "METHODOLOGY.html": {
-      "bytes": 16324,
-      "sha256": "b4d1d5222aa3788d8add5dee0ab3717184546f42a8da8237f0e206121a4d2f8c"
-    },
-    "P02-independent-check.json": {
-      "bytes": 12723,
-      "sha256": "5d486ab4909449803420e7abad835f827e8702f723fa7adbebdbf4e31795cce9"
-    },
-    "README.md": {
-      "bytes": 537,
-      "sha256": "5f65ce8665a47da39fc3319bc0bbb6ef33ccdf108e8e5be8b6b73365edb92bfb"
-    },
-    "RESPONSES.html": {
-      "bytes": 2461777,
-      "sha256": "2eb6b0698881f830143fb08d3e4809e57b6d115307558e6921da184adfccc9b1"
-    },
-    "RIGOR.html": {
-      "bytes": 22079,
-      "sha256": "85f0cba3070e7881d88eeda3057d9837cd08280c1f57cde97f91117acc7f092a"
-    },
-    "calibration.json": {
-      "bytes": 355,
-      "sha256": "119b3c6bb7acc5f94cf41aad7665794473ca1f9261a2ddbfc815df9a936dc7dd"
-    },
-    "candidate-grades.json": {
-      "bytes": 10969007,
-      "sha256": "226355f4d29d5386cf881d2766c4a9a8568061371aacd7409d73d105846a5cca"
-    },
-    "capture-corrections.json": {
-      "bytes": 53771,
-      "sha256": "0b5c5b75f06f80cfbb7eda941989ad120ee304aef10764595dab001929d704f1"
-    },
-    "capture-data.json": {
-      "bytes": 3073976,
-      "sha256": "96f7631549f72f992c5dc4cbca7ba82a7a0e7596765c97bc5377691ff5635b29"
-    },
-    "category-map.json": {
-      "bytes": 8268,
-      "sha256": "aecb8cee55b12b7c2cddd6e8ac7dd2b247d66586d9965332f47f864869bca2cb"
-    },
-    "expert-review-queue.json": {
-      "bytes": 116305,
-      "sha256": "c5caaa6e383d54e19d0d53c5fcb391d41200e26ea8add436ed4de3826c9c10c5"
-    },
-    "grading-manifest.json": {
-      "bytes": 19799,
-      "sha256": "3e3f1bc6a831a41fb7762283de062c46a9a4774e3f6f2358275740c42659b840"
-    },
     "index.html": {
-      "bytes": 1763030,
-      "sha256": "2bbc1aab007a5014adf6e3f65026965a0376cc5dad70521ba84e00dd1896c0aa"
-    },
-    "javascript-tests.json": {
-      "bytes": 1074,
-      "sha256": "f16d2ddb3fffcdf4c6f16ee01fd96ff770ebc2a3739f8a502fc9e45e8a89ba1e"
-    },
-    "judge-configs.json": {
-      "bytes": 6564,
-      "sha256": "b751ef39f1cc484b3161de6786027d862cb5aee9e6ac1391835b969eadae3775"
-    },
-    "next-run-protocol.json": {
-      "bytes": 9423,
-      "sha256": "bcf4db5b13e101ee9beb0d0bde53c2bcc121b4b35020d02af86ff20bfc7f1abd"
-    },
-    "paper-candidate-grades.json": {
-      "bytes": 1142661,
-      "sha256": "d8eb4de409807b209ae4b9264abf397c8a475aec2cd9d32e12b76c9a75aed88d"
-    },
-    "paper-rubric.json": {
-      "bytes": 233740,
-      "sha256": "8cb229726ccdde8c94d19878dd5eeeec34d33a288649cdea30b2cbfe1aa38ba8"
-    },
-    "paper-vote-validation.json": {
-      "bytes": 308,
-      "sha256": "b1bc7735a9f8d834fcde437ba696c884c093dc3aaf4850393c07e7fb24b341cf"
-    },
-    "release.json": {
-      "bytes": 395,
-      "sha256": "7357cdaddaa85d253b2dc8a45b8d0792ba0a8853e129cb7afcef5501c3c8ac3c"
-    },
-    "research-rubric.json": {
-      "bytes": 188290,
-      "sha256": "2523dca82072df6b78f87dcd6f7d95cab5e5908e53d8e8dddfe772caa698bbf4"
-    },
-    "rigor-audit.json": {
-      "bytes": 9007,
-      "sha256": "7e3cbe6306e1658ddb31c3f3651511cad43bfde3b1adfe3ade9c564b5fdc10a7"
+      "bytes": 1993943,
+      "sha256": "69986be95cbfe7a13fddd21cda4f6315e0077be069c435282bb6d76ae7e705d3"
     },
     "rubric-data.json": {
-      "bytes": 2128530,
-      "sha256": "0f31502bbcfd48186238a7c652a4065793ce14c41daa6477800b4da5606c0349"
+      "bytes": 2427368,
+      "sha256": "3c73e06d819df5a43e23bb3ce7d289c253152274c191ec86d1d7c38b42846d5a"
     },
-    "schemas.json": {
-      "bytes": 18970,
-      "sha256": "0e13453f78cabc0614a15fb96993fed3b42afe7c5065843773aad6009f89431e"
+    "RIGOR.html": {
+      "bytes": 22963,
+      "sha256": "e8c3ec4e8035ee2a37ec97bfe0c322b9f9d684596f10ff6d266125ad671406a5"
     },
-    "source-audit.json": {
-      "bytes": 8623,
-      "sha256": "7117795ae65cf5fc1ff5139cdda204ee8a99614d2cf912df6d8543c11e898325"
-    },
-    "verification-v1.4.json": {
-      "bytes": 1056,
-      "sha256": "003d4dbaf366f09c0b4ac89833a5b4bb08174da7cfad2fe1d1f4c4bf1debeb60"
-    },
-    "vote-validation.json": {
-      "bytes": 116,
-      "sha256": "78869d176154d382f4536d1154787b9bd05aa25ed8eca38a09e703b1d5ee9408"
+    "JANGO.html": {
+      "bytes": 449455,
+      "sha256": "f0c0fe97d9da05eb349d43a05e48b8f678cc93a353db6f9d195dbe2cdba58d0a"
     }
   },
-  "public_scope": "Reviewed benchmark answers, scores and minimal evidence excerpts. Raw desktop/account traces remain local.",
-  "release_status": "blocked"
+  "financial_release_status": "blocked"
 }
