@@ -1,0 +1,3 @@
+This folder is a visual presentation of strength-discovery-20261017. No new target runs or grade changes.
+To rebuild: install matplotlib 3.9.4, set DISCOVERY_SOURCE to the full original cohort and DISCOVERY_PRESENTATION to a new output directory, then run build-visuals.py.
+The complete source cohort and raw traces are retained beside this folder in the Desktop archive.

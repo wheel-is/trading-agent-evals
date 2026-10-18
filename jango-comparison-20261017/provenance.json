@@ -1,0 +1,104 @@
+{
+  "source_cohort": "strength-discovery-20261017",
+  "results_sha256": "f0fe2681a7c5d9002dfd05576f3d6ed8969f7eb735b9ed6103db936ab6cb224d",
+  "source_manifest_sha256": "3000ac8cd0ed8541ace6c7b25baf2f9f5d9bcfd9e9c1290c83f9b2513f6ea255",
+  "input_prompt_sha256": {
+    "D01": "1613040736f626f89d783d4e0acf4b85b1c63453ce15f0615dbcc3cae101eb01",
+    "D02": "9ef462177a26bfc56afd2bef0391a472e3dfae2aa0793cead34b45d2936b35d1",
+    "D03": "a1782c744ce2728172e1e1b689b703513c015d41cd8b8ffdc4079122e3f2bb5e"
+  },
+  "answer_key_sha256": "b39c55665614804d370d7d824b449145d48586c1c63388097e5b63266d780b78",
+  "files": [
+    {
+      "source": "D01/jango-astra/numeric-checks.json",
+      "bytes": 3367,
+      "sha256": "0826f9e7c842369209aff74e664986868af02f9721a79c850ed4555ec9a0424a"
+    },
+    {
+      "source": "D01/jango-astra/task-review.json",
+      "bytes": 630,
+      "sha256": "713ce525d332c0ae235c4653ac658b4b919c9678ff0870900fafacec28426729"
+    },
+    {
+      "source": "D01/jango-astra/response.txt",
+      "bytes": 3303,
+      "sha256": "b4382bc08bad28a5e4b168fe74bf2e8a1522d914e197407859d032d0510f7b3e"
+    },
+    {
+      "source": "D01/codex-astra-attempt2/numeric-checks.json",
+      "bytes": 3360,
+      "sha256": "4925e0dfdf74dc4f87a40fee169117e05a91a23cf2285698d1e6c9c4d5429248"
+    },
+    {
+      "source": "D01/codex-astra-attempt2/task-review.json",
+      "bytes": 623,
+      "sha256": "5221ed8ec4839709b60e404876d52083bf24bdc0dc961c44467aacd4b9c433a7"
+    },
+    {
+      "source": "D01/codex-astra-attempt2/response.txt",
+      "bytes": 2860,
+      "sha256": "f7397e1a4341a86f0b0fbe221e0f98447f41e9017206c64bf033324c47ecbeab"
+    },
+    {
+      "source": "D02/jango-astra/numeric-checks.json",
+      "bytes": 11076,
+      "sha256": "52ad715bcfdc179919fad4a0e951500bb6cc8b35269bdb814b52c6950f3d8492"
+    },
+    {
+      "source": "D02/jango-astra/task-review.json",
+      "bytes": 780,
+      "sha256": "7e2499459fce1df460f42f15494668d5e0caddaa26e5ee4d7a77b11c12b8c1d3"
+    },
+    {
+      "source": "D02/jango-astra/response.txt",
+      "bytes": 1635,
+      "sha256": "4390db30d8207b11e8a2e11d91b094709de4bc96d5df89577d4b01fa20168924"
+    },
+    {
+      "source": "D02/codex-astra/numeric-checks.json",
+      "bytes": 11076,
+      "sha256": "5af667a2938493f5de0f7fa4be158fb6c1caef14658a53774f7cc04899021b13"
+    },
+    {
+      "source": "D02/codex-astra/task-review.json",
+      "bytes": 773,
+      "sha256": "d4ab85f5a401a2a0d0ee0b1cd2189e93c9182b4deb1620b5da44a6c60e754d25"
+    },
+    {
+      "source": "D02/codex-astra/response.txt",
+      "bytes": 2041,
+      "sha256": "debaf3915288a547b17eb9de5c69297438d8da01d586fe2e37a725c0834da040"
+    },
+    {
+      "source": "D03/jango-astra/numeric-checks.json",
+      "bytes": 4699,
+      "sha256": "aa6828542bb1adfdc2b145a236d4974ecb72d5d5054d1917d91901d0e709f499"
+    },
+    {
+      "source": "D03/jango-astra/task-review.json",
+      "bytes": 643,
+      "sha256": "ff0b3f57a037a739de1fffbe0b92896558b295193c0ddc14602b0b34fc1bdf43"
+    },
+    {
+      "source": "D03/jango-astra/response.txt",
+      "bytes": 1127,
+      "sha256": "7faea7139e9e2d2870accb02630bc4690047b4f910a2953413ffcf7574abd2a6"
+    },
+    {
+      "source": "D03/codex-astra/numeric-checks.json",
+      "bytes": 4699,
+      "sha256": "5e0838a3f75c2cc28b3721790272fe5fafcfa426d27baed29440220b6ddbcdca"
+    },
+    {
+      "source": "D03/codex-astra/task-review.json",
+      "bytes": 636,
+      "sha256": "c822035225e168c3b52131f165b3d395bc39ed45656407ff22ca8b345dde8911"
+    },
+    {
+      "source": "D03/codex-astra/response.txt",
+      "bytes": 1604,
+      "sha256": "e4245921db2215eacb3bd5989557f8168afbb76ec799dbc3d81cb7b1bea72581"
+    }
+  ],
+  "raw_responses_and_traces": "Retained in the original local and Desktop archive; not republished by this visual update."
+}

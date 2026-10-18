@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "rows_matched_to_source": 6,
+  "numeric_checks_verified": 286,
+  "source_response_hashes_verified": 6,
+  "frozen_prompt_hashes_verified": 3,
+  "frozen_answer_key_verified": true,
+  "changed_scores": 0,
+  "new_target_runs": 0,
+  "original_archive_audit": {
+    "checks": 591,
+    "pass": true
+  },
+  "generated_at": "2026-10-18T05:57:37.034177+00:00"
+}

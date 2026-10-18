@@ -1,0 +1,93 @@
+{
+  "study": "Exploratory trading capability discovery",
+  "status": "complete",
+  "cases": 3,
+  "trials_per_case": 1,
+  "configurations": 2,
+  "rows": [
+    {
+      "case": "D01",
+      "capability": "Financial filing reconciliation",
+      "product": "Jango \u00b7 Astra",
+      "directory": "D01/jango-astra",
+      "passed_checks": 23,
+      "total_checks": 23,
+      "task_success": true,
+      "seconds": 279.579,
+      "timing_kind": "Deploy to first observed complete response",
+      "pause_verified": true
+    },
+    {
+      "case": "D01",
+      "capability": "Financial filing reconciliation",
+      "product": "Codex \u00b7 Astra",
+      "directory": "D01/codex-astra-attempt2",
+      "passed_checks": 23,
+      "total_checks": 23,
+      "task_success": true,
+      "seconds": 76.118069083,
+      "timing_kind": "CLI process wall time",
+      "pause_verified": null
+    },
+    {
+      "case": "D02",
+      "capability": "Portfolio replay and restart",
+      "product": "Jango \u00b7 Astra",
+      "directory": "D02/jango-astra",
+      "passed_checks": 87,
+      "total_checks": 87,
+      "task_success": true,
+      "seconds": 287.865,
+      "timing_kind": "Deploy to first observed complete response",
+      "pause_verified": true
+    },
+    {
+      "case": "D02",
+      "capability": "Portfolio replay and restart",
+      "product": "Codex \u00b7 Astra",
+      "directory": "D02/codex-astra",
+      "passed_checks": 87,
+      "total_checks": 87,
+      "task_success": true,
+      "seconds": 80.15963587499999,
+      "timing_kind": "CLI process wall time",
+      "pause_verified": null
+    },
+    {
+      "case": "D03",
+      "capability": "Backtest timing, fees and missing prices",
+      "product": "Jango \u00b7 Astra",
+      "directory": "D03/jango-astra",
+      "passed_checks": 33,
+      "total_checks": 33,
+      "task_success": true,
+      "seconds": 262.959,
+      "timing_kind": "Deploy to first observed complete response",
+      "pause_verified": true
+    },
+    {
+      "case": "D03",
+      "capability": "Backtest timing, fees and missing prices",
+      "product": "Codex \u00b7 Astra",
+      "directory": "D03/codex-astra",
+      "passed_checks": 33,
+      "total_checks": 33,
+      "task_success": true,
+      "seconds": 52.543123707999996,
+      "timing_kind": "CLI process wall time",
+      "pause_verified": null
+    }
+  ],
+  "conclusion": "Both configurations passed all three selected tasks. No comparative Jango advantage was demonstrated in these capabilities. The probes show a ceiling effect and do not support a general leaderboard or superiority claim.",
+  "selection": "All three frozen probes and both configurations retained. Codex D01 pre-delivery setup failure retained; first task-delivered attempt selected. Jango D01 two non-running draft failures retained. No quality-failure resampling.",
+  "scope": "Public historical research and task-local offline computation; no broker/account use, paper/live orders or schedules were requested. Jango used its native paper-mode runtime.",
+  "configuration_limits": [
+    "Requested/displayed Astra does not verify identical backend model snapshots.",
+    "Jango native task delegation and built-in financial tools differ from the Codex CLI public-web and local-computation profile.",
+    "Single trials and selected synthetic fixtures are not independent samples of all trading tasks.",
+    "Source references were independently checked against primary reports; archived evidence consists of retrieval excerpts rather than full source-document bytes.",
+    "Native UI selection captures rendered text, not verified backend bytes.",
+    "Jango displayed usage is not a fully comparable cost measure against a plan-funded CLI."
+  ],
+  "next_stage": "next-stage-design.json"
+}

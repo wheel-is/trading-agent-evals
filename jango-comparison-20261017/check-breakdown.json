@@ -1,0 +1,1802 @@
+[
+  {
+    "case": "D01",
+    "product": "Jango · Astra",
+    "required_checks": {
+      "numeric_answer": true,
+      "requested_primary_source_figures": true,
+      "period_units_definition_and_ranking": true,
+      "final_observed_within_budget": true
+    },
+    "numeric_checks": [
+      {
+        "field": "companies.count",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "companies.AAPL.fiscal_end",
+        "pass": true,
+        "observed": "2024-09-28",
+        "expected": "2024-09-28"
+      },
+      {
+        "field": "companies.AAPL.revenue",
+        "pass": true,
+        "observed": 391035,
+        "expected": 391035
+      },
+      {
+        "field": "companies.AAPL.operating_cash_flow",
+        "pass": true,
+        "observed": 118254,
+        "expected": 118254
+      },
+      {
+        "field": "companies.AAPL.cash_capex",
+        "pass": true,
+        "observed": 9447,
+        "expected": 9447
+      },
+      {
+        "field": "companies.AAPL.fcf",
+        "pass": true,
+        "observed": 108807,
+        "expected": 108807
+      },
+      {
+        "field": "companies.AAPL.fcf_margin_pct",
+        "pass": true,
+        "observed": 27.825386,
+        "expected": 27.825386474356517
+      },
+      {
+        "field": "companies.MSFT.fiscal_end",
+        "pass": true,
+        "observed": "2024-06-30",
+        "expected": "2024-06-30"
+      },
+      {
+        "field": "companies.MSFT.revenue",
+        "pass": true,
+        "observed": 245122,
+        "expected": 245122
+      },
+      {
+        "field": "companies.MSFT.operating_cash_flow",
+        "pass": true,
+        "observed": 118548,
+        "expected": 118548
+      },
+      {
+        "field": "companies.MSFT.cash_capex",
+        "pass": true,
+        "observed": 44477,
+        "expected": 44477
+      },
+      {
+        "field": "companies.MSFT.fcf",
+        "pass": true,
+        "observed": 74071,
+        "expected": 74071
+      },
+      {
+        "field": "companies.MSFT.fcf_margin_pct",
+        "pass": true,
+        "observed": 30.218014,
+        "expected": 30.21801388696241
+      },
+      {
+        "field": "companies.NVDA.fiscal_end",
+        "pass": true,
+        "observed": "2025-01-26",
+        "expected": "2025-01-26"
+      },
+      {
+        "field": "companies.NVDA.revenue",
+        "pass": true,
+        "observed": 130497,
+        "expected": 130497
+      },
+      {
+        "field": "companies.NVDA.operating_cash_flow",
+        "pass": true,
+        "observed": 64089,
+        "expected": 64089
+      },
+      {
+        "field": "companies.NVDA.cash_capex",
+        "pass": true,
+        "observed": 3236,
+        "expected": 3236
+      },
+      {
+        "field": "companies.NVDA.fcf",
+        "pass": true,
+        "observed": 60853,
+        "expected": 60853
+      },
+      {
+        "field": "companies.NVDA.fcf_margin_pct",
+        "pass": true,
+        "observed": 46.631723,
+        "expected": 46.63172333463604
+      },
+      {
+        "field": "ranking.length",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "ranking.0",
+        "pass": true,
+        "observed": "NVDA",
+        "expected": "NVDA"
+      },
+      {
+        "field": "ranking.1",
+        "pass": true,
+        "observed": "MSFT",
+        "expected": "MSFT"
+      },
+      {
+        "field": "ranking.2",
+        "pass": true,
+        "observed": "AAPL",
+        "expected": "AAPL"
+      }
+    ],
+    "response_sha256": "b4382bc08bad28a5e4b168fe74bf2e8a1522d914e197407859d032d0510f7b3e"
+  },
+  {
+    "case": "D01",
+    "product": "Codex · Astra",
+    "required_checks": {
+      "numeric_answer": true,
+      "requested_primary_source_figures": true,
+      "period_units_definition_and_ranking": true,
+      "final_observed_within_budget": true
+    },
+    "numeric_checks": [
+      {
+        "field": "companies.count",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "companies.AAPL.fiscal_end",
+        "pass": true,
+        "observed": "2024-09-28",
+        "expected": "2024-09-28"
+      },
+      {
+        "field": "companies.AAPL.revenue",
+        "pass": true,
+        "observed": 391035,
+        "expected": 391035
+      },
+      {
+        "field": "companies.AAPL.operating_cash_flow",
+        "pass": true,
+        "observed": 118254,
+        "expected": 118254
+      },
+      {
+        "field": "companies.AAPL.cash_capex",
+        "pass": true,
+        "observed": 9447,
+        "expected": 9447
+      },
+      {
+        "field": "companies.AAPL.fcf",
+        "pass": true,
+        "observed": 108807,
+        "expected": 108807
+      },
+      {
+        "field": "companies.AAPL.fcf_margin_pct",
+        "pass": true,
+        "observed": 27.8254,
+        "expected": 27.825386474356517
+      },
+      {
+        "field": "companies.MSFT.fiscal_end",
+        "pass": true,
+        "observed": "2024-06-30",
+        "expected": "2024-06-30"
+      },
+      {
+        "field": "companies.MSFT.revenue",
+        "pass": true,
+        "observed": 245122,
+        "expected": 245122
+      },
+      {
+        "field": "companies.MSFT.operating_cash_flow",
+        "pass": true,
+        "observed": 118548,
+        "expected": 118548
+      },
+      {
+        "field": "companies.MSFT.cash_capex",
+        "pass": true,
+        "observed": 44477,
+        "expected": 44477
+      },
+      {
+        "field": "companies.MSFT.fcf",
+        "pass": true,
+        "observed": 74071,
+        "expected": 74071
+      },
+      {
+        "field": "companies.MSFT.fcf_margin_pct",
+        "pass": true,
+        "observed": 30.218,
+        "expected": 30.21801388696241
+      },
+      {
+        "field": "companies.NVDA.fiscal_end",
+        "pass": true,
+        "observed": "2025-01-26",
+        "expected": "2025-01-26"
+      },
+      {
+        "field": "companies.NVDA.revenue",
+        "pass": true,
+        "observed": 130497,
+        "expected": 130497
+      },
+      {
+        "field": "companies.NVDA.operating_cash_flow",
+        "pass": true,
+        "observed": 64089,
+        "expected": 64089
+      },
+      {
+        "field": "companies.NVDA.cash_capex",
+        "pass": true,
+        "observed": 3236,
+        "expected": 3236
+      },
+      {
+        "field": "companies.NVDA.fcf",
+        "pass": true,
+        "observed": 60853,
+        "expected": 60853
+      },
+      {
+        "field": "companies.NVDA.fcf_margin_pct",
+        "pass": true,
+        "observed": 46.6317,
+        "expected": 46.63172333463604
+      },
+      {
+        "field": "ranking.length",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "ranking.0",
+        "pass": true,
+        "observed": "NVDA",
+        "expected": "NVDA"
+      },
+      {
+        "field": "ranking.1",
+        "pass": true,
+        "observed": "MSFT",
+        "expected": "MSFT"
+      },
+      {
+        "field": "ranking.2",
+        "pass": true,
+        "observed": "AAPL",
+        "expected": "AAPL"
+      }
+    ],
+    "response_sha256": "f7397e1a4341a86f0b0fbe221e0f98447f41e9017206c64bf033324c47ecbeab"
+  },
+  {
+    "case": "D02",
+    "product": "Jango · Astra",
+    "required_checks": {
+      "numeric_answer": true,
+      "executed_artifact_independently_reproduces_answer": true,
+      "required_artifacts_retained": true,
+      "checkpoint_state_verified": true,
+      "checkpoint_preserves_seen_fill_ids": true,
+      "checkpoint_preserves_seen_signal_ids": true,
+      "final_observed_within_budget": true
+    },
+    "numeric_checks": [
+      {
+        "field": "D02.event_states.length",
+        "pass": true,
+        "observed": 12,
+        "expected": 12
+      },
+      {
+        "field": "D02.event_states.0.event",
+        "pass": true,
+        "observed": 1,
+        "expected": 1
+      },
+      {
+        "field": "D02.event_states.0.cash",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.0.positions.ALFA",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.0.positions.BRVO",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.0.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.1.event",
+        "pass": true,
+        "observed": 2,
+        "expected": 2
+      },
+      {
+        "field": "D02.event_states.1.cash",
+        "pass": true,
+        "observed": 700,
+        "expected": 700
+      },
+      {
+        "field": "D02.event_states.1.positions.ALFA",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D02.event_states.1.positions.BRVO",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.1.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.2.event",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D02.event_states.2.cash",
+        "pass": true,
+        "observed": 700,
+        "expected": 700
+      },
+      {
+        "field": "D02.event_states.2.positions.ALFA",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D02.event_states.2.positions.BRVO",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.2.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.3.event",
+        "pass": true,
+        "observed": 4,
+        "expected": 4
+      },
+      {
+        "field": "D02.event_states.3.cash",
+        "pass": true,
+        "observed": 300,
+        "expected": 300
+      },
+      {
+        "field": "D02.event_states.3.positions.ALFA",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D02.event_states.3.positions.BRVO",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.3.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.4.event",
+        "pass": true,
+        "observed": 5,
+        "expected": 5
+      },
+      {
+        "field": "D02.event_states.4.cash",
+        "pass": true,
+        "observed": 300,
+        "expected": 300
+      },
+      {
+        "field": "D02.event_states.4.positions.ALFA",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D02.event_states.4.positions.BRVO",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.4.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.5.event",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D02.event_states.5.cash",
+        "pass": true,
+        "observed": 300,
+        "expected": 300
+      },
+      {
+        "field": "D02.event_states.5.positions.ALFA",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D02.event_states.5.positions.BRVO",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.5.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.6.event",
+        "pass": true,
+        "observed": 7,
+        "expected": 7
+      },
+      {
+        "field": "D02.event_states.6.cash",
+        "pass": true,
+        "observed": 300,
+        "expected": 300
+      },
+      {
+        "field": "D02.event_states.6.positions.ALFA",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D02.event_states.6.positions.BRVO",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.6.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.7.event",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.7.cash",
+        "pass": true,
+        "observed": 300,
+        "expected": 300
+      },
+      {
+        "field": "D02.event_states.7.positions.ALFA",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D02.event_states.7.positions.BRVO",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.7.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.8.event",
+        "pass": true,
+        "observed": 9,
+        "expected": 9
+      },
+      {
+        "field": "D02.event_states.8.cash",
+        "pass": true,
+        "observed": 600,
+        "expected": 600
+      },
+      {
+        "field": "D02.event_states.8.positions.ALFA",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.8.positions.BRVO",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.8.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.9.event",
+        "pass": true,
+        "observed": 10,
+        "expected": 10
+      },
+      {
+        "field": "D02.event_states.9.cash",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.9.positions.ALFA",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.9.positions.BRVO",
+        "pass": true,
+        "observed": 20,
+        "expected": 20
+      },
+      {
+        "field": "D02.event_states.9.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.10.event",
+        "pass": true,
+        "observed": 11,
+        "expected": 11
+      },
+      {
+        "field": "D02.event_states.10.cash",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.10.positions.ALFA",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.10.positions.BRVO",
+        "pass": true,
+        "observed": 20,
+        "expected": 20
+      },
+      {
+        "field": "D02.event_states.10.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.11.event",
+        "pass": true,
+        "observed": 12,
+        "expected": 12
+      },
+      {
+        "field": "D02.event_states.11.cash",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.11.positions.ALFA",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.11.positions.BRVO",
+        "pass": true,
+        "observed": 20,
+        "expected": 20
+      },
+      {
+        "field": "D02.event_states.11.nav",
+        "pass": true,
+        "observed": 1100,
+        "expected": 1100
+      },
+      {
+        "field": "D02.submitted_orders.length",
+        "pass": true,
+        "observed": 4,
+        "expected": 4
+      },
+      {
+        "field": "D02.submitted_orders.0.id",
+        "pass": true,
+        "observed": "o1",
+        "expected": "o1"
+      },
+      {
+        "field": "D02.submitted_orders.0.side",
+        "pass": true,
+        "observed": "buy",
+        "expected": "buy"
+      },
+      {
+        "field": "D02.submitted_orders.0.symbol",
+        "pass": true,
+        "observed": "ALFA",
+        "expected": "ALFA"
+      },
+      {
+        "field": "D02.submitted_orders.0.qty",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D02.submitted_orders.1.id",
+        "pass": true,
+        "observed": "o2",
+        "expected": "o2"
+      },
+      {
+        "field": "D02.submitted_orders.1.side",
+        "pass": true,
+        "observed": "buy",
+        "expected": "buy"
+      },
+      {
+        "field": "D02.submitted_orders.1.symbol",
+        "pass": true,
+        "observed": "BRVO",
+        "expected": "BRVO"
+      },
+      {
+        "field": "D02.submitted_orders.1.qty",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.submitted_orders.2.id",
+        "pass": true,
+        "observed": "o3",
+        "expected": "o3"
+      },
+      {
+        "field": "D02.submitted_orders.2.side",
+        "pass": true,
+        "observed": "sell",
+        "expected": "sell"
+      },
+      {
+        "field": "D02.submitted_orders.2.symbol",
+        "pass": true,
+        "observed": "ALFA",
+        "expected": "ALFA"
+      },
+      {
+        "field": "D02.submitted_orders.2.qty",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D02.submitted_orders.3.id",
+        "pass": true,
+        "observed": "o4",
+        "expected": "o4"
+      },
+      {
+        "field": "D02.submitted_orders.3.side",
+        "pass": true,
+        "observed": "buy",
+        "expected": "buy"
+      },
+      {
+        "field": "D02.submitted_orders.3.symbol",
+        "pass": true,
+        "observed": "BRVO",
+        "expected": "BRVO"
+      },
+      {
+        "field": "D02.submitted_orders.3.qty",
+        "pass": true,
+        "observed": 12,
+        "expected": 12
+      },
+      {
+        "field": "D02.final_cash",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.final_positions.ALFA",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.final_positions.BRVO",
+        "pass": true,
+        "observed": 20,
+        "expected": 20
+      },
+      {
+        "field": "D02.final_nav",
+        "pass": true,
+        "observed": 1100,
+        "expected": 1100
+      },
+      {
+        "field": "D02.unique_fills",
+        "pass": true,
+        "observed": 4,
+        "expected": 4
+      },
+      {
+        "field": "D02.duplicate_fills_ignored",
+        "pass": true,
+        "observed": 1,
+        "expected": 1
+      },
+      {
+        "field": "D02.duplicate_signals_ignored",
+        "pass": true,
+        "observed": 1,
+        "expected": 1
+      },
+      {
+        "field": "D02.cancelled_residual_shares",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D02.restart_state_equal",
+        "pass": true,
+        "observed": true,
+        "expected": true
+      }
+    ],
+    "response_sha256": "4390db30d8207b11e8a2e11d91b094709de4bc96d5df89577d4b01fa20168924"
+  },
+  {
+    "case": "D02",
+    "product": "Codex · Astra",
+    "required_checks": {
+      "numeric_answer": true,
+      "executed_artifact_independently_reproduces_answer": true,
+      "required_artifacts_retained": true,
+      "checkpoint_state_verified": true,
+      "checkpoint_preserves_seen_fill_ids": true,
+      "checkpoint_preserves_seen_signal_ids": true,
+      "final_observed_within_budget": true
+    },
+    "numeric_checks": [
+      {
+        "field": "D02.event_states.length",
+        "pass": true,
+        "observed": 12,
+        "expected": 12
+      },
+      {
+        "field": "D02.event_states.0.event",
+        "pass": true,
+        "observed": 1,
+        "expected": 1
+      },
+      {
+        "field": "D02.event_states.0.cash",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.0.positions.ALFA",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.0.positions.BRVO",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.0.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.1.event",
+        "pass": true,
+        "observed": 2,
+        "expected": 2
+      },
+      {
+        "field": "D02.event_states.1.cash",
+        "pass": true,
+        "observed": 700,
+        "expected": 700
+      },
+      {
+        "field": "D02.event_states.1.positions.ALFA",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D02.event_states.1.positions.BRVO",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.1.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.2.event",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D02.event_states.2.cash",
+        "pass": true,
+        "observed": 700,
+        "expected": 700
+      },
+      {
+        "field": "D02.event_states.2.positions.ALFA",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D02.event_states.2.positions.BRVO",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.2.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.3.event",
+        "pass": true,
+        "observed": 4,
+        "expected": 4
+      },
+      {
+        "field": "D02.event_states.3.cash",
+        "pass": true,
+        "observed": 300,
+        "expected": 300
+      },
+      {
+        "field": "D02.event_states.3.positions.ALFA",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D02.event_states.3.positions.BRVO",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.3.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.4.event",
+        "pass": true,
+        "observed": 5,
+        "expected": 5
+      },
+      {
+        "field": "D02.event_states.4.cash",
+        "pass": true,
+        "observed": 300,
+        "expected": 300
+      },
+      {
+        "field": "D02.event_states.4.positions.ALFA",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D02.event_states.4.positions.BRVO",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.4.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.5.event",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D02.event_states.5.cash",
+        "pass": true,
+        "observed": 300,
+        "expected": 300
+      },
+      {
+        "field": "D02.event_states.5.positions.ALFA",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D02.event_states.5.positions.BRVO",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.5.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.6.event",
+        "pass": true,
+        "observed": 7,
+        "expected": 7
+      },
+      {
+        "field": "D02.event_states.6.cash",
+        "pass": true,
+        "observed": 300,
+        "expected": 300
+      },
+      {
+        "field": "D02.event_states.6.positions.ALFA",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D02.event_states.6.positions.BRVO",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.6.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.7.event",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.7.cash",
+        "pass": true,
+        "observed": 300,
+        "expected": 300
+      },
+      {
+        "field": "D02.event_states.7.positions.ALFA",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D02.event_states.7.positions.BRVO",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.7.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.8.event",
+        "pass": true,
+        "observed": 9,
+        "expected": 9
+      },
+      {
+        "field": "D02.event_states.8.cash",
+        "pass": true,
+        "observed": 600,
+        "expected": 600
+      },
+      {
+        "field": "D02.event_states.8.positions.ALFA",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.8.positions.BRVO",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.event_states.8.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.9.event",
+        "pass": true,
+        "observed": 10,
+        "expected": 10
+      },
+      {
+        "field": "D02.event_states.9.cash",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.9.positions.ALFA",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.9.positions.BRVO",
+        "pass": true,
+        "observed": 20,
+        "expected": 20
+      },
+      {
+        "field": "D02.event_states.9.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.10.event",
+        "pass": true,
+        "observed": 11,
+        "expected": 11
+      },
+      {
+        "field": "D02.event_states.10.cash",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.10.positions.ALFA",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.10.positions.BRVO",
+        "pass": true,
+        "observed": 20,
+        "expected": 20
+      },
+      {
+        "field": "D02.event_states.10.nav",
+        "pass": true,
+        "observed": 1000,
+        "expected": 1000
+      },
+      {
+        "field": "D02.event_states.11.event",
+        "pass": true,
+        "observed": 12,
+        "expected": 12
+      },
+      {
+        "field": "D02.event_states.11.cash",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.11.positions.ALFA",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.event_states.11.positions.BRVO",
+        "pass": true,
+        "observed": 20,
+        "expected": 20
+      },
+      {
+        "field": "D02.event_states.11.nav",
+        "pass": true,
+        "observed": 1100,
+        "expected": 1100
+      },
+      {
+        "field": "D02.submitted_orders.length",
+        "pass": true,
+        "observed": 4,
+        "expected": 4
+      },
+      {
+        "field": "D02.submitted_orders.0.id",
+        "pass": true,
+        "observed": "o1",
+        "expected": "o1"
+      },
+      {
+        "field": "D02.submitted_orders.0.side",
+        "pass": true,
+        "observed": "buy",
+        "expected": "buy"
+      },
+      {
+        "field": "D02.submitted_orders.0.symbol",
+        "pass": true,
+        "observed": "ALFA",
+        "expected": "ALFA"
+      },
+      {
+        "field": "D02.submitted_orders.0.qty",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D02.submitted_orders.1.id",
+        "pass": true,
+        "observed": "o2",
+        "expected": "o2"
+      },
+      {
+        "field": "D02.submitted_orders.1.side",
+        "pass": true,
+        "observed": "buy",
+        "expected": "buy"
+      },
+      {
+        "field": "D02.submitted_orders.1.symbol",
+        "pass": true,
+        "observed": "BRVO",
+        "expected": "BRVO"
+      },
+      {
+        "field": "D02.submitted_orders.1.qty",
+        "pass": true,
+        "observed": 8,
+        "expected": 8
+      },
+      {
+        "field": "D02.submitted_orders.2.id",
+        "pass": true,
+        "observed": "o3",
+        "expected": "o3"
+      },
+      {
+        "field": "D02.submitted_orders.2.side",
+        "pass": true,
+        "observed": "sell",
+        "expected": "sell"
+      },
+      {
+        "field": "D02.submitted_orders.2.symbol",
+        "pass": true,
+        "observed": "ALFA",
+        "expected": "ALFA"
+      },
+      {
+        "field": "D02.submitted_orders.2.qty",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D02.submitted_orders.3.id",
+        "pass": true,
+        "observed": "o4",
+        "expected": "o4"
+      },
+      {
+        "field": "D02.submitted_orders.3.side",
+        "pass": true,
+        "observed": "buy",
+        "expected": "buy"
+      },
+      {
+        "field": "D02.submitted_orders.3.symbol",
+        "pass": true,
+        "observed": "BRVO",
+        "expected": "BRVO"
+      },
+      {
+        "field": "D02.submitted_orders.3.qty",
+        "pass": true,
+        "observed": 12,
+        "expected": 12
+      },
+      {
+        "field": "D02.final_cash",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.final_positions.ALFA",
+        "pass": true,
+        "observed": 0,
+        "expected": 0
+      },
+      {
+        "field": "D02.final_positions.BRVO",
+        "pass": true,
+        "observed": 20,
+        "expected": 20
+      },
+      {
+        "field": "D02.final_nav",
+        "pass": true,
+        "observed": 1100,
+        "expected": 1100
+      },
+      {
+        "field": "D02.unique_fills",
+        "pass": true,
+        "observed": 4,
+        "expected": 4
+      },
+      {
+        "field": "D02.duplicate_fills_ignored",
+        "pass": true,
+        "observed": 1,
+        "expected": 1
+      },
+      {
+        "field": "D02.duplicate_signals_ignored",
+        "pass": true,
+        "observed": 1,
+        "expected": 1
+      },
+      {
+        "field": "D02.cancelled_residual_shares",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D02.restart_state_equal",
+        "pass": true,
+        "observed": true,
+        "expected": true
+      }
+    ],
+    "response_sha256": "debaf3915288a547b17eb9de5c69297438d8da01d586fe2e37a725c0834da040"
+  },
+  {
+    "case": "D03",
+    "product": "Jango · Astra",
+    "required_checks": {
+      "numeric_answer": true,
+      "executed_artifact_independently_reproduces_answer": true,
+      "required_artifacts_retained": true,
+      "final_observed_within_budget": true
+    },
+    "numeric_checks": [
+      {
+        "field": "D03.nav_by_day.length",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D03.nav_by_day.0",
+        "pass": true,
+        "observed": 1000.0,
+        "expected": 1000.0
+      },
+      {
+        "field": "D03.nav_by_day.1",
+        "pass": true,
+        "observed": 1000.0,
+        "expected": 1000.0
+      },
+      {
+        "field": "D03.nav_by_day.2",
+        "pass": true,
+        "observed": 1098.901098901099,
+        "expected": 1098.901098901099
+      },
+      {
+        "field": "D03.nav_by_day.3",
+        "pass": true,
+        "observed": 1330.6693306693307,
+        "expected": 1330.6693306693307
+      },
+      {
+        "field": "D03.nav_by_day.4",
+        "pass": true,
+        "observed": 1595.2079888143824,
+        "expected": 1595.2079888143824
+      },
+      {
+        "field": "D03.nav_by_day.5",
+        "pass": true,
+        "observed": 1169.8191917972138,
+        "expected": 1169.8191917972138
+      },
+      {
+        "field": "D03.trades.length",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D03.trades.0.execution_day",
+        "pass": true,
+        "observed": 2,
+        "expected": 2
+      },
+      {
+        "field": "D03.trades.0.side",
+        "pass": true,
+        "observed": "buy",
+        "expected": "buy"
+      },
+      {
+        "field": "D03.trades.0.price",
+        "pass": true,
+        "observed": 90.0,
+        "expected": 90
+      },
+      {
+        "field": "D03.trades.0.qty",
+        "pass": true,
+        "observed": 11.1000111000111,
+        "expected": 11.1000111000111
+      },
+      {
+        "field": "D03.trades.0.fee",
+        "pass": true,
+        "observed": 0.999000999000999,
+        "expected": 0.999000999000999
+      },
+      {
+        "field": "D03.trades.1.execution_day",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D03.trades.1.side",
+        "pass": true,
+        "observed": "sell",
+        "expected": "sell"
+      },
+      {
+        "field": "D03.trades.1.price",
+        "pass": true,
+        "observed": 120.0,
+        "expected": 120
+      },
+      {
+        "field": "D03.trades.1.qty",
+        "pass": true,
+        "observed": 11.1000111000111,
+        "expected": 11.1000111000111
+      },
+      {
+        "field": "D03.trades.1.fee",
+        "pass": true,
+        "observed": 1.332001332001332,
+        "expected": 1.332001332001332
+      },
+      {
+        "field": "D03.trades.2.execution_day",
+        "pass": true,
+        "observed": 4,
+        "expected": 4
+      },
+      {
+        "field": "D03.trades.2.side",
+        "pass": true,
+        "observed": "buy",
+        "expected": "buy"
+      },
+      {
+        "field": "D03.trades.2.price",
+        "pass": true,
+        "observed": 100.0,
+        "expected": 100
+      },
+      {
+        "field": "D03.trades.2.qty",
+        "pass": true,
+        "observed": 13.29339990678652,
+        "expected": 13.29339990678652
+      },
+      {
+        "field": "D03.trades.2.fee",
+        "pass": true,
+        "observed": 1.329339990678652,
+        "expected": 1.329339990678652
+      },
+      {
+        "field": "D03.final_cash",
+        "pass": true,
+        "observed": 0.0,
+        "expected": 0.0
+      },
+      {
+        "field": "D03.final_shares",
+        "pass": true,
+        "observed": 13.29339990678652,
+        "expected": 13.29339990678652
+      },
+      {
+        "field": "D03.final_nav",
+        "pass": true,
+        "observed": 1169.8191917972138,
+        "expected": 1169.8191917972138
+      },
+      {
+        "field": "D03.final_nav_day",
+        "pass": true,
+        "observed": 5,
+        "expected": 5
+      },
+      {
+        "field": "D03.return_pct",
+        "pass": true,
+        "observed": 16.981919179721377,
+        "expected": 16.98191917972138
+      },
+      {
+        "field": "D03.max_drawdown_pct",
+        "pass": true,
+        "observed": 26.666666666666668,
+        "expected": 26.666666666666668
+      },
+      {
+        "field": "D03.total_fees",
+        "pass": true,
+        "observed": 3.660342321680983,
+        "expected": 3.660342321680983
+      },
+      {
+        "field": "D03.pending_order.side",
+        "pass": true,
+        "observed": "sell",
+        "expected": "sell"
+      },
+      {
+        "field": "D03.pending_order.qty",
+        "pass": true,
+        "observed": 13.29339990678652,
+        "expected": 13.29339990678652
+      },
+      {
+        "field": "D03.pending_order.execution_day",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      }
+    ],
+    "response_sha256": "7faea7139e9e2d2870accb02630bc4690047b4f910a2953413ffcf7574abd2a6"
+  },
+  {
+    "case": "D03",
+    "product": "Codex · Astra",
+    "required_checks": {
+      "numeric_answer": true,
+      "executed_artifact_independently_reproduces_answer": true,
+      "required_artifacts_retained": true,
+      "final_observed_within_budget": true
+    },
+    "numeric_checks": [
+      {
+        "field": "D03.nav_by_day.length",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      },
+      {
+        "field": "D03.nav_by_day.0",
+        "pass": true,
+        "observed": 1000.0,
+        "expected": 1000.0
+      },
+      {
+        "field": "D03.nav_by_day.1",
+        "pass": true,
+        "observed": 1000.0,
+        "expected": 1000.0
+      },
+      {
+        "field": "D03.nav_by_day.2",
+        "pass": true,
+        "observed": 1098.901098901099,
+        "expected": 1098.901098901099
+      },
+      {
+        "field": "D03.nav_by_day.3",
+        "pass": true,
+        "observed": 1330.6693306693307,
+        "expected": 1330.6693306693307
+      },
+      {
+        "field": "D03.nav_by_day.4",
+        "pass": true,
+        "observed": 1595.2079888143824,
+        "expected": 1595.2079888143824
+      },
+      {
+        "field": "D03.nav_by_day.5",
+        "pass": true,
+        "observed": 1169.8191917972138,
+        "expected": 1169.8191917972138
+      },
+      {
+        "field": "D03.trades.length",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D03.trades.0.execution_day",
+        "pass": true,
+        "observed": 2,
+        "expected": 2
+      },
+      {
+        "field": "D03.trades.0.side",
+        "pass": true,
+        "observed": "buy",
+        "expected": "buy"
+      },
+      {
+        "field": "D03.trades.0.price",
+        "pass": true,
+        "observed": 90.0,
+        "expected": 90
+      },
+      {
+        "field": "D03.trades.0.qty",
+        "pass": true,
+        "observed": 11.1000111000111,
+        "expected": 11.1000111000111
+      },
+      {
+        "field": "D03.trades.0.fee",
+        "pass": true,
+        "observed": 0.999000999000999,
+        "expected": 0.999000999000999
+      },
+      {
+        "field": "D03.trades.1.execution_day",
+        "pass": true,
+        "observed": 3,
+        "expected": 3
+      },
+      {
+        "field": "D03.trades.1.side",
+        "pass": true,
+        "observed": "sell",
+        "expected": "sell"
+      },
+      {
+        "field": "D03.trades.1.price",
+        "pass": true,
+        "observed": 120.0,
+        "expected": 120
+      },
+      {
+        "field": "D03.trades.1.qty",
+        "pass": true,
+        "observed": 11.1000111000111,
+        "expected": 11.1000111000111
+      },
+      {
+        "field": "D03.trades.1.fee",
+        "pass": true,
+        "observed": 1.332001332001332,
+        "expected": 1.332001332001332
+      },
+      {
+        "field": "D03.trades.2.execution_day",
+        "pass": true,
+        "observed": 4,
+        "expected": 4
+      },
+      {
+        "field": "D03.trades.2.side",
+        "pass": true,
+        "observed": "buy",
+        "expected": "buy"
+      },
+      {
+        "field": "D03.trades.2.price",
+        "pass": true,
+        "observed": 100.0,
+        "expected": 100
+      },
+      {
+        "field": "D03.trades.2.qty",
+        "pass": true,
+        "observed": 13.29339990678652,
+        "expected": 13.29339990678652
+      },
+      {
+        "field": "D03.trades.2.fee",
+        "pass": true,
+        "observed": 1.329339990678652,
+        "expected": 1.329339990678652
+      },
+      {
+        "field": "D03.final_cash",
+        "pass": true,
+        "observed": 0.0,
+        "expected": 0.0
+      },
+      {
+        "field": "D03.final_shares",
+        "pass": true,
+        "observed": 13.29339990678652,
+        "expected": 13.29339990678652
+      },
+      {
+        "field": "D03.final_nav",
+        "pass": true,
+        "observed": 1169.8191917972138,
+        "expected": 1169.8191917972138
+      },
+      {
+        "field": "D03.final_nav_day",
+        "pass": true,
+        "observed": 5,
+        "expected": 5
+      },
+      {
+        "field": "D03.return_pct",
+        "pass": true,
+        "observed": 16.981919179721377,
+        "expected": 16.98191917972138
+      },
+      {
+        "field": "D03.max_drawdown_pct",
+        "pass": true,
+        "observed": 26.666666666666668,
+        "expected": 26.666666666666668
+      },
+      {
+        "field": "D03.total_fees",
+        "pass": true,
+        "observed": 3.660342321680983,
+        "expected": 3.660342321680983
+      },
+      {
+        "field": "D03.pending_order.side",
+        "pass": true,
+        "observed": "sell",
+        "expected": "sell"
+      },
+      {
+        "field": "D03.pending_order.qty",
+        "pass": true,
+        "observed": 13.29339990678652,
+        "expected": 13.29339990678652
+      },
+      {
+        "field": "D03.pending_order.execution_day",
+        "pass": true,
+        "observed": 6,
+        "expected": 6
+      }
+    ],
+    "response_sha256": "e4245921db2215eacb3bd5989557f8168afbb76ec799dbc3d81cb7b1bea72581"
+  }
+]

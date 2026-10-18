@@ -1,0 +1,70 @@
+{
+  "files": [
+    {
+      "file": "01-task-results.png",
+      "bytes": 127261,
+      "sha256": "e09523fb4abe8c553e532a054b88fab64fd96dd376b8bcb0034649f836474ce1"
+    },
+    {
+      "file": "01-task-results.svg",
+      "bytes": 7291,
+      "sha256": "e66891fe03296f3729d80cbdff3c3288a879905c50c4ef719152ba92c9425e3f"
+    },
+    {
+      "file": "02-category-results.png",
+      "bytes": 174885,
+      "sha256": "8b01baebe43f5598d36bab910098e02805f9081a5103d7ea303eb8eae388550e"
+    },
+    {
+      "file": "02-category-results.svg",
+      "bytes": 7917,
+      "sha256": "43ae0ec205cb74dd15b10c991c398f5102c4d8578045a692887c6cd250366106"
+    },
+    {
+      "file": "03-observed-time.png",
+      "bytes": 154030,
+      "sha256": "d83be6e42b84004b9b5bac7e374c785989efce12dee3a80d3a4a74fe71958d1f"
+    },
+    {
+      "file": "03-observed-time.svg",
+      "bytes": 10830,
+      "sha256": "c348110b82cd87324fda9244ce158678364f282f3aaca1dc270834e91f0d3699"
+    },
+    {
+      "file": "REPRODUCE.txt",
+      "bytes": 372,
+      "sha256": "9c0a9e981129cb9d66ac1ca389d51963e19723b2247c03f3474d24f10afe0827"
+    },
+    {
+      "file": "build-visuals.py",
+      "bytes": 20822,
+      "sha256": "305c57a202378a5f29ed29cc37cb99c4c3323169a469de50ec28f291a4d5a638"
+    },
+    {
+      "file": "check-breakdown.json",
+      "bytes": 41704,
+      "sha256": "6a5682fa547c35c04e6b01a846ecb705d0d7de30eb6a9529ab3494ff753c249c"
+    },
+    {
+      "file": "index.html",
+      "bytes": 13395,
+      "sha256": "9762e9d73d36f6227483792da9c0fffe4a315d68b6c3203baed6698e1f0e1996"
+    },
+    {
+      "file": "provenance.json",
+      "bytes": 3796,
+      "sha256": "f8db010159680d72bb8525bd321232b32f5c7f524a19668954fdfa595cbe921c"
+    },
+    {
+      "file": "results.json",
+      "bytes": 3763,
+      "sha256": "f0fe2681a7c5d9002dfd05576f3d6ed8969f7eb735b9ed6103db936ab6cb224d"
+    },
+    {
+      "file": "validation.json",
+      "bytes": 372,
+      "sha256": "fe8be6fbdb5e72b82af2d7e417924b2829a1f56fb5b9afa72a2f396cba639142"
+    }
+  ],
+  "scope": "Visual presentation and aggregate result/check data only. Original raw archive unchanged."
+}
