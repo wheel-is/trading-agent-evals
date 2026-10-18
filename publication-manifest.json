@@ -4,8 +4,8 @@
   "base_commit": "872ea1e38dcfa2a057d8e0701203e94c4855de01",
   "files": {
     "index.html": {
-      "bytes": 1993943,
-      "sha256": "69986be95cbfe7a13fddd21cda4f6315e0077be069c435282bb6d76ae7e705d3"
+      "bytes": 1993929,
+      "sha256": "15cfc5c8153d2beffb24149e336479e4d13a538d8dc5f38bf9a19ce47701a10a"
     },
     "rubric-data.json": {
       "bytes": 2427368,
